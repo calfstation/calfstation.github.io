@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>CALF STATION IPS Web Patcher</title>
+  <style>
+    :root{--red:#b22222;--red-dark:#861417;--gold:#d4af37;--cream:#f8f4e6;--paper:#fffdf8;--ink:#3a1f0b;--line:#e6c9a8;--ok:#21783c;--bad:#c5262d;--muted:#8c6555}
+    *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;background:repeating-linear-gradient(0deg,rgba(58,31,11,.025) 0 1px,transparent 1px 4px),var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;word-break:keep-all}
+    button,input{font:inherit}.shell{width:min(920px,calc(100% - 24px));margin:18px auto 48px}.hero{text-align:center;padding:32px 18px 28px;background:linear-gradient(#b22222,#93171a);border:4px solid var(--red-dark);border-bottom:7px solid var(--gold);box-shadow:0 6px 0 rgba(72,35,18,.16)}
+    .hero h1{margin:0;color:#fff;font-size:clamp(30px,6vw,52px);letter-spacing:.04em;text-shadow:3px 3px 0 #000}.hero p{margin:8px 0 0;color:#fff1bd}.nav{display:flex;justify-content:center;gap:8px;margin:16px 0}.nav a{padding:8px 13px;color:#fff;background:var(--red);border:2px solid var(--gold);border-radius:7px;text-decoration:none;box-shadow:0 2px 0 var(--red-dark)}
+    .card{padding:22px;background:var(--paper);border:4px solid var(--red);box-shadow:7px 7px 0 var(--gold)}.badge{display:inline-block;padding:4px 9px;background:var(--red);color:#fff;border:2px solid var(--gold);font-size:12px}.title{margin:14px 0 4px;font-size:clamp(25px,4vw,36px)}.desc{margin:0 0 18px;color:var(--muted)}
+    .info{display:grid;grid-template-columns:145px minmax(0,1fr);margin:18px 0;border:2px solid var(--line);background:#fff}.info dt,.info dd{margin:0;padding:10px 12px;border-bottom:1px solid var(--line)}.info dt{font-weight:700;background:#fff3c9}.info dt:last-of-type,.info dd:last-of-type{border-bottom:0}
+    .status{margin:14px 0;padding:11px 13px;background:#fff;border:2px solid var(--line)}.status.ok{color:var(--ok);border-color:#8fc59f}.status.bad{color:var(--bad);border-color:#e2a1a4}.status.warn{color:#8b6410;border-color:#d8bf6b}
+    .patcher{margin-top:18px;padding:20px;background:#fff;border:3px solid var(--line)}.field{margin:0 0 14px}.field label{display:block;margin-bottom:6px;font-weight:700}.file-box{position:relative;display:flex;align-items:center;justify-content:center;min-height:96px;padding:15px;border:3px dashed #d1b97c;background:#fffaf0;text-align:center;cursor:pointer}.file-box.drag{background:#fff0bf;border-color:var(--red)}.file-box input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+    .hashes{display:grid;grid-template-columns:110px minmax(0,1fr);margin:16px 0;border-top:1px solid var(--line)}.hashes dt,.hashes dd{margin:0;padding:8px 9px;border-bottom:1px solid var(--line)}.hashes dt{font-weight:700}.hashes dd{font-family:ui-monospace,Consolas,monospace;overflow-wrap:anywhere}.actions{text-align:center;margin-top:18px}.apply{min-width:150px;padding:11px 18px;color:#fff;background:var(--red);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 var(--red-dark);font-weight:800;cursor:pointer}.apply:disabled{opacity:.42;cursor:not-allowed}.apply:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--red-dark)}
+    .notice{margin-top:20px;padding:14px 16px;background:#fff3c9;border-left:7px solid var(--gold)}footer{text-align:center;margin-top:25px;color:var(--muted);font-size:12px}footer a{color:var(--red-dark)}
+    @media(max-width:620px){.shell{width:calc(100% - 12px);margin-top:6px}.hero,.card,.patcher{padding:16px 12px}.info,.hashes{grid-template-columns:1fr}.info dt,.hashes dt{border-bottom:0;padding-bottom:2px}.info dd,.hashes dd{padding-top:2px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <h1>CALF STATION</h1>
+      <p>Retro Game Korean Patch · IPS Web Patcher</p>
+    </header>
+
+    <nav class="nav"><a href="./">패처</a><a href="./generator/">글 생성기</a></nav>
+
+    <section class="card">
+      <span class="badge">IPS WEB PATCHER</span>
+      <h2 class="title" id="pageTitle">CALF STATION 패처</h2>
+      <p class="desc">원본 게임 파일과 IPS 패치는 브라우저 안에서만 처리됩니다.</p>
+
+      <dl class="info">
+        <dt>패치명</dt><dd id="patchName">직접 패치 파일 선택</dd>
+        <dt>원본 기준</dt><dd id="originalInfo">-</dd>
+        <dt>권장 CRC32</dt><dd id="requiredCrc">미지정</dd>
+        <dt>출력 파일명</dt><dd id="outputInfo">patched-korean</dd>
+      </dl>
+
+      <div class="status warn" id="status">초기화 중...</div>
+
+      <div class="patcher">
+        <div class="field">
+          <label>1. 원본 게임 파일</label>
+          <div class="file-box" id="romDrop">
+            <input type="file" id="romInput" />
+            <span id="romLabel">클릭하거나 원본 파일을 끌어다 놓으세요.</span>
+          </div>
+        </div>
+
+        <div class="field" id="manualPatchField">
+          <label>2. IPS 패치 파일</label>
+          <div class="file-box" id="patchDrop">
+            <input type="file" id="patchInput" accept=".ips,.bin,.dat,application/octet-stream" />
+            <span id="patchLabel">클릭하거나 IPS 파일을 끌어다 놓으세요.</span>
+          </div>
+        </div>
+
+        <dl class="hashes">
+          <dt>파일명</dt><dd id="romFileName">-</dd>
+          <dt>파일 크기</dt><dd id="romSize">-</dd>
+          <dt>CRC32</dt><dd id="romCrc">-</dd>
+          <dt>검증</dt><dd id="crcResult">원본 파일을 선택하세요.</dd>
+          <dt>패치 상태</dt><dd id="patchState">패치 대기 중</dd>
+        </dl>
+
+        <div class="actions"><button type="button" class="apply" id="applyButton" disabled>패치하기</button></div>
+      </div>
+
+      <div class="notice"><strong>안내</strong><br />이 사이트는 원본 ROM을 제공하거나 서버에 업로드하지 않습니다. 본인이 보유한 정당한 원본 파일을 사용하세요.</div>
+    </section>
+
+    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진</footer>
+  </main>
+
+  <script>
+  (function(){
+    'use strict';
+    const $=id=>document.getElementById(id);
+    const params=new URLSearchParams(location.search);
+    const patchParam=params.get('patch')||params.get('p')||'';
+    const title=params.get('title')||'CALF STATION 패처';
+    const version=params.get('version')||'';
+    const original=params.get('original')||'-';
+    const required=(params.get('crc')||'').replace(/^0x/i,'').trim().toUpperCase();
+    const outputBase=params.get('out')||'patched-korean';
+    let romFile=null,romBytes=null,patchBytes=null,romCrcValue='';
+
+    document.title=title+(version?' '+version:'')+' | CALF STATION';
+    $('pageTitle').textContent=title+(version?' '+version:'');
+    $('patchName').textContent=patchParam?title+(version?' '+version:''):'직접 패치 파일 선택';
+    $('originalInfo').textContent=original;
+    $('requiredCrc').textContent=required||'미지정';
+    $('outputInfo').textContent=outputBase;
+
+    const crcTable=(()=>{const table=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);table[n]=c>>>0}return table})();
+    function crc32(bytes){let c=0xFFFFFFFF;for(let i=0;i<bytes.length;i++)c=crcTable[(c^bytes[i])&255]^(c>>>8);return ((c^0xFFFFFFFF)>>>0).toString(16).toUpperCase().padStart(8,'0')}
+    function text(bytes,start,len){let s='';for(let i=0;i<len;i++)s+=String.fromCharCode(bytes[start+i]);return s}
+    function read16(b,p){return (b[p]<<8)|b[p+1]}
+    function read24(b,p){return (b[p]<<16)|(b[p+1]<<8)|b[p+2]}
+
+    function parseIps(bytes){
+      if(bytes.length<8||text(bytes,0,5)!=='PATCH')throw new Error('IPS 헤더(PATCH)가 없는 파일입니다.');
+      let p=5,eof=false,truncate=null,maxEnd=0;const records=[];
+      while(p+3<=bytes.length){
+        if(text(bytes,p,3)==='EOF'){p+=3;eof=true;if(p+3<=bytes.length)truncate=read24(bytes,p);break}
+        const offset=read24(bytes,p);p+=3;if(p+2>bytes.length)throw new Error('IPS 레코드 길이가 잘못되었습니다.');
+        const size=read16(bytes,p);p+=2;
+        if(size===0){if(p+3>bytes.length)throw new Error('IPS RLE 레코드가 손상되었습니다.');const count=read16(bytes,p);const value=bytes[p+2];p+=3;records.push({offset,count,value,rle:true});maxEnd=Math.max(maxEnd,offset+count)}
+        else{if(p+size>bytes.length)throw new Error('IPS 데이터 레코드가 잘렸습니다.');records.push({offset,data:bytes.slice(p,p+size),rle:false});p+=size;maxEnd=Math.max(maxEnd,offset+size)}
+      }
+      if(!eof)throw new Error('IPS 종료 표식(EOF)이 없습니다.');
+      return {records,truncate,maxEnd};
+    }
+
+    function applyIps(source,patch){
+      const parsed=parseIps(patch);let workLen=Math.max(source.length,parsed.maxEnd,parsed.truncate||0);let out=new Uint8Array(workLen);out.set(source.subarray(0,Math.min(source.length,workLen)));
+      for(const r of parsed.records){if(r.rle)out.fill(r.value,r.offset,r.offset+r.count);else out.set(r.data,r.offset)}
+      if(parsed.truncate!==null){const resized=new Uint8Array(parsed.truncate);resized.set(out.subarray(0,Math.min(out.length,resized.length)));out=resized}
+      return out;
+    }
+
+    function setStatus(msg,type='warn'){$('status').className='status '+type;$('status').textContent=msg}
+    function formatBytes(n){if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';return (n/1048576).toFixed(2)+' MB'}
+    function canApply(){const crcOk=!required||required===romCrcValue;$('applyButton').disabled=!(romBytes&&patchBytes&&crcOk)}
+    function validateCrc(){if(!romBytes){$('crcResult').textContent='원본 파일을 선택하세요.';return}if(!required){$('crcResult').textContent='CRC32 제한 없음';return}if(required===romCrcValue){$('crcResult').textContent='일치 · 패치 가능';$('crcResult').style.color='var(--ok)'}else{$('crcResult').textContent='불일치 · 요구 '+required;$('crcResult').style.color='var(--bad)'}}
+
+    async function loadRom(file){
+      try{romFile=file;romBytes=new Uint8Array(await file.arrayBuffer());romCrcValue=crc32(romBytes);$('romLabel').textContent=file.name;$('romFileName').textContent=file.name;$('romSize').textContent=formatBytes(file.size);$('romCrc').textContent=romCrcValue;validateCrc();canApply();setStatus(required&&required!==romCrcValue?'원본 CRC32가 일치하지 않습니다.':'원본 파일을 읽었습니다.',required&&required!==romCrcValue?'bad':'ok')}
+      catch(e){romBytes=null;setStatus('원본 파일 읽기 실패: '+e.message,'bad');canApply()}
+    }
+    async function loadPatchFile(file){
+      try{const b=new Uint8Array(await file.arrayBuffer());parseIps(b);patchBytes=b;$('patchLabel').textContent=file.name;$('patchState').textContent='정상 IPS · '+formatBytes(file.size);setStatus('IPS 패치 파일을 읽었습니다.','ok');canApply()}
+      catch(e){patchBytes=null;$('patchState').textContent='읽기 실패';setStatus('패치 파일 오류: '+e.message,'bad');canApply()}
+    }
+    async function loadEmbeddedPatch(path){
+      try{const u=new URL(path,location.href);if(u.origin!==location.origin)throw new Error('패치 파일은 CALF STATION GitHub Pages 내부 경로만 사용할 수 있습니다.');const res=await fetch(u.href,{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);const b=new Uint8Array(await res.arrayBuffer());parseIps(b);patchBytes=b;$('manualPatchField').hidden=true;$('patchState').textContent='내장 IPS 준비 완료';setStatus('내장 패치를 준비했습니다. 원본 파일을 선택하세요.','ok');canApply()}
+      catch(e){patchBytes=null;$('patchState').textContent='내장 패치 읽기 실패';setStatus('내장 패치 오류: '+e.message,'bad')}
+    }
+
+    function downloadPatched(){
+      try{const out=applyIps(romBytes,patchBytes);const originalName=romFile?romFile.name:'game.bin';const dot=originalName.lastIndexOf('.');const ext=dot>=0?originalName.slice(dot):'.bin';let name=outputBase.trim()||'patched-korean';if(!/\.[A-Za-z0-9]{1,8}$/.test(name))name+=ext;const blob=new Blob([out],{type:'application/octet-stream'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);setStatus('패치 완료: '+name,'ok')}
+      catch(e){setStatus('패치 적용 실패: '+e.message,'bad')}
+    }
+
+    function bindDrop(box,input,handler){
+      input.addEventListener('change',()=>{if(input.files&&input.files[0])handler(input.files[0])});
+      ['dragenter','dragover'].forEach(ev=>box.addEventListener(ev,e=>{e.preventDefault();box.classList.add('drag')}));
+      ['dragleave','drop'].forEach(ev=>box.addEventListener(ev,e=>{e.preventDefault();box.classList.remove('drag')}));
+      box.addEventListener('drop',e=>{const f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(f)handler(f)});
+    }
+    bindDrop($('romDrop'),$('romInput'),loadRom);bindDrop($('patchDrop'),$('patchInput'),loadPatchFile);$('applyButton').addEventListener('click',downloadPatched);
+    if(patchParam)loadEmbeddedPatch(patchParam);else setStatus('테스트 모드: 원본 파일과 IPS 패치 파일을 직접 선택하세요.','warn');
+  })();
+  </script>
+</body>
+</html>
