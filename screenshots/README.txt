@@ -1,13 +1,10 @@
-패치 스크린샷 업로드 예시
+V5에서는 로컬 글 생성기에서 스크린샷 파일을 직접 선택합니다.
 
-screenshots/
-└─ nekketsu-dodgeball/
-   ├─ 01.png
-   ├─ 02.png
-   ├─ 03.png
-   └─ 04.png
+1. 이미지 1~4 선택
+2. 실제 PNG로 재인코딩
+3. 원본 비율 유지
+4. 1024×960보다 큰 경우에만 축소
+5. 01.png~04.png로 이름 지정
+6. screenshots/<게임폴더>/ 구조의 ZIP 다운로드
 
-업로드 후 주소 예시:
-https://calfstation.github.io/screenshots/nekketsu-dodgeball/01.png
-
-이 주소들을 로컬 글 생성기 V4의 이미지 1~4 칸에 입력하세요.
+ZIP을 풀고 screenshots 폴더를 GitHub 저장소 최상위에 끌어놓아 업로드합니다.
