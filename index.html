@@ -37,7 +37,7 @@
         <dt>패치명</dt><dd id="patchName">직접 패치 파일 선택</dd>
         <dt>원본 기준</dt><dd id="originalInfo">-</dd>
         <dt>권장 CRC32</dt><dd id="requiredCrc">미지정</dd>
-        <dt>출력 파일명</dt><dd id="outputInfo">patched-korean</dd>
+        <dt>출력 파일명</dt><dd id="outputInfo">원본 파일명 + (patched)</dd>
       </dl>
 
       <div class="status warn" id="status">초기화 중...</div>
@@ -86,7 +86,6 @@
     const version=params.get('version')||'';
     const original=params.get('original')||'-';
     const required=(params.get('crc')||'').replace(/^0x/i,'').trim().toUpperCase();
-    const outputBase=params.get('out')||'patched-korean';
     let romFile=null,romBytes=null,patchBytes=null,romCrcValue='';
 
     document.title=title+(version?' '+version:'')+' | CALF STATION';
@@ -94,7 +93,6 @@
     $('patchName').textContent=patchParam?title+(version?' '+version:''):'직접 패치 파일 선택';
     $('originalInfo').textContent=original;
     $('requiredCrc').textContent=required||'미지정';
-    $('outputInfo').textContent=outputBase;
 
     const crcTable=(()=>{const table=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);table[n]=c>>>0}return table})();
     function crc32(bytes){let c=0xFFFFFFFF;for(let i=0;i<bytes.length;i++)c=crcTable[(c^bytes[i])&255]^(c>>>8);return ((c^0xFFFFFFFF)>>>0).toString(16).toUpperCase().padStart(8,'0')}
@@ -125,11 +123,21 @@
 
     function setStatus(msg,type='warn'){$('status').className='status '+type;$('status').textContent=msg}
     function formatBytes(n){if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';return (n/1048576).toFixed(2)+' MB'}
+    function makePatchedName(originalName){
+      const fallback='game.bin';
+      const clean=(originalName||fallback).trim()||fallback;
+      const dot=clean.lastIndexOf('.');
+      const hasExt=dot>0&&dot<clean.length-1;
+      const base=hasExt?clean.slice(0,dot):clean;
+      const ext=hasExt?clean.slice(dot):'';
+      const patched=/\s\(patched\)$/i.test(base)?base:base+' (patched)';
+      return patched+ext;
+    }
     function canApply(){const crcOk=!required||required===romCrcValue;$('applyButton').disabled=!(romBytes&&patchBytes&&crcOk)}
     function validateCrc(){if(!romBytes){$('crcResult').textContent='원본 파일을 선택하세요.';return}if(!required){$('crcResult').textContent='CRC32 제한 없음';return}if(required===romCrcValue){$('crcResult').textContent='일치 · 패치 가능';$('crcResult').style.color='var(--ok)'}else{$('crcResult').textContent='불일치 · 요구 '+required;$('crcResult').style.color='var(--bad)'}}
 
     async function loadRom(file){
-      try{romFile=file;romBytes=new Uint8Array(await file.arrayBuffer());romCrcValue=crc32(romBytes);$('romLabel').textContent=file.name;$('romFileName').textContent=file.name;$('romSize').textContent=formatBytes(file.size);$('romCrc').textContent=romCrcValue;validateCrc();canApply();setStatus(required&&required!==romCrcValue?'원본 CRC32가 일치하지 않습니다.':'원본 파일을 읽었습니다.',required&&required!==romCrcValue?'bad':'ok')}
+      try{romFile=file;romBytes=new Uint8Array(await file.arrayBuffer());romCrcValue=crc32(romBytes);$('romLabel').textContent=file.name;$('romFileName').textContent=file.name;$('romSize').textContent=formatBytes(file.size);$('romCrc').textContent=romCrcValue;$('outputInfo').textContent=makePatchedName(file.name);validateCrc();canApply();setStatus(required&&required!==romCrcValue?'원본 CRC32가 일치하지 않습니다.':'원본 파일을 읽었습니다.',required&&required!==romCrcValue?'bad':'ok')}
       catch(e){romBytes=null;setStatus('원본 파일 읽기 실패: '+e.message,'bad');canApply()}
     }
     async function loadPatchFile(file){
@@ -142,7 +150,7 @@
     }
 
     function downloadPatched(){
-      try{const out=applyIps(romBytes,patchBytes);const originalName=romFile?romFile.name:'game.bin';const dot=originalName.lastIndexOf('.');const ext=dot>=0?originalName.slice(dot):'.bin';let name=outputBase.trim()||'patched-korean';if(!/\.[A-Za-z0-9]{1,8}$/.test(name))name+=ext;const blob=new Blob([out],{type:'application/octet-stream'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);setStatus('패치 완료: '+name,'ok')}
+      try{const out=applyIps(romBytes,patchBytes);const originalName=romFile?romFile.name:'game.bin';const name=makePatchedName(originalName);const blob=new Blob([out],{type:'application/octet-stream'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);setStatus('패치 완료: '+name,'ok')}
       catch(e){setStatus('패치 적용 실패: '+e.message,'bad')}
     }
 
@@ -154,6 +162,16 @@
     }
     bindDrop($('romDrop'),$('romInput'),loadRom);bindDrop($('patchDrop'),$('patchInput'),loadPatchFile);$('applyButton').addEventListener('click',downloadPatched);
     if(patchParam)loadEmbeddedPatch(patchParam);else setStatus('테스트 모드: 원본 파일과 IPS 패치 파일을 직접 선택하세요.','warn');
+    function notifyParentHeight(){
+      if(window.parent===window)return;
+      const height=Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+      window.parent.postMessage({type:'calf-patcher-height',height:height},'*');
+    }
+    window.addEventListener('load',notifyParentHeight);
+    window.addEventListener('resize',notifyParentHeight);
+    if('ResizeObserver' in window)new ResizeObserver(notifyParentHeight).observe(document.body);
+    setTimeout(notifyParentHeight,300);
+    setTimeout(notifyParentHeight,1000);
   })();
   </script>
 </body>
