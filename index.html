@@ -4,18 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
-  <title>CALF STATION IPS Web Patcher</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="calf-patcher-build" content="20260714-v6" />
+  <title>CALF STATION IPS Web Patcher V6</title>
   <style>
     :root{--red:#b22222;--red-dark:#861417;--gold:#d4af37;--cream:#f8f4e6;--paper:#fffdf8;--ink:#3a1f0b;--line:#e6c9a8;--ok:#21783c;--bad:#c5262d;--muted:#8c6555}
     *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;background:repeating-linear-gradient(0deg,rgba(58,31,11,.025) 0 1px,transparent 1px 4px),var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;word-break:keep-all}
     button,input{font:inherit}.shell{width:min(920px,calc(100% - 24px));margin:18px auto 48px}.hero{text-align:center;padding:32px 18px 28px;background:linear-gradient(#b22222,#93171a);border:4px solid var(--red-dark);border-bottom:7px solid var(--gold);box-shadow:0 6px 0 rgba(72,35,18,.16)}
     .hero h1{margin:0;color:#fff;font-size:clamp(30px,6vw,52px);letter-spacing:.04em;text-shadow:3px 3px 0 #000}.hero p{margin:8px 0 0;color:#fff1bd}.nav{display:flex;justify-content:center;gap:8px;margin:16px 0}.nav a{padding:8px 13px;color:#fff;background:var(--red);border:2px solid var(--gold);border-radius:7px;text-decoration:none;box-shadow:0 2px 0 var(--red-dark)}
     .card{padding:22px;background:var(--paper);border:4px solid var(--red);box-shadow:7px 7px 0 var(--gold)}.badge{display:inline-block;padding:4px 9px;background:var(--red);color:#fff;border:2px solid var(--gold);font-size:12px}.title{margin:14px 0 4px;font-size:clamp(25px,4vw,36px)}.desc{margin:0 0 18px;color:var(--muted)}
-    .info{display:grid;grid-template-columns:145px minmax(0,1fr);margin:18px 0;border:2px solid var(--line);background:#fff}.info dt,.info dd{margin:0;padding:10px 12px;border-bottom:1px solid var(--line)}.info dt{font-weight:700;background:#fff3c9}.info dt:last-of-type,.info dd:last-of-type{border-bottom:0}
-    .status{margin:14px 0;padding:11px 13px;background:#fff;border:2px solid var(--line)}.status.ok{color:var(--ok);border-color:#8fc59f}.status.bad{color:var(--bad);border-color:#e2a1a4}.status.warn{color:#8b6410;border-color:#d8bf6b}
+    .info{display:grid;grid-template-columns:140px minmax(0,1fr);margin:18px 0;border:2px solid var(--line);background:#fff;min-width:0}.info dt,.info dd{margin:0;padding:10px 12px;border-bottom:1px solid var(--line);min-width:0}.info dt{font-weight:700;background:#fff3c9}.info dd{overflow-wrap:anywhere;word-break:break-all;white-space:normal}.info dt:last-of-type,.info dd:last-of-type{border-bottom:0}.info dd[id^="requiredSha"]{font-family:ui-monospace,Consolas,monospace;font-size:12px;line-height:1.5}
+    .status{margin:14px 0;padding:11px 13px;background:#fff;border:2px solid var(--line)}.status[hidden]{display:none!important}.status.ok{color:var(--ok);border-color:#8fc59f}.status.bad{color:var(--bad);border-color:#e2a1a4}.status.warn{color:#8b6410;border-color:#d8bf6b}
     .patcher{margin-top:18px;padding:20px;background:#fff;border:3px solid var(--line)}.field{margin:0 0 14px}.field label{display:block;margin-bottom:6px;font-weight:700}.file-box{position:relative;display:flex;align-items:center;justify-content:center;min-height:96px;padding:15px;border:3px dashed #d1b97c;background:#fffaf0;text-align:center;cursor:pointer}.file-box.drag{background:#fff0bf;border-color:var(--red)}.file-box input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
-    .hashes{display:grid;grid-template-columns:110px minmax(0,1fr);margin:16px 0;border-top:1px solid var(--line)}.hashes dt,.hashes dd{margin:0;padding:8px 9px;border-bottom:1px solid var(--line)}.hashes dt{font-weight:700}.hashes dd{font-family:ui-monospace,Consolas,monospace;overflow-wrap:anywhere}.actions{text-align:center;margin-top:18px}.apply{min-width:150px;padding:11px 18px;color:#fff;background:var(--red);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 var(--red-dark);font-weight:800;cursor:pointer}.apply:disabled{opacity:.42;cursor:not-allowed}.apply:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--red-dark)}
+    .hashes{display:grid;grid-template-columns:105px minmax(0,1fr);margin:16px 0;border-top:1px solid var(--line);min-width:0}.hashes dt,.hashes dd{margin:0;padding:8px 9px;border-bottom:1px solid var(--line);min-width:0}.hashes dt{font-weight:700}.hashes dd{font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;word-break:break-all;white-space:normal}.actions{text-align:center;margin-top:18px}.apply{min-width:150px;padding:11px 18px;color:#fff;background:var(--red);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 var(--red-dark);font-weight:800;cursor:pointer}.apply:disabled{opacity:.42;cursor:not-allowed}.apply:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--red-dark)}
     .notice{margin-top:20px;padding:14px 16px;background:#fff3c9;border-left:7px solid var(--gold)}footer{text-align:center;margin-top:25px;color:var(--muted);font-size:12px}footer a{color:var(--red-dark)}
+
+    html.is-embed,html.is-embed body{min-height:0}
+    html.is-embed body{overflow:hidden;background:transparent}
+    html.is-embed .shell{width:100%;margin:0}
+    html.is-embed .hero,
+    html.is-embed .badge,
+    html.is-embed .title,
+    html.is-embed .desc,
+    html.is-embed .info,
+    html.is-embed footer{display:none!important}
+    html.is-embed .card{padding:6px;background:transparent;border:0;box-shadow:none}
+    html.is-embed .patcher{margin:0;padding:13px;border:2px solid var(--line);border-radius:6px}
+    html.is-embed .file-box{min-height:78px}
+    html.is-embed .notice{margin-top:10px;padding:9px 11px;font-size:12px}
+    html.is-embed .status{margin:0 0 10px}
     @media(max-width:620px){.shell{width:calc(100% - 12px);margin-top:6px}.hero,.card,.patcher{padding:16px 12px}.info,.hashes{grid-template-columns:1fr}.info dt,.hashes dt{border-bottom:0;padding-bottom:2px}.info dd,.hashes dd{padding-top:2px}}
   </style>
 </head>
@@ -40,7 +59,7 @@
         <dt>출력 파일명</dt><dd id="outputInfo">원본 파일명 + (patched)</dd>
       </dl>
 
-      <div class="status warn" id="status">초기화 중...</div>
+      <div class="status" id="status" hidden></div>
 
       <div class="patcher">
         <div class="field">
@@ -75,7 +94,7 @@
       <div class="notice"><strong>안내</strong><br />이 사이트는 원본 ROM을 제공하거나 서버에 업로드하지 않습니다. 본인이 보유한 정당한 원본 파일을 사용하세요.</div>
     </section>
 
-    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진</footer>
+    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진 · V6</footer>
   </main>
 
   <script>
@@ -83,6 +102,8 @@
     'use strict';
     const $=id=>document.getElementById(id);
     const params=new URLSearchParams(location.search);
+    const embedMode=params.get('embed')==='1';
+    if(embedMode)document.documentElement.classList.add('is-embed');
     const patchParam=params.get('patch')||params.get('p')||'';
     const title=params.get('title')||'CALF STATION 패처';
     const version=params.get('version')||'';
@@ -134,7 +155,19 @@
       return out;
     }
 
-    function setStatus(msg,type='warn'){$('status').className='status '+type;$('status').textContent=msg}
+    function setStatus(msg,type='warn'){
+      const box=$('status');
+      box.hidden=false;
+      box.className='status '+type;
+      box.textContent=msg;
+      notifyParentHeight();
+    }
+    function clearStatus(){
+      const box=$('status');
+      box.hidden=true;
+      box.textContent='';
+      notifyParentHeight();
+    }
     function formatBytes(n){if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';return (n/1048576).toFixed(2)+' MB'}
     function makePatchedName(originalName){
       const fallback='game.bin';
@@ -196,10 +229,12 @@
         canApply();
 
         const mismatches=getHashMismatches();
-        setStatus(
-          mismatches.length?'원본 검증값이 일치하지 않습니다: '+mismatches.join(', '):'원본 파일을 읽고 검증했습니다.',
-          mismatches.length?'bad':'ok'
-        );
+        if(mismatches.length){
+          setStatus('원본 검증값이 일치하지 않습니다: '+mismatches.join(', '),'bad');
+        }else{
+          clearStatus();
+        }
+        notifyParentHeight();
       }catch(e){
         romBytes=null;
         romHashes={crc32:'',sha1:'',sha256:''};
@@ -208,12 +243,41 @@
       }
     }
     async function loadPatchFile(file){
-      try{const b=new Uint8Array(await file.arrayBuffer());parseIps(b);patchBytes=b;$('patchLabel').textContent=file.name;$('patchState').textContent='정상 IPS · '+formatBytes(file.size);setStatus('IPS 패치 파일을 읽었습니다.','ok');canApply()}
-      catch(e){patchBytes=null;$('patchState').textContent='읽기 실패';setStatus('패치 파일 오류: '+e.message,'bad');canApply()}
+      try{
+        const b=new Uint8Array(await file.arrayBuffer());
+        parseIps(b);
+        patchBytes=b;
+        $('patchLabel').textContent=file.name;
+        $('patchState').textContent='정상 IPS · '+formatBytes(file.size);
+        clearStatus();
+        canApply();
+        notifyParentHeight();
+      }catch(e){
+        patchBytes=null;
+        $('patchState').textContent='읽기 실패';
+        setStatus('패치 파일 오류: '+e.message,'bad');
+        canApply();
+      }
     }
     async function loadEmbeddedPatch(path){
-      try{const u=new URL(path,location.href);if(u.origin!==location.origin)throw new Error('패치 파일은 CALF STATION GitHub Pages 내부 경로만 사용할 수 있습니다.');const res=await fetch(u.href,{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);const b=new Uint8Array(await res.arrayBuffer());parseIps(b);patchBytes=b;$('manualPatchField').hidden=true;$('patchState').textContent='내장 IPS 준비 완료';setStatus('내장 패치를 준비했습니다. 원본 파일을 선택하세요.','ok');canApply()}
-      catch(e){patchBytes=null;$('patchState').textContent='내장 패치 읽기 실패';setStatus('내장 패치 오류: '+e.message,'bad')}
+      try{
+        const u=new URL(path,location.href);
+        if(u.origin!==location.origin)throw new Error('패치 파일은 CALF STATION GitHub Pages 내부 경로만 사용할 수 있습니다.');
+        const res=await fetch(u.href,{cache:'no-store'});
+        if(!res.ok)throw new Error('HTTP '+res.status);
+        const b=new Uint8Array(await res.arrayBuffer());
+        parseIps(b);
+        patchBytes=b;
+        $('manualPatchField').hidden=true;
+        $('patchState').textContent='내장 IPS 준비 완료';
+        clearStatus();
+        canApply();
+        notifyParentHeight();
+      }catch(e){
+        patchBytes=null;
+        $('patchState').textContent='내장 패치 읽기 실패';
+        setStatus('내장 패치 오류: '+e.message,'bad');
+      }
     }
 
     function downloadPatched(){
@@ -228,7 +292,7 @@
       box.addEventListener('drop',e=>{const f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(f)handler(f)});
     }
     bindDrop($('romDrop'),$('romInput'),loadRom);bindDrop($('patchDrop'),$('patchInput'),loadPatchFile);$('applyButton').addEventListener('click',downloadPatched);
-    if(patchParam)loadEmbeddedPatch(patchParam);else setStatus('테스트 모드: 원본 파일과 IPS 패치 파일을 직접 선택하세요.','warn');
+    if(patchParam)loadEmbeddedPatch(patchParam);else clearStatus();
     const shell=document.querySelector('.shell');
     let lastSentHeight=0;
     let heightRaf=0;
@@ -238,10 +302,16 @@
       heightRaf=requestAnimationFrame(function(){
         const style=getComputedStyle(shell);
         const margins=(parseFloat(style.marginTop)||0)+(parseFloat(style.marginBottom)||0);
-        const height=Math.ceil(shell.getBoundingClientRect().height+margins);
+        const rectHeight=shell.getBoundingClientRect().height+margins;
+        const scrollHeight=Math.max(shell.scrollHeight,document.body.scrollHeight);
+        const height=Math.ceil(Math.max(rectHeight,scrollHeight));
         if(Math.abs(height-lastSentHeight)<2)return;
         lastSentHeight=height;
-        window.parent.postMessage({type:'calf-patcher-height',height:height},'*');
+        window.parent.postMessage({
+          type:'calf-patcher-height',
+          height:height,
+          build:'20260714-v6'
+        },'*');
       });
     }
     window.addEventListener('load',notifyParentHeight);
