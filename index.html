@@ -7,8 +7,8 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <meta name="calf-patcher-build" content="20260717-v7" />
-  <title>CALF STATION IPS Web Patcher V7</title>
+  <meta name="calf-patcher-build" content="20260717-v8" />
+  <title>CALF STATION IPS Web Patcher V8</title>
   <style>
     :root{--red:#b22222;--red-dark:#861417;--gold:#d4af37;--cream:#f8f4e6;--paper:#fffdf8;--ink:#3a1f0b;--line:#e6c9a8;--ok:#21783c;--bad:#c5262d;--muted:#8c6555}
     *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;background:repeating-linear-gradient(0deg,rgba(58,31,11,.025) 0 1px,transparent 1px 4px),var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;word-break:keep-all}
@@ -106,7 +106,7 @@
       <div class="notice"><strong>안내</strong><br />이 사이트는 원본 ROM을 제공하거나 서버에 업로드하지 않습니다. 본인이 보유한 정당한 원본 파일을 사용하세요.</div>
     </section>
 
-    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진 · V7</footer>
+    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진 · V8</footer>
   </main>
 
   <script>
@@ -221,8 +221,9 @@
       const hasExt=dot>0&&dot<clean.length-1;
       const base=hasExt?clean.slice(0,dot):clean;
       const ext=hasExt?clean.slice(dot):'';
-      const patched=/\s\(patched\)$/i.test(base)?base:base+' (patched)';
-      return patched+ext;
+
+      const cleanedBase=base.replace(/\s\((?:K-)?patched\)$/i,'');
+      return cleanedBase+' (K-patched)'+ext;
     }
     function getHashMismatches(){
       const mismatches=[];
@@ -434,7 +435,7 @@
         window.parent.postMessage({
           type:'calf-patcher-height',
           height:height,
-          build:'20260717-v7'
+          build:'20260717-v8'
         },'*');
       });
     }
