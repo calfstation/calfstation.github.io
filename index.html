@@ -7,8 +7,8 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <meta name="calf-patcher-build" content="20260714-v6" />
-  <title>CALF STATION IPS Web Patcher V6</title>
+  <meta name="calf-patcher-build" content="20260717-v7" />
+  <title>CALF STATION IPS Web Patcher V7</title>
   <style>
     :root{--red:#b22222;--red-dark:#861417;--gold:#d4af37;--cream:#f8f4e6;--paper:#fffdf8;--ink:#3a1f0b;--line:#e6c9a8;--ok:#21783c;--bad:#c5262d;--muted:#8c6555}
     *{box-sizing:border-box}html,body{min-height:100%}body{margin:0;background:repeating-linear-gradient(0deg,rgba(58,31,11,.025) 0 1px,transparent 1px 4px),var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;word-break:keep-all}
@@ -19,6 +19,7 @@
     .status{margin:14px 0;padding:11px 13px;background:#fff;border:2px solid var(--line)}.status[hidden]{display:none!important}.status.ok{color:var(--ok);border-color:#8fc59f}.status.bad{color:var(--bad);border-color:#e2a1a4}.status.warn{color:#8b6410;border-color:#d8bf6b}
     .patcher{margin-top:18px;padding:20px;background:#fff;border:3px solid var(--line)}.field{margin:0 0 14px}.field label{display:block;margin-bottom:6px;font-weight:700}.file-box{position:relative;display:flex;align-items:center;justify-content:center;min-height:96px;padding:15px;border:3px dashed #d1b97c;background:#fffaf0;text-align:center;cursor:pointer}.file-box.drag{background:#fff0bf;border-color:var(--red)}.file-box input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
     .hashes{display:grid;grid-template-columns:105px minmax(0,1fr);margin:16px 0;border-top:1px solid var(--line);min-width:0}.hashes dt,.hashes dd{margin:0;padding:8px 9px;border-bottom:1px solid var(--line);min-width:0}.hashes dt{font-weight:700}.hashes dd{font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;word-break:break-all;white-space:normal}.actions{text-align:center;margin-top:18px}.apply{min-width:150px;padding:11px 18px;color:#fff;background:var(--red);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 var(--red-dark);font-weight:800;cursor:pointer}.apply:disabled{opacity:.42;cursor:not-allowed}.apply:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--red-dark)}
+    .result-panel{margin:16px 0 0;padding:13px 14px;background:#fffaf0;border:3px solid var(--gold)}.result-panel[hidden]{display:none!important}.result-panel h3{margin:0 0 9px;font-size:17px}.result-grid{display:grid;grid-template-columns:125px minmax(0,1fr);margin:0;border-top:1px solid var(--line);min-width:0}.result-grid dt,.result-grid dd{margin:0;padding:7px 8px;border-bottom:1px solid var(--line);min-width:0}.result-grid dt{font-weight:700}.result-grid dd{font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;word-break:break-all;white-space:normal}.result-grid dd.result-ok{color:var(--ok);font-family:inherit;font-weight:700}.result-grid dd.result-bad{color:var(--bad);font-family:inherit;font-weight:700}
     .notice{margin-top:20px;padding:14px 16px;background:#fff3c9;border-left:7px solid var(--gold)}footer{text-align:center;margin-top:25px;color:var(--muted);font-size:12px}footer a{color:var(--red-dark)}
 
     html.is-embed,html.is-embed body{min-height:0}
@@ -35,7 +36,7 @@
     html.is-embed .file-box{min-height:78px}
     html.is-embed .notice{margin-top:10px;padding:9px 11px;font-size:12px}
     html.is-embed .status{margin:0 0 10px}
-    @media(max-width:620px){.shell{width:calc(100% - 12px);margin-top:6px}.hero,.card,.patcher{padding:16px 12px}.info,.hashes{grid-template-columns:1fr}.info dt,.hashes dt{border-bottom:0;padding-bottom:2px}.info dd,.hashes dd{padding-top:2px}}
+    @media(max-width:620px){.shell{width:calc(100% - 12px);margin-top:6px}.hero,.card,.patcher{padding:16px 12px}.info,.hashes,.result-grid{grid-template-columns:1fr}.info dt,.hashes dt{border-bottom:0;padding-bottom:2px}.info dd,.hashes dd{padding-top:2px}}
   </style>
 </head>
 <body>
@@ -88,13 +89,24 @@
           <dt>패치 상태</dt><dd id="patchState">패치 대기 중</dd>
         </dl>
 
+        <section class="result-panel" id="patchedResultPanel" hidden>
+          <h3>패치 후 결과</h3>
+          <dl class="result-grid">
+            <dt>파일 크기</dt><dd id="patchedSizeResult">-</dd>
+            <dt>CRC32</dt><dd id="patchedCrcResult">-</dd>
+            <dt>SHA-1</dt><dd id="patchedSha1Result">-</dd>
+            <dt>SHA-256</dt><dd id="patchedSha256Result">-</dd>
+            <dt>결과 검증</dt><dd id="patchedVerifyResult">-</dd>
+          </dl>
+        </section>
+
         <div class="actions"><button type="button" class="apply" id="applyButton" disabled>패치하기</button></div>
       </div>
 
       <div class="notice"><strong>안내</strong><br />이 사이트는 원본 ROM을 제공하거나 서버에 업로드하지 않습니다. 본인이 보유한 정당한 원본 파일을 사용하세요.</div>
     </section>
 
-    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진 · V6</footer>
+    <footer>© 2026 CALF STATION · 자체 브라우저 IPS 엔진 · V7</footer>
   </main>
 
   <script>
@@ -111,6 +123,15 @@
     const requiredCrc=(params.get('crc')||'').replace(/^0x/i,'').trim().toUpperCase();
     const requiredSha1=(params.get('sha1')||'').replace(/\s+/g,'').trim().toUpperCase();
     const requiredSha256=(params.get('sha256')||'').replace(/\s+/g,'').trim().toUpperCase();
+
+    const expectedPatchedSizeRaw=(params.get('psize')||'').trim();
+    const expectedPatchedSize=/^\d+$/.test(expectedPatchedSizeRaw)
+      ? Number(expectedPatchedSizeRaw)
+      : null;
+    const expectedPatchedCrc=(params.get('pcrc')||'').replace(/^0x/i,'').trim().toUpperCase();
+    const expectedPatchedSha1=(params.get('psha1')||'').replace(/\s+/g,'').trim().toUpperCase();
+    const expectedPatchedSha256=(params.get('psha256')||'').replace(/\s+/g,'').trim().toUpperCase();
+
     let romFile=null,romBytes=null,patchBytes=null;
     let romHashes={crc32:'',sha1:'',sha256:''};
 
@@ -169,6 +190,30 @@
       notifyParentHeight();
     }
     function formatBytes(n){if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';return (n/1048576).toFixed(2)+' MB'}
+    function formatExactBytes(n){
+      let human;
+      if(n<1024)human=n+' B';
+      else if(n<1048576)human=(n/1024).toFixed(1)+' KiB';
+      else human=(n/1048576).toFixed(2)+' MiB';
+      return n.toLocaleString('en-US')+' bytes · '+human;
+    }
+    function clearPatchedResult(){
+      $('patchedResultPanel').hidden=true;
+      $('patchedSizeResult').textContent='-';
+      $('patchedCrcResult').textContent='-';
+      $('patchedSha1Result').textContent='-';
+      $('patchedSha256Result').textContent='-';
+      $('patchedVerifyResult').textContent='-';
+      $('patchedVerifyResult').className='';
+    }
+    function getPatchedMismatches(result){
+      const mismatches=[];
+      if(expectedPatchedSize!==null&&expectedPatchedSize!==result.size)mismatches.push('파일 크기');
+      if(expectedPatchedCrc&&expectedPatchedCrc!==result.crc32)mismatches.push('CRC32');
+      if(expectedPatchedSha1&&expectedPatchedSha1!==result.sha1)mismatches.push('SHA-1');
+      if(expectedPatchedSha256&&expectedPatchedSha256!==result.sha256)mismatches.push('SHA-256');
+      return mismatches;
+    }
     function makePatchedName(originalName){
       const fallback='game.bin';
       const clean=(originalName||fallback).trim()||fallback;
@@ -205,6 +250,7 @@
       try{
         romFile=file;
         romBytes=new Uint8Array(await file.arrayBuffer());
+        clearPatchedResult();
         $('romLabel').textContent=file.name;
         $('romFileName').textContent=file.name;
         $('romSize').textContent=formatBytes(file.size);
@@ -245,6 +291,7 @@
     async function loadPatchFile(file){
       try{
         const b=new Uint8Array(await file.arrayBuffer());
+        clearPatchedResult();
         parseIps(b);
         patchBytes=b;
         $('patchLabel').textContent=file.name;
@@ -266,6 +313,7 @@
         const res=await fetch(u.href,{cache:'no-store'});
         if(!res.ok)throw new Error('HTTP '+res.status);
         const b=new Uint8Array(await res.arrayBuffer());
+        clearPatchedResult();
         parseIps(b);
         patchBytes=b;
         $('manualPatchField').hidden=true;
@@ -280,9 +328,85 @@
       }
     }
 
-    function downloadPatched(){
-      try{const out=applyIps(romBytes,patchBytes);const originalName=romFile?romFile.name:'game.bin';const name=makePatchedName(originalName);const blob=new Blob([out],{type:'application/octet-stream'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);setStatus('패치 완료: '+name,'ok')}
-      catch(e){setStatus('패치 적용 실패: '+e.message,'bad')}
+    async function downloadPatched(){
+      const button=$('applyButton');
+      const originalText=button.textContent;
+
+      try{
+        button.disabled=true;
+        button.textContent='처리 중...';
+        setStatus('IPS 적용 후 결과 ROM의 크기와 해시를 계산하고 있습니다.','warn');
+
+        const out=applyIps(romBytes,patchBytes);
+        const hashes=await Promise.all([
+          digestHex('SHA-1',out),
+          digestHex('SHA-256',out)
+        ]);
+
+        const result={
+          size:out.length,
+          crc32:crc32(out),
+          sha1:hashes[0],
+          sha256:hashes[1]
+        };
+
+        $('patchedSizeResult').textContent=formatExactBytes(result.size);
+        $('patchedCrcResult').textContent=result.crc32;
+        $('patchedSha1Result').textContent=result.sha1;
+        $('patchedSha256Result').textContent=result.sha256;
+        $('patchedResultPanel').hidden=false;
+
+        const hasExpected=
+          expectedPatchedSize!==null||
+          expectedPatchedCrc||
+          expectedPatchedSha1||
+          expectedPatchedSha256;
+
+        const mismatches=getPatchedMismatches(result);
+        const verify=$('patchedVerifyResult');
+
+        if(mismatches.length){
+          verify.textContent='불일치: '+mismatches.join(', ');
+          verify.className='result-bad';
+          setStatus(
+            '패치 후 결과가 배포 기준과 일치하지 않아 다운로드를 중단했습니다: '+
+            mismatches.join(', '),
+            'bad'
+          );
+          notifyParentHeight();
+          return;
+        }
+
+        if(hasExpected){
+          verify.textContent='모든 결과 일치';
+          verify.className='result-ok';
+        }else{
+          verify.textContent='기준값 미지정 · 실제 결과 계산 완료';
+          verify.className='result-ok';
+        }
+
+        const originalName=romFile?romFile.name:'game.bin';
+        const name=makePatchedName(originalName);
+        const blob=new Blob([out],{type:'application/octet-stream'});
+        const a=document.createElement('a');
+        a.href=URL.createObjectURL(blob);
+        a.download=name;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(()=>URL.revokeObjectURL(a.href),1500);
+
+        setStatus(
+          '패치 완료 · '+formatExactBytes(result.size)+' · CRC32 '+result.crc32,
+          'ok'
+        );
+        notifyParentHeight();
+      }catch(e){
+        setStatus('패치 적용 또는 결과 검증 실패: '+e.message,'bad');
+      }finally{
+        button.textContent=originalText;
+        canApply();
+      }
     }
 
     function bindDrop(box,input,handler){
@@ -310,7 +434,7 @@
         window.parent.postMessage({
           type:'calf-patcher-height',
           height:height,
-          build:'20260714-v6'
+          build:'20260717-v7'
         },'*');
       });
     }
