@@ -40,7 +40,7 @@ jobs:
         run: |
           python scripts/build_home_feed.py
 
-           - name: Commit feed if changed
+      - name: Commit feed if changed
         run: |
           git add home-feed.json
 
@@ -52,9 +52,5 @@ jobs:
           git config user.name "CALF STATION Feed Bot"
           git config user.email "actions@users.noreply.github.com"
 
-          git commit -m "chore: refresh CALF home feed"
-          git push
-
-          git add home-feed.json
           git commit -m "chore: refresh CALF home feed"
           git push
