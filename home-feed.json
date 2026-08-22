@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-23T03:49:02+09:00",
+  "generatedAt": "2026-08-23T03:52:59+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -96,6 +96,30 @@
       "average": 66,
       "platform": "",
       "test": "pending"
+    },
+    {
+      "url": "/13",
+      "path": "/13",
+      "title": "쿠니오군의 열혈축구 리그",
+      "date": "2026.07.25",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete"
+    },
+    {
+      "url": "/12",
+      "path": "/12",
+      "title": "가라가라! 열혈하키부 미끄러지고 넘어지고 대난투",
+      "date": "2026.07.25",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete"
     }
   ],
   "history": [
