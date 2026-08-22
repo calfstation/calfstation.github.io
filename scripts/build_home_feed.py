@@ -202,7 +202,12 @@ def enrich_next(post: dict) -> dict | None:
         result = dict(post)
         result.update({
             "title": title,
+            "analysis": analysis,
+            "translation": translation,
+            "review": review,
             "average": average,
+            "platform": clean(block.get("data-platform") or ""),
+            "test": clean(block.get("data-test") or ""),
         })
         return result
     except Exception as exc:
@@ -258,16 +263,12 @@ def parse_time(text: str) -> float:
         except ValueError:
             return 0
 
-    # 2026.08.22
-    # 2026-08-22
-    # 2026. 8. 22. 23:14
-    # 2026.08.22 오후 11:14
+    # 2026.08.22 / 2026-08-22 / 2026. 8. 22. 23:14 / 오후 표기
     m = re.search(
         r"(\d{4})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})\.?"
         r"(?:\s*(오전|오후)?\s*(\d{1,2}):(\d{2}))?",
         text,
     )
-
     if m:
         return make_dt(
             int(m.group(1)),
@@ -278,17 +279,12 @@ def parse_time(text: str) -> float:
             m.group(4) or "",
         )
 
-    # 티스토리 최근댓글 연도 생략형
-    # 08.22
-    # 8. 22.
-    # 08-22 23:14
-    # 08.22 오후 11:14
+    # 티스토리 최근댓글 연도 생략형: 08.22 / 8. 22. / 08-22 23:14
     m = re.search(
         r"(?<!\d)(\d{1,2})\s*[.\-/]\s*(\d{1,2})\.?"
         r"(?:\s*(오전|오후)?\s*(\d{1,2}):(\d{2}))?(?!\d)",
         text,
     )
-
     if m:
         month = int(m.group(1))
         day = int(m.group(2))
@@ -296,54 +292,24 @@ def parse_time(text: str) -> float:
         minute = int(m.group(5) or 0)
         ampm = m.group(3) or ""
 
-        ts = make_dt(
-            now.year,
-            month,
-            day,
-            hour,
-            minute,
-            ampm,
-        )
-
-        # 12월 말 → 다음 해 1월 같은 연도 경계 보정
+        ts = make_dt(now.year, month, day, hour, minute, ampm)
         if ts and ts > (now + timedelta(days=1)).timestamp():
-            ts = make_dt(
-                now.year - 1,
-                month,
-                day,
-                hour,
-                minute,
-                ampm,
-            )
-
+            ts = make_dt(now.year - 1, month, day, hour, minute, ampm)
         return ts
 
-    # 오늘 날짜 없이 시간만 내려오는 경우
-    # 23:14
-    # 오후 11:14
+    # 오늘 날짜 없이 시간만: 23:14 / 오후 11:14
     m = re.search(
         r"(?:^|\s)(오전|오후)?\s*(\d{1,2}):(\d{2})(?:$|\s)",
         text,
     )
-
     if m:
         hour = int(m.group(2))
         minute = int(m.group(3))
         ampm = m.group(1) or ""
 
-        ts = make_dt(
-            now.year,
-            now.month,
-            now.day,
-            hour,
-            minute,
-            ampm,
-        )
-
-        # 현재 시각보다 미래로 잡히면 전날 시각으로 처리
+        ts = make_dt(now.year, now.month, now.day, hour, minute, ampm)
         if ts and ts > (now + timedelta(minutes=5)).timestamp():
             yesterday = now - timedelta(days=1)
-
             ts = make_dt(
                 yesterday.year,
                 yesterday.month,
@@ -352,7 +318,6 @@ def parse_time(text: str) -> float:
                 minute,
                 ampm,
             )
-
         return ts
 
     return 0
