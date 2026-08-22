@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-23T03:10:02+09:00",
+  "generatedAt": "2026-08-23T03:24:47+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -66,21 +66,36 @@
       "path": "/21",
       "title": "다운타운 열혈물어",
       "date": "2026.08.08",
-      "average": 63
+      "analysis": 100,
+      "translation": 90,
+      "review": 0,
+      "average": 63,
+      "platform": "fc",
+      "test": "pending"
     },
     {
       "url": "/15",
       "path": "/15",
       "title": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합!",
       "date": "2026.07.26",
-      "average": 90
+      "analysis": 100,
+      "translation": 100,
+      "review": 70,
+      "average": 90,
+      "platform": "fc",
+      "test": "progress"
     },
     {
       "url": "/14",
       "path": "/14",
       "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
       "date": "2026.07.26",
-      "average": 66
+      "analysis": 100,
+      "translation": 97,
+      "review": 0,
+      "average": 66,
+      "platform": "",
+      "test": "pending"
     }
   ],
   "history": [
