@@ -40,15 +40,20 @@ jobs:
         run: |
           python scripts/build_home_feed.py
 
-      - name: Commit feed if changed
+           - name: Commit feed if changed
         run: |
-          if git diff --quiet -- home-feed.json; then
+          git add home-feed.json
+
+          if git diff --cached --quiet; then
             echo "home-feed.json unchanged"
             exit 0
           fi
 
           git config user.name "CALF STATION Feed Bot"
           git config user.email "actions@users.noreply.github.com"
+
+          git commit -m "chore: refresh CALF home feed"
+          git push
 
           git add home-feed.json
           git commit -m "chore: refresh CALF home feed"
