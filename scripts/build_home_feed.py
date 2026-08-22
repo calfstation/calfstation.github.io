@@ -11,7 +11,7 @@ CALF STATION home-feed.json generator
 - 오늘의 꽃송아지 2
 - 게시물 댓글 + 방명록 원글 최신 2
 - 한글화 3
-- NEXT 3 + 평균 진행률
+- NEXT 전체 + 분석/한글화/검수/평균 진행률
 - 프로젝트 히스토리 3
 
 방문자 HOME은 이 JSON 1개만 읽습니다.
@@ -504,7 +504,7 @@ def main() -> None:
         item
         for item in (
             enrich_next(post)
-            for post in parse_post_list(next_soup, 3)
+            for post in parse_post_list(next_soup, 30)
         )
         if item
     ]
