@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-23T02:27:56+09:00",
+  "generatedAt": "2026-08-23T02:50:33+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -26,12 +26,12 @@
       "time": 1787385360.0
     },
     {
-      "name": "덕분에",
-      "text": "한글패치 후에도 코가네무시 입력이 가능하다니! 어릴때는 머리가 느려서 게⋯",
-      "link": "/19",
-      "commentId": "comment23947724",
-      "kind": "comment",
-      "time": 1787065200.0
+      "name": "야희호",
+      "text": "아닛! 이렇게 멋진 분이 계셨을 줄이야! 작업 중이신 열혈시대극과 그리고 새롭게 신청드리는 열혈물어 이 2가지를 조심히 기다려봅니다.",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1787367300.0
     }
   ],
   "patch": [
