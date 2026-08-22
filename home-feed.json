@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-23T03:52:59+09:00",
+  "generatedAt": "2026-08-23T04:12:34+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
+    {
+      "url": "/30",
+      "path": "/30",
+      "title": "여기저기 문제 터지는 중..!?",
+      "date": "04:08:54"
+    },
     {
       "url": "/29",
       "path": "/29",
       "title": "월악산 계곡 휴양 중, 8/22(토) 부터 작업 재개",
       "date": "2026.08.21"
-    },
-    {
-      "url": "/28",
-      "path": "/28",
-      "title": "버그 때려잡기",
-      "date": "2026.08.20"
     }
   ],
   "friends": [
