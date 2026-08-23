@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-23T16:47:04+09:00",
+  "generatedAt": "2026-08-23T17:13:31+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
-      "name": "열혈물어",
-      "text": "그 시절 팩 훅훅 불어가며 꼽고 게임하면서 주변의 그 누구도 학교 안으로⋯",
-      "link": "/23",
-      "commentId": "comment23950126",
-      "kind": "comment",
-      "time": 1787385360.0
-    },
-    {
       "name": "야희호",
       "text": "아닛! 이렇게 멋진 분이 계셨을 줄이야! 작업 중이신 열혈시대극과 그리고 새롭게 신청드리는 열혈물어 이 2가지를 조심히 기다려봅니다.",
       "link": "/guestbook",
       "commentId": "",
       "kind": "guestbook",
       "time": 1787367300.0
+    },
+    {
+      "name": "열혈물어",
+      "text": "그 시절 팩 훅훅 불어가며 꼽고 게임하면서 주변의 그 누구도 학교 안으로⋯",
+      "link": "/23",
+      "commentId": "comment23950126",
+      "kind": "comment",
+      "time": 1787324400.0
     }
   ],
   "patch": [
