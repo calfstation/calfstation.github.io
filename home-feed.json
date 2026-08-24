@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-24T15:28:35+09:00",
+  "generatedAt": "2026-08-24T16:40:58+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
+    {
+      "url": "/31",
+      "path": "/31",
+      "title": "꾸역꾸역 검수 중..........",
+      "date": "16:10:54"
+    },
     {
       "url": "/30",
       "path": "/30",
       "title": "여기저기 문제 터지는 중..!?",
       "date": "2026.08.23"
-    },
-    {
-      "url": "/29",
-      "path": "/29",
-      "title": "월악산 계곡 휴양 중, 8/22(토) 부터 작업 재개",
-      "date": "2026.08.21"
     }
   ],
   "friends": [
@@ -67,11 +67,11 @@
       "title": "다운타운 열혈물어",
       "date": "2026.08.08",
       "analysis": 100,
-      "translation": 90,
-      "review": 0,
-      "average": 63,
+      "translation": 100,
+      "review": 20,
+      "average": 73,
       "platform": "fc",
-      "test": "pending"
+      "test": "progress"
     },
     {
       "url": "/15",
@@ -80,8 +80,8 @@
       "date": "2026.07.26",
       "analysis": 100,
       "translation": 100,
-      "review": 70,
-      "average": 90,
+      "review": 80,
+      "average": 93,
       "platform": "fc",
       "test": "progress"
     },
@@ -91,11 +91,11 @@
       "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
       "date": "2026.07.26",
       "analysis": 100,
-      "translation": 97,
-      "review": 0,
-      "average": 66,
+      "translation": 100,
+      "review": 10,
+      "average": 70,
       "platform": "",
-      "test": "pending"
+      "test": "progress"
     },
     {
       "url": "/13",
