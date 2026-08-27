@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-27T07:10:57+09:00",
+  "generatedAt": "2026-08-27T12:19:29+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -68,8 +68,8 @@
       "date": "2026.08.08",
       "analysis": 100,
       "translation": 100,
-      "review": 20,
-      "average": 73,
+      "review": 80,
+      "average": 93,
       "platform": "fc",
       "test": "progress"
     },
