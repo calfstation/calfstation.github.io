@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-28T17:14:50+09:00",
+  "generatedAt": "2026-08-29T04:29:27+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/33",
       "path": "/33",
       "title": "마무리 되가는 중..!",
-      "date": "16:52:39"
+      "date": "2026.08.28"
     },
     {
       "url": "/31",
@@ -127,7 +127,7 @@
       "url": "/32",
       "path": "/32",
       "title": "다운타운 열혈물어 - PAGE3 (END)",
-      "date": "16:40:19",
+      "date": "2026.08.28",
       "displayTitle": "다운타운 열혈물어 - PAGE3 (END)",
       "subtitle": "열혈물어 한글화 작업기 3"
     },
