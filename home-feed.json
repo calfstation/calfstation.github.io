@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-28T12:28:15+09:00",
+  "generatedAt": "2026-08-28T16:15:51+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "빌리진",
+      "text": "개인적으로 모든 플랫폼 통틀어 더블 드래곤 탑 3안에 든다고 생각함.",
+      "link": "/8",
+      "commentId": "comment23962904",
+      "kind": "comment",
+      "time": 1787891340.0
+    },
+    {
       "name": "네로황제",
       "text": "방금 엔딩보고 왔어요. 정말 감사합니다.^^b",
       "link": "/6",
       "commentId": "comment23962813",
       "kind": "comment",
       "time": 1787884500.0
-    },
-    {
-      "name": "네로황제",
-      "text": "너무나 깔끔해요 ^^b",
-      "link": "/20",
-      "commentId": "comment23962810",
-      "kind": "comment",
-      "time": 1787884380.0
     }
   ],
   "patch": [
