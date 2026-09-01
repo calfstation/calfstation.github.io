@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-01T21:46:46+09:00",
+  "generatedAt": "2026-09-02T01:59:40+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/34",
       "path": "/34",
       "title": "마지막 버그 때려잡기 중...........힘들어!",
-      "date": "10:19:35"
+      "date": "2026.09.01"
     },
     {
       "url": "/33",
