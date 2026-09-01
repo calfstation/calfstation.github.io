@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-01T08:24:36+09:00",
+  "generatedAt": "2026-09-01T11:01:10+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
+    {
+      "url": "/34",
+      "path": "/34",
+      "title": "마지막 버그 때려잡기 중...........힘들어!",
+      "date": "10:19:35"
+    },
     {
       "url": "/33",
       "path": "/33",
       "title": "마무리 되가는 중..!",
       "date": "2026.08.28"
-    },
-    {
-      "url": "/31",
-      "path": "/31",
-      "title": "꾸역꾸역 검수 중..........",
-      "date": "2026.08.24"
     }
   ],
   "friends": [
@@ -23,7 +23,7 @@
       "link": "/32",
       "commentId": "comment23964705",
       "kind": "comment",
-      "time": 1788135900.0
+      "time": 1788102000.0
     },
     {
       "name": "율이아빠",
