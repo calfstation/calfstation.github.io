@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-06T13:21:59+09:00",
+  "generatedAt": "2026-09-06T17:45:33+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "리키",
+      "text": "열혈시리즈는 나이먹어도 재밌는듯",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1788668640.0
+    },
+    {
       "name": "ABsoul",
       "text": "기대하면서, 기다리고 있습니다..!! 수고하세요~~ 시대극도 한글 할 수 있는 건가요?",
       "link": "/guestbook",
       "commentId": "",
       "kind": "guestbook",
       "time": 1788528360.0
-    },
-    {
-      "name": "순옥살코기",
-      "text": "너무 고생하셨습니다~ 패미컴 게임들은 패치만들기가 참으로 악명높다던데 사⋯",
-      "link": "/32",
-      "commentId": "comment23964705",
-      "kind": "comment",
-      "time": 1788102000.0
     }
   ],
   "patch": [
