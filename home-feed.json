@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-08T10:21:06+09:00",
+  "generatedAt": "2026-09-08T15:04:31+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -124,6 +124,14 @@
   ],
   "history": [
     {
+      "url": "/37",
+      "path": "/37",
+      "title": "다운타운 스페셜♥ 쿠니오군의 열혈시대극이다 전원집합! 히스토리 - PAGE 3 (END)",
+      "date": "14:50:37",
+      "displayTitle": "다운타운 스페셜♥ 쿠니오군의 열혈시대극이다 전원집합! 히스토리 - PAGE 3 (END)",
+      "subtitle": "열혈시대극 한글화 작업기 3"
+    },
+    {
       "url": "/32",
       "path": "/32",
       "title": "다운타운 열혈물어 - PAGE3 (END)",
@@ -138,14 +146,6 @@
       "date": "2026.08.13",
       "displayTitle": "다운타운 열혈물어 - PAGE2",
       "subtitle": "열혈물어 한글화 작업기 2"
-    },
-    {
-      "url": "/22",
-      "path": "/22",
-      "title": "다운타운 열혈물어 - PAGE1",
-      "date": "2026.08.10",
-      "displayTitle": "다운타운 열혈물어 - PAGE1",
-      "subtitle": "열혈물어 한글화 작업기 1"
     }
   ]
 }
