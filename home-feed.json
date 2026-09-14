@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-14T10:46:19+09:00",
+  "generatedAt": "2026-09-14T16:13:20+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -23,7 +23,7 @@
       "link": "/37",
       "commentId": "comment23977200",
       "kind": "comment",
-      "time": 1789271340.0
+      "time": 1789225200.0
     },
     {
       "name": "리키",
