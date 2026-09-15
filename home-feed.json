@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-15T20:37:40+09:00",
+  "generatedAt": "2026-09-16T00:41:49+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -68,10 +68,10 @@
       "date": "2026.08.08",
       "analysis": 100,
       "translation": 100,
-      "review": 95,
-      "average": 98,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
-      "test": "progress"
+      "test": "complete"
     },
     {
       "url": "/15",
@@ -80,10 +80,10 @@
       "date": "2026.07.26",
       "analysis": 100,
       "translation": 100,
-      "review": 97,
-      "average": 99,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
-      "test": "progress"
+      "test": "complete"
     },
     {
       "url": "/14",
