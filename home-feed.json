@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-18T02:18:55+09:00",
+  "generatedAt": "2026-09-18T05:23:52+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "꿀아잉",
+      "text": "대화를 알아듣지 못해 헤메다 중간에 포기 했었는데 이 게임을 한글로 보는⋯",
+      "link": "/39",
+      "commentId": "comment23979445",
+      "kind": "comment",
+      "time": 1789675080.0
+    },
+    {
       "name": "뽀송",
       "text": "진짜 감사합니다. 한글패치가 없어서 영문패치판만 찾아다녔던 적이 있을정도⋯",
       "link": "/39",
       "commentId": "comment23979972",
       "kind": "comment",
       "time": 1789621320.0
-    },
-    {
-      "name": "감사합니다.",
-      "text": "열혈시리즈 2개를 추가로!!! 사이트도 너무 멋져요 ㅋ",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1789606800.0
     }
   ],
   "patch": [
