@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-18T10:13:59+09:00",
+  "generatedAt": "2026-09-18T15:03:07+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
-      "name": "뽀송",
-      "text": "진짜 감사합니다. 한글패치가 없어서 영문패치판만 찾아다녔던 적이 있을정도⋯",
-      "link": "/39",
-      "commentId": "comment23979972",
-      "kind": "comment",
-      "time": 1789621320.0
-    },
-    {
       "name": "감사합니다.",
       "text": "열혈시리즈 2개를 추가로!!! 사이트도 너무 멋져요 ㅋ",
       "link": "/guestbook",
       "commentId": "",
       "kind": "guestbook",
       "time": 1789606800.0
+    },
+    {
+      "name": "뽀송",
+      "text": "진짜 감사합니다. 한글패치가 없어서 영문패치판만 찾아다녔던 적이 있을정도⋯",
+      "link": "/39",
+      "commentId": "comment23979972",
+      "kind": "comment",
+      "time": 1789570800.0
     }
   ],
   "patch": [
