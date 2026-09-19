@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-20T02:21:19+09:00",
+  "generatedAt": "2026-09-20T03:27:32+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -62,6 +62,54 @@
   ],
   "next": [
     {
+      "url": "/47",
+      "path": "/47",
+      "title": "초대 열혈경파 쿠니오군",
+      "date": "03:24:57",
+      "analysis": 100,
+      "translation": 10,
+      "review": 0,
+      "average": 37,
+      "platform": "sfc",
+      "test": "pending"
+    },
+    {
+      "url": "/46",
+      "path": "/46",
+      "title": "베어 너클 II: 사투로의 진혼가",
+      "date": "02:38:39",
+      "analysis": 100,
+      "translation": 70,
+      "review": 0,
+      "average": 57,
+      "platform": "md",
+      "test": "pending"
+    },
+    {
+      "url": "/45",
+      "path": "/45",
+      "title": "열혈! 비치발리볼이다♥ 쿠니오군",
+      "date": "02:19:50",
+      "analysis": 100,
+      "translation": 50,
+      "review": 0,
+      "average": 50,
+      "platform": "gb",
+      "test": "pending"
+    },
+    {
+      "url": "/44",
+      "path": "/44",
+      "title": "열혈고교 축구부 월드컵편",
+      "date": "02:17:51",
+      "analysis": 100,
+      "translation": 50,
+      "review": 0,
+      "average": 50,
+      "platform": "gb",
+      "test": "pending"
+    },
+    {
       "url": "/43",
       "path": "/43",
       "title": "열혈경파 쿠니오군 번외난투편",
@@ -84,30 +132,6 @@
       "average": 50,
       "platform": "gb",
       "test": "pending"
-    },
-    {
-      "url": "/21",
-      "path": "/21",
-      "title": "다운타운 열혈물어",
-      "date": "2026.08.08",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "complete"
-    },
-    {
-      "url": "/15",
-      "path": "/15",
-      "title": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합!",
-      "date": "2026.07.26",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "complete"
     }
   ],
   "history": [
