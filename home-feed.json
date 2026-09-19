@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-19T23:00:37+09:00",
+  "generatedAt": "2026-09-20T02:11:31+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/41",
       "path": "/41",
       "title": "새 프로젝트 리스트 수집 중ㆍㆍㆍㆍㆍ",
-      "date": "14:02:07"
+      "date": "2026.09.19"
     },
     {
       "url": "/38",
@@ -61,6 +61,18 @@
     }
   ],
   "next": [
+    {
+      "url": "/42",
+      "path": "/42",
+      "title": "열혈고교 피구부 ~강적! 투구전사의 권~",
+      "date": "01:56:15",
+      "analysis": 100,
+      "translation": 50,
+      "review": 0,
+      "average": 50,
+      "platform": "gb",
+      "test": "pending"
+    },
     {
       "url": "/21",
       "path": "/21",
