@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-20T15:54:30+09:00",
+  "generatedAt": "2026-09-20T21:13:19+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -23,7 +23,7 @@
       "link": "/40",
       "commentId": "comment23981927",
       "kind": "comment",
-      "time": 1789815060.0
+      "time": 1789743600.0
     },
     {
       "name": "일개겜돌이",
@@ -31,7 +31,7 @@
       "link": "/39",
       "commentId": "comment23981925",
       "kind": "comment",
-      "time": 1789814940.0
+      "time": 1789743600.0
     }
   ],
   "patch": [
