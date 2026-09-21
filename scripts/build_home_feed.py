@@ -566,17 +566,22 @@ def main() -> None:
         if item
     ]
 
-    next_complete = sum(
-        1
+    next_active_posts = [
+        item
+        for item in next_posts
+        if not is_next_complete(item.get("test"))
+    ]
+
+    next_completed_posts = [
+        item
         for item in next_posts
         if is_next_complete(item.get("test"))
-    )
+    ]
 
     next_summary = {
-        "active": max(0, len(next_posts) - next_complete),
-        "complete": next_complete,
-        "total": len(next_source_posts),
-        "resolved": len(next_posts),
+        "active": len(next_active_posts),
+        "complete": len(next_completed_posts),
+        "total": len(next_posts),
     }
 
     history_posts = [
@@ -598,7 +603,13 @@ def main() -> None:
         "daily": daily_posts,
         "friends": merge_friends(comments, guestbook),
         "patch": patch_posts,
-        "next": next_posts,
+
+        # NEXT 첫 진입에서 사용하는 진행 중 프로젝트만.
+        "next": next_active_posts,
+
+        # "완료된 프로젝트" 버튼을 눌렀을 때만 사용하는 별도 배열.
+        "nextCompleted": next_completed_posts,
+
         "nextSummary": next_summary,
         "history": history_posts,
     }
@@ -618,6 +629,7 @@ def main() -> None:
         "friends": len(feed["friends"]),
         "patch": len(feed["patch"]),
         "next": len(feed["next"]),
+        "nextCompleted": len(feed["nextCompleted"]),
         "nextActive": feed["nextSummary"]["active"],
         "nextComplete": feed["nextSummary"]["complete"],
         "history": len(feed["history"]),
