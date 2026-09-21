@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-21T15:32:54+09:00",
+  "generatedAt": "2026-09-21T16:38:44+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -71,7 +71,8 @@
       "review": 0,
       "average": 37,
       "platform": "sfc",
-      "test": "pending"
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FclZjfm%2FdJMcablxUD0%2FAAAAAAAAAAAAAAAAAAAAABI_OkKiV61yr43YQPSzka42KBNZaqUuj127-6gpISkC%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DQtCjw7X2glXKdPfpgqJNZ4uHNUA%253D"
     },
     {
       "url": "/46",
@@ -83,7 +84,8 @@
       "review": 0,
       "average": 57,
       "platform": "md",
-      "test": "pending"
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJFtFX%2FdJMcacdyW4y%2FAAAAAAAAAAAAAAAAAAAAAPL5jQEgNWCLjy2PVxBzAGyphok2mx-iQBLu0cdTERaI%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DblO6dEndSTNO%252BvSJ7zKVVV%252B5BCQ%253D"
     },
     {
       "url": "/45",
@@ -95,7 +97,8 @@
       "review": 0,
       "average": 50,
       "platform": "gb",
-      "test": "pending"
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjJdHg%2FdJMcab0aVzr%2FAAAAAAAAAAAAAAAAAAAAABKgeHFJr5f8AG8CKnheBKvOH2Oir2fKXdKb0VIXM663%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DnxuAa09eugB29OECrtSviiynQeg%253D"
     },
     {
       "url": "/44",
@@ -107,7 +110,8 @@
       "review": 0,
       "average": 50,
       "platform": "gb",
-      "test": "pending"
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FwTPiq%2FdJMcajw5WSq%2FAAAAAAAAAAAAAAAAAAAAALgRgKmlLy2qvpbB154aYmP_Ln6yPP5Xchnr72dbZsjj%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DQwcf3QNrnl7Yo4tc%252Bc0kQEsEv0A%253D"
     },
     {
       "url": "/43",
@@ -119,7 +123,8 @@
       "review": 0,
       "average": 50,
       "platform": "gb",
-      "test": "pending"
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4uL16%2FdJMcac5Iluc%2FAAAAAAAAAAAAAAAAAAAAAIbgrhGfW9xN6cBjO8EQDlmMugXdF_f9EofmMCGDX4VB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D7wCP8B6KiarluALMKTZMHUXttB8%253D"
     },
     {
       "url": "/42",
@@ -131,9 +136,81 @@
       "review": 0,
       "average": 50,
       "platform": "gb",
-      "test": "pending"
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcRUHqa%2FdJMcaa0730P%2FAAAAAAAAAAAAAAAAAAAAAMibtZeLX39uj5mixEkmr3lGKqMv6OPO5abNfUhuGCuB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DaKna0F6j5rd4TkhFnhQ3yGo%252BMTU%253D"
+    },
+    {
+      "url": "/21",
+      "path": "/21",
+      "title": "다운타운 열혈물어",
+      "date": "2026.08.08",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdKtu7T%2FdJMcadv7Wjl%2FAAAAAAAAAAAAAAAAAAAAAJG2unecOa-4aKAH8kBSsfr0vZCS2mlpxU8eWIC121Dt%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Ds6mbTL11FmkI8Vf0wX5HDQaeoRw%253D"
+    },
+    {
+      "url": "/15",
+      "path": "/15",
+      "title": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합!",
+      "date": "2026.07.26",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcN0Xmp%2FdJMcabLVwzf%2FAAAAAAAAAAAAAAAAAAAAANZal4N51jVwqSPntn3Zoqhl54rpOP3YVQx33VivM6oO%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfNsXuSzqMGtudi9bKbhh0NaYHb4%253D"
+    },
+    {
+      "url": "/14",
+      "path": "/14",
+      "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
+      "date": "2026.07.26",
+      "analysis": 100,
+      "translation": 100,
+      "review": 40,
+      "average": 80,
+      "platform": "",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO4If6%252BRgxUSUe%252BjiBNTbB8QeiDA%253D"
+    },
+    {
+      "url": "/13",
+      "path": "/13",
+      "title": "쿠니오군의 열혈축구 리그",
+      "date": "2026.07.25",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcAymmz%2FdJMcab571XB%2FAAAAAAAAAAAAAAAAAAAAAHNKW8A1S7RSjDqKOqCMSJCFbdjPbaD_9Nb9MwM-kF6E%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DBIesCuBrYZL7kTgt8pLd3idjjHQ%253D"
+    },
+    {
+      "url": "/12",
+      "path": "/12",
+      "title": "가라가라! 열혈하키부 미끄러지고 넘어지고 대난투",
+      "date": "2026.07.25",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcmeXRB%2FdJMcabLU3z3%2FAAAAAAAAAAAAAAAAAAAAAJsC8R3r8OeceiKh1P1ViV9EA5aXUgfL5jnfkpHRqGT7%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DS9OW6OYCBl%252BkayuHBoUTaCJFMXs%253D"
     }
   ],
+  "nextSummary": {
+    "active": 7,
+    "complete": 4,
+    "total": 11,
+    "resolved": 11
+  },
   "history": [
     {
       "url": "/37",
