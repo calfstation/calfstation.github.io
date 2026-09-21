@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-21T22:17:16+09:00",
+  "generatedAt": "2026-09-22T03:47:44+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/48",
       "path": "/48",
       "title": "웹사이트 최적화 완료...!",
-      "date": "18:14:48"
+      "date": "2026.09.21"
     },
     {
       "url": "/41",
@@ -18,18 +18,18 @@
   ],
   "friends": [
     {
+      "name": "BOLFKANG77",
+      "text": "사이트 진짜 맛깔나게 꾸미셨네요. 정말 멋지십니다.",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1790003100.0
+    },
+    {
       "name": "일개겜돌이",
       "text": "아...감동입니다.. 이걸 한글로 하는 날이 오네요..간판 힌글도 그렇고⋯",
       "link": "/40",
       "commentId": "comment23981927",
-      "kind": "comment",
-      "time": 1789743600.0
-    },
-    {
-      "name": "일개겜돌이",
-      "text": "Mesen 실행 잘되네요.이거 정말 한글화 디테일에 감탄을 금치못하겠네⋯",
-      "link": "/39",
-      "commentId": "comment23981925",
       "kind": "comment",
       "time": 1789743600.0
     }
