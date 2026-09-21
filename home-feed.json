@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-21T16:38:44+09:00",
+  "generatedAt": "2026-09-21T16:47:23+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -140,6 +140,21 @@
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcRUHqa%2FdJMcaa0730P%2FAAAAAAAAAAAAAAAAAAAAAMibtZeLX39uj5mixEkmr3lGKqMv6OPO5abNfUhuGCuB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DaKna0F6j5rd4TkhFnhQ3yGo%252BMTU%253D"
     },
     {
+      "url": "/14",
+      "path": "/14",
+      "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
+      "date": "2026.07.26",
+      "analysis": 100,
+      "translation": 100,
+      "review": 40,
+      "average": 80,
+      "platform": "",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO4If6%252BRgxUSUe%252BjiBNTbB8QeiDA%253D"
+    }
+  ],
+  "nextCompleted": [
+    {
       "url": "/21",
       "path": "/21",
       "title": "다운타운 열혈물어",
@@ -164,19 +179,6 @@
       "platform": "fc",
       "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcN0Xmp%2FdJMcabLVwzf%2FAAAAAAAAAAAAAAAAAAAAANZal4N51jVwqSPntn3Zoqhl54rpOP3YVQx33VivM6oO%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfNsXuSzqMGtudi9bKbhh0NaYHb4%253D"
-    },
-    {
-      "url": "/14",
-      "path": "/14",
-      "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
-      "date": "2026.07.26",
-      "analysis": 100,
-      "translation": 100,
-      "review": 40,
-      "average": 80,
-      "platform": "",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO4If6%252BRgxUSUe%252BjiBNTbB8QeiDA%253D"
     },
     {
       "url": "/13",
@@ -208,8 +210,7 @@
   "nextSummary": {
     "active": 7,
     "complete": 4,
-    "total": 11,
-    "resolved": 11
+    "total": 11
   },
   "history": [
     {
