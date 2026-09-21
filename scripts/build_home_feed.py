@@ -100,6 +100,50 @@ def parse_post_list(soup: BeautifulSoup, limit: int) -> list[dict]:
     return posts
 
 
+def parse_paginated_post_list(
+    url: str,
+    limit: int,
+    max_pages: int = 10,
+) -> list[dict]:
+    """
+    Tistory category pagination collector.
+
+    /category/NEXT is paged, so fetching only the first document silently
+    truncates the project feed. Read successive ?page=N documents, dedupe by
+    post path, and stop when Tistory returns no new posts (including the case
+    where it repeats the last page).
+    """
+    posts: list[dict] = []
+    seen: set[str] = set()
+
+    for page in range(1, max_pages + 1):
+        separator = "&" if "?" in url else "?"
+        soup = fetch_soup(f"{url}{separator}page={page}")
+        page_posts = parse_post_list(soup, limit)
+
+        if not page_posts:
+            break
+
+        added = 0
+
+        for post in page_posts:
+            path = post.get("path", "")
+            if not path or path in seen:
+                continue
+
+            seen.add(path)
+            posts.append(post)
+            added += 1
+
+            if len(posts) >= limit:
+                return posts
+
+        if added == 0:
+            break
+
+    return posts
+
+
 def patch_fallback_title(post: dict) -> str:
     return LEGACY_PATCH_SHORT.get(post["path"], post["title"])
 
@@ -182,6 +226,17 @@ def clamp(value) -> int:
     return max(0, min(100, round(n)))
 
 
+def is_next_complete(value: str | None) -> bool:
+    state = re.sub(r"\s+", "", clean(value)).lower()
+    return state in {
+        "complete",
+        "completed",
+        "done",
+        "완료",
+        "테스트완료",
+    }
+
+
 def enrich_next(post: dict) -> dict | None:
     try:
         soup = fetch_soup(urljoin(BASE, post["url"]))
@@ -200,6 +255,9 @@ def enrich_next(post: dict) -> dict | None:
         title = clean(block.get("data-project-title") or post["title"])
 
         result = dict(post)
+        image_node = soup.select_one('meta[property="og:image"]')
+        image = clean(image_node.get("content", "")) if image_node else ""
+
         result.update({
             "title": title,
             "analysis": analysis,
@@ -208,6 +266,7 @@ def enrich_next(post: dict) -> dict | None:
             "average": average,
             "platform": clean(block.get("data-platform") or ""),
             "test": clean(block.get("data-test") or ""),
+            "image": image,
         })
         return result
     except Exception as exc:
@@ -263,7 +322,6 @@ def parse_time(text: str) -> float:
         except ValueError:
             return 0
 
-    # 2026.08.22 / 2026-08-22 / 2026. 8. 22. 23:14 / 오후 표기
     m = re.search(
         r"(\d{4})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})\.?"
         r"(?:\s*(오전|오후)?\s*(\d{1,2}):(\d{2}))?",
@@ -279,7 +337,6 @@ def parse_time(text: str) -> float:
             m.group(4) or "",
         )
 
-    # 티스토리 최근댓글 연도 생략형: 08.22 / 8. 22. / 08-22 23:14
     m = re.search(
         r"(?<!\d)(\d{1,2})\s*[.\-/]\s*(\d{1,2})\.?"
         r"(?:\s*(오전|오후)?\s*(\d{1,2}):(\d{2}))?(?!\d)",
@@ -297,7 +354,6 @@ def parse_time(text: str) -> float:
             ts = make_dt(now.year - 1, month, day, hour, minute, ampm)
         return ts
 
-    # 오늘 날짜 없이 시간만: 23:14 / 오후 11:14
     m = re.search(
         r"(?:^|\s)(오전|오후)?\s*(\d{1,2}):(\d{2})(?:$|\s)",
         text,
@@ -402,10 +458,6 @@ def parse_guestbook_hidden(guest: BeautifulSoup) -> list[dict]:
 
 
 def parse_guestbook_fallback(guest: BeautifulSoup) -> list[dict]:
-    """
-    V117 skin 적용 전 첫 workflow도 최대한 동작시키는 보조 경로.
-    hidden source가 없으면 현재 server HTML의 최상위 tt-item-reply를 읽습니다.
-    """
     root = guest.select_one(".guestbook-wrap")
     if not root:
         return []
@@ -490,7 +542,6 @@ def main() -> None:
 
     home = fetch_soup(URLS["home"])
     patch_soup = fetch_soup(URLS["patch"])
-    next_soup = fetch_soup(URLS["next"])
     history_soup = fetch_soup(URLS["history"])
     daily_soup = fetch_soup(URLS["daily"])
     guest_soup = fetch_soup(URLS["guestbook"])
@@ -500,14 +551,33 @@ def main() -> None:
         for post in parse_post_list(patch_soup, 3)
     ]
 
+    next_source_posts = parse_paginated_post_list(
+        URLS["next"],
+        limit=30,
+        max_pages=10,
+    )
+
     next_posts = [
         item
         for item in (
             enrich_next(post)
-            for post in parse_post_list(next_soup, 30)
+            for post in next_source_posts
         )
         if item
     ]
+
+    next_complete = sum(
+        1
+        for item in next_posts
+        if is_next_complete(item.get("test"))
+    )
+
+    next_summary = {
+        "active": max(0, len(next_posts) - next_complete),
+        "complete": next_complete,
+        "total": len(next_source_posts),
+        "resolved": len(next_posts),
+    }
 
     history_posts = [
         enrich_history(post)
@@ -529,6 +599,7 @@ def main() -> None:
         "friends": merge_friends(comments, guestbook),
         "patch": patch_posts,
         "next": next_posts,
+        "nextSummary": next_summary,
         "history": history_posts,
     }
 
@@ -547,6 +618,8 @@ def main() -> None:
         "friends": len(feed["friends"]),
         "patch": len(feed["patch"]),
         "next": len(feed["next"]),
+        "nextActive": feed["nextSummary"]["active"],
+        "nextComplete": feed["nextSummary"]["complete"],
         "history": len(feed["history"]),
         "output": str(OUT),
     }, ensure_ascii=False))
