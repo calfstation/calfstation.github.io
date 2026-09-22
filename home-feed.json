@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-23T00:37:57+09:00",
+  "generatedAt": "2026-09-23T04:10:42+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -146,8 +146,8 @@
       "date": "2026.07.26",
       "analysis": 100,
       "translation": 100,
-      "review": 40,
-      "average": 80,
+      "review": 80,
+      "average": 93,
       "platform": "",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO4If6%252BRgxUSUe%252BjiBNTbB8QeiDA%253D"
