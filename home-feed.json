@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-23T14:07:05+09:00",
+  "generatedAt": "2026-09-23T14:10:35+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -93,11 +93,11 @@
       "title": "열혈! 비치발리볼이다♥ 쿠니오군",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 50,
+      "translation": 80,
       "review": 0,
-      "average": 50,
+      "average": 60,
       "platform": "gb",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjJdHg%2FdJMcab0aVzr%2FAAAAAAAAAAAAAAAAAAAAABKgeHFJr5f8AG8CKnheBKvOH2Oir2fKXdKb0VIXM663%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DnxuAa09eugB29OECrtSviiynQeg%253D"
     },
     {
@@ -106,11 +106,11 @@
       "title": "열혈고교 축구부 월드컵편",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 50,
-      "review": 0,
-      "average": 50,
+      "translation": 100,
+      "review": 30,
+      "average": 77,
       "platform": "gb",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FwTPiq%2FdJMcajw5WSq%2FAAAAAAAAAAAAAAAAAAAAALgRgKmlLy2qvpbB154aYmP_Ln6yPP5Xchnr72dbZsjj%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DQwcf3QNrnl7Yo4tc%252Bc0kQEsEv0A%253D"
     },
     {
@@ -119,11 +119,11 @@
       "title": "열혈경파 쿠니오군 번외난투편",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 50,
-      "review": 0,
-      "average": 50,
+      "translation": 100,
+      "review": 70,
+      "average": 90,
       "platform": "gb",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4uL16%2FdJMcac5Iluc%2FAAAAAAAAAAAAAAAAAAAAAIbgrhGfW9xN6cBjO8EQDlmMugXdF_f9EofmMCGDX4VB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D7wCP8B6KiarluALMKTZMHUXttB8%253D"
     },
     {
@@ -132,11 +132,11 @@
       "title": "열혈고교 피구부 ~강적! 투구전사의 권~",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 50,
-      "review": 0,
-      "average": 50,
+      "translation": 100,
+      "review": 80,
+      "average": 93,
       "platform": "gb",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcRUHqa%2FdJMcaa0730P%2FAAAAAAAAAAAAAAAAAAAAAMibtZeLX39uj5mixEkmr3lGKqMv6OPO5abNfUhuGCuB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DaKna0F6j5rd4TkhFnhQ3yGo%252BMTU%253D"
     },
     {
