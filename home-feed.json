@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-23T14:42:19+09:00",
+  "generatedAt": "2026-09-23T18:58:01+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -61,6 +61,19 @@
     }
   ],
   "next": [
+    {
+      "url": "/49",
+      "path": "/49",
+      "title": "열혈격투전설",
+      "date": "16:35:13",
+      "analysis": 100,
+      "translation": 20,
+      "review": 0,
+      "average": 40,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbE0Vm4%2FdJMcagmK392%2FAAAAAAAAAAAAAAAAAAAAAKWVK1fI2OsB7DYSzoxbrnibEDeNLmj_4-WpYZh9kq4J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D6d7Uqkz9HNCc%252FdLI5kO6DPqK4t4%253D"
+    },
     {
       "url": "/47",
       "path": "/47",
@@ -208,9 +221,9 @@
     }
   ],
   "nextSummary": {
-    "active": 7,
+    "active": 8,
     "complete": 4,
-    "total": 11
+    "total": 12
   },
   "history": [
     {
