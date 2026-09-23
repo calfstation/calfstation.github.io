@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-23T09:32:40+09:00",
+  "generatedAt": "2026-09-23T14:07:05+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "레봉쿤의노예",
+      "text": "고생많으셨습니다. 작게나마 후원하고 갑니다.",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1790130180.0
+    },
+    {
       "name": "BOLFKANG77",
       "text": "사이트 진짜 맛깔나게 꾸미셨네요. 정말 멋지십니다.",
       "link": "/guestbook",
       "commentId": "",
       "kind": "guestbook",
       "time": 1790003100.0
-    },
-    {
-      "name": "일개겜돌이",
-      "text": "아...감동입니다.. 이걸 한글로 하는 날이 오네요..간판 힌글도 그렇고⋯",
-      "link": "/40",
-      "commentId": "comment23981927",
-      "kind": "comment",
-      "time": 1789743600.0
     }
   ],
   "patch": [
