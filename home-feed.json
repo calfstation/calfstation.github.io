@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-28T10:46:56+09:00",
+  "generatedAt": "2026-09-28T12:42:02+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -67,9 +67,9 @@
       "title": "열혈격투전설",
       "date": "2026.09.23",
       "analysis": 100,
-      "translation": 20,
+      "translation": 50,
       "review": 0,
-      "average": 40,
+      "average": 50,
       "platform": "fc",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbE0Vm4%2FdJMcagmK392%2FAAAAAAAAAAAAAAAAAAAAAKWVK1fI2OsB7DYSzoxbrnibEDeNLmj_4-WpYZh9kq4J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D6d7Uqkz9HNCc%252FdLI5kO6DPqK4t4%253D"
@@ -80,9 +80,9 @@
       "title": "초대 열혈경파 쿠니오군",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 10,
+      "translation": 40,
       "review": 0,
-      "average": 37,
+      "average": 47,
       "platform": "sfc",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FclZjfm%2FdJMcablxUD0%2FAAAAAAAAAAAAAAAAAAAAABI_OkKiV61yr43YQPSzka42KBNZaqUuj127-6gpISkC%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DQtCjw7X2glXKdPfpgqJNZ4uHNUA%253D"
@@ -93,9 +93,9 @@
       "title": "베어 너클 II: 사투로의 진혼가",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 70,
+      "translation": 100,
       "review": 0,
-      "average": 57,
+      "average": 67,
       "platform": "md",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJFtFX%2FdJMcacdyW4y%2FAAAAAAAAAAAAAAAAAAAAAPL5jQEgNWCLjy2PVxBzAGyphok2mx-iQBLu0cdTERaI%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DblO6dEndSTNO%252BvSJ7zKVVV%252B5BCQ%253D"
@@ -106,13 +106,28 @@
       "title": "열혈! 비치발리볼이다♥ 쿠니오군",
       "date": "2026.09.20",
       "analysis": 100,
-      "translation": 80,
-      "review": 0,
-      "average": 60,
+      "translation": 100,
+      "review": 40,
+      "average": 80,
       "platform": "gb",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbjJdHg%2FdJMcab0aVzr%2FAAAAAAAAAAAAAAAAAAAAABKgeHFJr5f8AG8CKnheBKvOH2Oir2fKXdKb0VIXM663%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DnxuAa09eugB29OECrtSviiynQeg%253D"
     },
+    {
+      "url": "/14",
+      "path": "/14",
+      "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
+      "date": "2026.07.26",
+      "analysis": 100,
+      "translation": 100,
+      "review": 90,
+      "average": 97,
+      "platform": "",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO4If6%252BRgxUSUe%252BjiBNTbB8QeiDA%253D"
+    }
+  ],
+  "nextCompleted": [
     {
       "url": "/44",
       "path": "/44",
@@ -120,10 +135,10 @@
       "date": "2026.09.20",
       "analysis": 100,
       "translation": 100,
-      "review": 30,
-      "average": 77,
+      "review": 100,
+      "average": 100,
       "platform": "gb",
-      "test": "progress",
+      "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FwTPiq%2FdJMcajw5WSq%2FAAAAAAAAAAAAAAAAAAAAALgRgKmlLy2qvpbB154aYmP_Ln6yPP5Xchnr72dbZsjj%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DQwcf3QNrnl7Yo4tc%252Bc0kQEsEv0A%253D"
     },
     {
@@ -133,10 +148,10 @@
       "date": "2026.09.20",
       "analysis": 100,
       "translation": 100,
-      "review": 70,
-      "average": 90,
+      "review": 100,
+      "average": 100,
       "platform": "gb",
-      "test": "progress",
+      "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F4uL16%2FdJMcac5Iluc%2FAAAAAAAAAAAAAAAAAAAAAIbgrhGfW9xN6cBjO8EQDlmMugXdF_f9EofmMCGDX4VB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D7wCP8B6KiarluALMKTZMHUXttB8%253D"
     },
     {
@@ -146,27 +161,12 @@
       "date": "2026.09.20",
       "analysis": 100,
       "translation": 100,
-      "review": 80,
-      "average": 93,
+      "review": 100,
+      "average": 100,
       "platform": "gb",
-      "test": "progress",
+      "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcRUHqa%2FdJMcaa0730P%2FAAAAAAAAAAAAAAAAAAAAAMibtZeLX39uj5mixEkmr3lGKqMv6OPO5abNfUhuGCuB%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DaKna0F6j5rd4TkhFnhQ3yGo%252BMTU%253D"
     },
-    {
-      "url": "/14",
-      "path": "/14",
-      "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
-      "date": "2026.07.26",
-      "analysis": 100,
-      "translation": 100,
-      "review": 80,
-      "average": 93,
-      "platform": "",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DO4If6%252BRgxUSUe%252BjiBNTbB8QeiDA%253D"
-    }
-  ],
-  "nextCompleted": [
     {
       "url": "/21",
       "path": "/21",
@@ -221,11 +221,19 @@
     }
   ],
   "nextSummary": {
-    "active": 8,
-    "complete": 4,
+    "active": 5,
+    "complete": 7,
     "total": 12
   },
   "history": [
+    {
+      "url": "/51",
+      "path": "/51",
+      "title": "GB 열혈 시리즈 작업완료 (END)",
+      "date": "12:37:59",
+      "displayTitle": "GB 열혈 시리즈 작업완료 (END)",
+      "subtitle": "GB 열혈 시리즈 작업완료 한글화 작업기"
+    },
     {
       "url": "/37",
       "path": "/37",
@@ -241,14 +249,6 @@
       "date": "2026.08.28",
       "displayTitle": "다운타운 열혈물어 - PAGE3 (END)",
       "subtitle": "열혈물어 한글화 작업기 3"
-    },
-    {
-      "url": "/23",
-      "path": "/23",
-      "title": "다운타운 열혈물어 - PAGE2",
-      "date": "2026.08.13",
-      "displayTitle": "다운타운 열혈물어 - PAGE2",
-      "subtitle": "열혈물어 한글화 작업기 2"
     }
   ]
 }
