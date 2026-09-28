@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-28T16:46:15+09:00",
+  "generatedAt": "2026-09-29T01:06:13+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -230,7 +230,7 @@
       "url": "/51",
       "path": "/51",
       "title": "GB 열혈 시리즈 작업완료 (END)",
-      "date": "12:37:59",
+      "date": "2026.09.28",
       "displayTitle": "GB 열혈 시리즈 작업완료 (END)",
       "subtitle": "GB 열혈 시리즈 작업완료 한글화 작업기"
     },
