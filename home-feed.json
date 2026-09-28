@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-29T01:06:13+09:00",
+  "generatedAt": "2026-09-29T06:59:03+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "일촤스",
+      "text": "수많은 패밀리 게임들이 한글패치가 되었지만 도대체 인기있는 이 작품은 왜⋯",
+      "link": "/37",
+      "commentId": "comment23987507",
+      "kind": "comment",
+      "time": 1790632560.0
+    },
+    {
       "name": "sega",
       "text": "진심으로 감사합니다, 올 추석 선생님 덕분에 잘 보낼수 있었어요",
       "link": "/guestbook",
       "commentId": "",
       "kind": "guestbook",
       "time": 1790430540.0
-    },
-    {
-      "name": "일개겜돌이",
-      "text": "열혈물어랑 시대극 둘다 엔딩봤습니다. 게임을 잘 못해서 저장하면서 하는데 30년만에 엔딩보네요.. 폭풍감동... 감사합니다. 한글화 퀄리티도 너무 좋았어요.",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1790423400.0
     }
   ],
   "patch": [
