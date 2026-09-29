@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-29T23:19:20+09:00",
+  "generatedAt": "2026-09-30T04:29:51+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "ㅎㅎㅎ",
+      "text": "이런 역사적인 한글화.. 혹시 여력이 되시면 mesen 에뮬로는 드래곤볼⋯",
+      "link": "/37",
+      "commentId": "comment23988009",
+      "kind": "comment",
+      "time": 1790693040.0
+    },
+    {
       "name": "일촤스",
       "text": "수많은 패밀리 게임들이 한글패치가 되었지만 도대체 인기있는 이 작품은 왜⋯",
       "link": "/37",
       "commentId": "comment23987507",
       "kind": "comment",
       "time": 1790632560.0
-    },
-    {
-      "name": "sega",
-      "text": "진심으로 감사합니다, 올 추석 선생님 덕분에 잘 보낼수 있었어요",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1790430540.0
     }
   ],
   "patch": [
@@ -132,7 +132,7 @@
       "url": "/53",
       "path": "/53",
       "title": "푸른 전설 슛!",
-      "date": "17:35:10",
+      "date": "2026.09.29",
       "analysis": 100,
       "translation": 100,
       "review": 100,
