@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-30T08:09:14+09:00",
+  "generatedAt": "2026-09-30T09:51:21+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -36,11 +36,89 @@
   ],
   "patch": [
     {
+      "url": "/57",
+      "path": "/57",
+      "title": "열혈! 비치발리볼이다♥ 쿠니오군",
+      "date": "2026.09.29",
+      "subtitle": "열혈! 비치발리볼이다♥ 쿠니오군",
+      "displayTitle": "GB 열혈비치발리볼 한글패치"
+    },
+    {
+      "url": "/56",
+      "path": "/56",
+      "title": "열혈고교 피구부 ~강적! 투구전사의 권~ 한국어화&한글 패치",
+      "date": "2026.09.29",
+      "subtitle": "열혈고교 피구부 ~강적! 투구전사의 권~ 한국어화&한글 패치",
+      "displayTitle": "GB 열혈피구 한글패치"
+    },
+    {
+      "url": "/55",
+      "path": "/55",
+      "title": "열혈고교 축구부 월드컵편 한국어화&한글 패치",
+      "date": "2026.09.29",
+      "subtitle": "열혈고교 축구부 월드컵편 한국어화&한글 패치",
+      "displayTitle": "GB 열혈축구 월드컵편 한글패치"
+    }
+  ],
+  "patchArchive": [
+    {
+      "url": "/57",
+      "path": "/57",
+      "title": "열혈! 비치발리볼이다♥ 쿠니오군",
+      "date": "2026.09.29",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png",
+      "platform": "GB / 게임보이",
+      "platformCode": "gb",
+      "platformLabel": "게임보이",
+      "platformShort": "GB",
+      "displayTitle": "GB 열혈비치발리볼 한글패치"
+    },
+    {
+      "url": "/56",
+      "path": "/56",
+      "title": "열혈고교 피구부 ~강적! 투구전사의 권~ 한국어화&한글 패치",
+      "date": "2026.09.29",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png",
+      "platform": "GB / 게임보이",
+      "platformCode": "gb",
+      "platformLabel": "게임보이",
+      "platformShort": "GB",
+      "displayTitle": "GB 열혈피구 한글패치"
+    },
+    {
+      "url": "/55",
+      "path": "/55",
+      "title": "열혈고교 축구부 월드컵편 한국어화&한글 패치",
+      "date": "2026.09.29",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png",
+      "platform": "GB / 게임보이",
+      "platformCode": "gb",
+      "platformLabel": "게임보이",
+      "platformShort": "GB",
+      "displayTitle": "GB 열혈축구 월드컵편 한글패치"
+    },
+    {
+      "url": "/54",
+      "path": "/54",
+      "title": "열혈경파 쿠니오군 번외난투편 한국어화&한글 패치",
+      "date": "2026.09.29",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png",
+      "platform": "GB / 게임보이",
+      "platformCode": "gb",
+      "platformLabel": "게임보이",
+      "platformShort": "GB",
+      "displayTitle": "GB 열혈경파 쿠니오군 한글패치"
+    },
+    {
       "url": "/40",
       "path": "/40",
       "title": "다운타운 열혈물어 한국어화&한글 패치",
       "date": "2026.09.16",
-      "subtitle": "다운타운 열혈물어 한국어화&한글 패치",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fs3GnY%2FdJMb99VoeIW%2FAAAAAAAAAAAAAAAAAAAAAKLOONMslbwhIsbNshl5Kd4ynh8kgbvlcb1Rin-mLRds%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DR6YE1Me4GmDYTZM22tPtDOR107Y%253D",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
       "displayTitle": "열혈물어 한글패치"
     },
     {
@@ -48,7 +126,11 @@
       "path": "/39",
       "title": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합! 한국어화&한글 패치",
       "date": "2026.09.16",
-      "subtitle": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합! 한국어화&한글 패치",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FwvjS1%2FdJMcagmE9RH%2FAAAAAAAAAAAAAAAAAAAAABJivFX3ScPPzW-X4wqAkcZ4EZGXeWtPZXQyCCAUd_xV%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dnmk4FdxjYExmsVQceNqPkWguXco%253D",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
       "displayTitle": "열혈시대극 한글패치"
     },
     {
@@ -56,10 +138,71 @@
       "path": "/20",
       "title": "쿠니오군의 열혈축구리그 한국어화&한글 패치",
       "date": "2026.08.08",
-      "subtitle": "쿠니오군의 열혈축구리그 한국어화&한글 패치",
-      "displayTitle": "열혈축구2 한글패치"
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcavdpo%2FdJMb991IAC4%2FAAAAAAAAAAAAAAAAAAAAAApW5jchIdwY1vfKqAOT_8ufj--S6zevXQWov6ZrN_kA%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DndI2teuhP%252BvWVQ9Xk%252BLFD3EpDsU%253D",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "열혈축구2 한글 패치"
+    },
+    {
+      "url": "/17",
+      "path": "/17",
+      "title": "가라가라! 열혈하키부 미끄러지고 넘어지고 대난투 한국어화&한글 패치",
+      "date": "2026.07.29",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbclipT%2FdJMcacD5eQw%2FAAAAAAAAAAAAAAAAAAAAABKDzwBtXrPreLQm6U4CHLTxDySZH_Pxv3TQY5xD1F9j%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Db7D5WaRTUBNgEbIVZOU8KzkVbpQ%253D",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "열혈하키 한글 패치"
+    },
+    {
+      "url": "/8",
+      "path": "/8",
+      "title": "더블 드래곤 II: 더 리벤지 한글 패치",
+      "date": "2026.07.17",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FD6QgM%2FdJMcagTOYfx%2FAAAAAAAAAAAAAAAAAAAAANtqeG4lnDPz_njhNJE5W2xPGeVUCLUrYxHAzhV1wrqQ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DRFcmZa0sHZVPiqDDxGJcPelcsxk%253D",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "더블 드래곤 2 한글패치"
+    },
+    {
+      "url": "/6",
+      "path": "/6",
+      "title": "열혈고교 피구부 한글 패치",
+      "date": "2026.07.14",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FK10m0%2FdJMcadvRjcL%2FAAAAAAAAAAAAAAAAAAAAABD_dlYGdO_0lk4X60lojSDMIGScNf-P7wMruENa2bjf%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D0%252FMD0JRWaYQvE0YU%252BloxcEWADlg%253D",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "열혈피구 한글패치"
     }
   ],
+  "patchSummary": {
+    "total": 10,
+    "byPlatform": {
+      "gb": 4,
+      "fc": 6
+    },
+    "platforms": [
+      {
+        "code": "gb",
+        "label": "게임보이",
+        "short": "GB",
+        "count": 4
+      },
+      {
+        "code": "fc",
+        "label": "패미컴",
+        "short": "FC",
+        "count": 6
+      }
+    ]
+  },
   "next": [
     {
       "url": "/49",
