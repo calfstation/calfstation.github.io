@@ -289,8 +289,14 @@ def enrich_patch_archive(post: dict) -> dict:
 
         platform = platform_meta_from_raw(declared or "FC / 패미컴")
 
+        # 배포글 생성기가 이미 명시한 대표 커버를 가장 우선합니다.
+        # og:image는 티스토리 대표이미지/비공개 상태에 따라 다른 이미지가 잡힐 수 있어
+        # 아카이브 카드용으로는 data-cover-image가 더 정확합니다.
+        cover_image = clean(block.get("data-cover-image", "")) if block else ""
+        thumbnail = clean(block.get("data-thumbnail", "")) if block else ""
         image_node = soup.select_one('meta[property="og:image"]')
-        image = clean(image_node.get("content", "")) if image_node else ""
+        og_image = clean(image_node.get("content", "")) if image_node else ""
+        image = cover_image or thumbnail or og_image
 
         saved = clean(block.get("data-home-card-title", "")) if block else ""
         result.update({
