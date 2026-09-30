@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-01T05:08:18+09:00",
+  "generatedAt": "2026-10-01T08:47:15+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "BOLFKANG77",
+      "text": "찾는데요?",
+      "link": "/59",
+      "commentId": "comment23988673",
+      "kind": "comment",
+      "time": 1790800800.0
+    },
+    {
       "name": "야호",
       "text": "어릴때 내용 먼지 몰랐는데 알고 하니까 재밌네요 ㅋㅋ 감사합니다",
       "link": "/guestbook",
       "commentId": "",
       "kind": "guestbook",
       "time": 1790769780.0
-    },
-    {
-      "name": "ㅎㅎㅎ",
-      "text": "이런 역사적인 한글화.. 혹시 여력이 되시면 mesen 에뮬로는 드래곤볼⋯",
-      "link": "/37",
-      "commentId": "comment23988009",
-      "kind": "comment",
-      "time": 1790607600.0
     }
   ],
   "patch": [
