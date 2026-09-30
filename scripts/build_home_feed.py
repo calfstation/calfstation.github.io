@@ -144,6 +144,179 @@ def parse_paginated_post_list(
     return posts
 
 
+PLATFORM_META = {
+    "fc": ("패미컴", "FC"),
+    "sfc": ("슈퍼 패미컴", "SFC"),
+    "md": ("메가 드라이브", "MD"),
+    "sms": ("세가 마스터 시스템", "SMS"),
+    "pce": ("PC 엔진", "PCE"),
+    "gg": ("게임 기어", "GG"),
+    "gb": ("게임보이", "GB"),
+    "gbc": ("게임보이 컬러", "GBC"),
+    "gba": ("게임보이 어드밴스", "GBA"),
+    "nds": ("닌텐도 DS", "NDS"),
+    "3ds": ("닌텐도 3DS", "3DS"),
+    "n64": ("닌텐도 64", "N64"),
+    "gc": ("게임큐브", "GC"),
+    "wii": ("Wii", "Wii"),
+    "ps1": ("플레이스테이션", "PS1"),
+    "ps2": ("플레이스테이션 2", "PS2"),
+    "psp": ("PSP", "PSP"),
+    "sat": ("세가 새턴", "SAT"),
+    "dc": ("드림캐스트", "DC"),
+    "ng": ("네오지오", "NG"),
+    "ngp": ("네오지오 포켓", "NGP"),
+    "ngpc": ("네오지오 포켓 컬러", "NGPC"),
+    "ws": ("원더스완", "WS"),
+    "wsc": ("원더스완 컬러", "WSC"),
+}
+
+PLATFORM_ALIASES = {
+    "famicom": "fc",
+    "familycomputer": "fc",
+    "superfamicom": "sfc",
+    "snes": "sfc",
+    "megadrive": "md",
+    "genesis": "md",
+    "mastersystem": "sms",
+    "pcengine": "pce",
+    "gamegear": "gg",
+    "gameboy": "gb",
+    "gameboycolor": "gbc",
+    "gameboyadvance": "gba",
+    "ds": "nds",
+    "nintendods": "nds",
+    "nintendo3ds": "3ds",
+    "nintendo64": "n64",
+    "gamecube": "gc",
+    "playstation": "ps1",
+    "psx": "ps1",
+    "playstation2": "ps2",
+    "segasaturn": "sat",
+    "saturn": "sat",
+    "dreamcast": "dc",
+    "neogeo": "ng",
+    "neogeopocket": "ngp",
+    "neogeopocketcolor": "ngpc",
+    "wonderswan": "ws",
+    "wonderswancolor": "wsc",
+}
+
+
+def platform_meta_from_raw(value: str | None) -> dict:
+    raw = clean(value)
+    if not raw:
+        return {
+            "code": "fc",
+            "label": PLATFORM_META["fc"][0],
+            "short": PLATFORM_META["fc"][1],
+            "raw": "",
+        }
+
+    parts = [clean(v) for v in raw.split("/", 1)]
+    head = parts[0]
+    label_hint = parts[1] if len(parts) > 1 else ""
+
+    compact = re.sub(r"[^a-z0-9]+", "", head.lower())
+    code = PLATFORM_ALIASES.get(compact, compact)
+
+    whole = re.sub(r"[^a-z0-9]+", "", raw.lower())
+    if not re.fullmatch(r"[a-z0-9]{2,8}", code or ""):
+        code = PLATFORM_ALIASES.get(whole, "")
+
+    known_text = raw.lower()
+    if not code:
+        checks = [
+            ("게임보이 컬러", "gbc"),
+            ("게임보이 어드밴스", "gba"),
+            ("게임보이", "gb"),
+            ("슈퍼 패미컴", "sfc"),
+            ("슈퍼패미컴", "sfc"),
+            ("패미컴", "fc"),
+            ("메가 드라이브", "md"),
+            ("메가드라이브", "md"),
+            ("세가 마스터 시스템", "sms"),
+            ("pc 엔진", "pce"),
+            ("pc엔진", "pce"),
+            ("게임 기어", "gg"),
+            ("게임기어", "gg"),
+            ("닌텐도 ds", "nds"),
+            ("닌텐도 3ds", "3ds"),
+            ("닌텐도 64", "n64"),
+            ("게임큐브", "gc"),
+            ("플레이스테이션 2", "ps2"),
+            ("플레이스테이션", "ps1"),
+            ("세가 새턴", "sat"),
+            ("드림캐스트", "dc"),
+        ]
+        for needle, candidate in checks:
+            if needle in known_text:
+                code = candidate
+                break
+
+    if not code or not re.fullmatch(r"[a-z0-9]{2,8}", code):
+        code = "other"
+
+    if code in PLATFORM_META:
+        known_label, known_short = PLATFORM_META[code]
+    else:
+        known_label, known_short = code.upper(), code.upper()
+
+    return {
+        "code": code,
+        "label": label_hint or known_label,
+        "short": head if re.fullmatch(r"[A-Za-z0-9]{2,8}", head) else known_short,
+        "raw": raw,
+    }
+
+
+def enrich_patch_archive(post: dict) -> dict:
+    result = dict(post)
+
+    try:
+        soup = fetch_soup(urljoin(BASE, post["url"]))
+
+        block = soup.select_one(".calf-patch-auto")
+        declared = clean(
+            (
+                block.get("data-platform-code")
+                or block.get("data-platform")
+                or ""
+            )
+            if block
+            else ""
+        )
+
+        platform = platform_meta_from_raw(declared or "FC / 패미컴")
+
+        image_node = soup.select_one('meta[property="og:image"]')
+        image = clean(image_node.get("content", "")) if image_node else ""
+
+        saved = clean(block.get("data-home-card-title", "")) if block else ""
+        result.update({
+            "image": image,
+            "platform": declared,
+            "platformCode": platform["code"],
+            "platformLabel": platform["label"],
+            "platformShort": platform["short"],
+            "displayTitle": saved or post["title"],
+        })
+        return result
+
+    except Exception as exc:
+        print(f"[patch-archive] detail failed {post['url']}: {exc}", file=sys.stderr)
+        platform = platform_meta_from_raw("FC / 패미컴")
+        result.update({
+            "image": "",
+            "platform": "",
+            "platformCode": platform["code"],
+            "platformLabel": platform["label"],
+            "platformShort": platform["short"],
+            "displayTitle": post["title"],
+        })
+        return result
+
+
 def patch_fallback_title(post: dict) -> str:
     return LEGACY_PATCH_SHORT.get(post["path"], post["title"])
 
@@ -546,10 +719,50 @@ def main() -> None:
     daily_soup = fetch_soup(URLS["daily"])
     guest_soup = fetch_soup(URLS["guestbook"])
 
+    # HOME용 최신 3개는 기존 계약 그대로 유지.
     patch_posts = [
         enrich_patch(post)
         for post in parse_post_list(patch_soup, 3)
     ]
+
+    # 한글화 아카이브용 전체 목록은 GitHub Actions에서 미리 완성합니다.
+    patch_archive_source = parse_paginated_post_list(
+        URLS["patch"],
+        limit=100,
+        max_pages=20,
+    )
+
+    patch_archive = [
+        enrich_patch_archive(post)
+        for post in patch_archive_source
+    ]
+
+    patch_counts: dict[str, int] = {}
+    patch_platform_info: dict[str, dict] = {}
+
+    for item in patch_archive:
+        code = clean(item.get("platformCode") or "other")
+        patch_counts[code] = patch_counts.get(code, 0) + 1
+        patch_platform_info.setdefault(
+            code,
+            {
+                "code": code,
+                "label": clean(item.get("platformLabel") or code.upper()),
+                "short": clean(item.get("platformShort") or code.upper()),
+            },
+        )
+
+    patch_summary = {
+        "total": len(patch_archive),
+        "byPlatform": patch_counts,
+        "platforms": [
+            {
+                **patch_platform_info[code],
+                "count": patch_counts[code],
+            }
+            for code in patch_counts
+        ],
+    }
 
     next_source_posts = parse_paginated_post_list(
         URLS["next"],
@@ -604,6 +817,10 @@ def main() -> None:
         "friends": merge_friends(comments, guestbook),
         "patch": patch_posts,
 
+        # 한글화 카테고리 전체 즉시 렌더용.
+        "patchArchive": patch_archive,
+        "patchSummary": patch_summary,
+
         # NEXT 첫 진입에서 사용하는 진행 중 프로젝트만.
         "next": next_active_posts,
 
@@ -628,6 +845,8 @@ def main() -> None:
         "daily": len(feed["daily"]),
         "friends": len(feed["friends"]),
         "patch": len(feed["patch"]),
+        "patchArchive": len(feed["patchArchive"]),
+        "patchPlatforms": feed["patchSummary"]["byPlatform"],
         "next": len(feed["next"]),
         "nextCompleted": len(feed["nextCompleted"]),
         "nextActive": feed["nextSummary"]["active"],
