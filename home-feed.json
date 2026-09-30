@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-30T10:30:48+09:00",
+  "generatedAt": "2026-09-30T11:06:57+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -36,6 +36,14 @@
   ],
   "patch": [
     {
+      "url": "/58",
+      "path": "/58",
+      "title": "푸른 전설 슛! 한국어화&한글 패치",
+      "date": "10:45:44",
+      "subtitle": "푸른 전설 슛! 한국어화&한글 패치",
+      "displayTitle": "GB 푸른 전설 슛! 한글패치"
+    },
+    {
       "url": "/57",
       "path": "/57",
       "title": "열혈! 비치발리볼이다♥ 쿠니오군",
@@ -50,17 +58,21 @@
       "date": "2026.09.29",
       "subtitle": "열혈고교 피구부 ~강적! 투구전사의 권~ 한국어화&한글 패치",
       "displayTitle": "GB 열혈피구 한글패치"
-    },
-    {
-      "url": "/55",
-      "path": "/55",
-      "title": "열혈고교 축구부 월드컵편 한국어화&한글 패치",
-      "date": "2026.09.29",
-      "subtitle": "열혈고교 축구부 월드컵편 한국어화&한글 패치",
-      "displayTitle": "GB 열혈축구 월드컵편 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/58",
+      "path": "/58",
+      "title": "푸른 전설 슛! 한국어화&한글 패치",
+      "date": "10:45:44",
+      "image": "https://calfstation.github.io/screenshots/aoki-densetsu-shoot/cover.png",
+      "platform": "GB / 게임보이",
+      "platformCode": "gb",
+      "platformLabel": "게임보이",
+      "platformShort": "GB",
+      "displayTitle": "GB 푸른 전설 슛! 한글패치"
+    },
     {
       "url": "/57",
       "path": "/57",
@@ -183,9 +195,9 @@
     }
   ],
   "patchSummary": {
-    "total": 10,
+    "total": 11,
     "byPlatform": {
-      "gb": 4,
+      "gb": 5,
       "fc": 6
     },
     "platforms": [
@@ -193,7 +205,7 @@
         "code": "gb",
         "label": "게임보이",
         "short": "GB",
-        "count": 4
+        "count": 5
       },
       {
         "code": "fc",
