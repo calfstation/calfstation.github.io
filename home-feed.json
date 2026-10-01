@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-02T01:36:26+09:00",
+  "generatedAt": "2026-10-02T06:21:47+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "도리도리",
+      "text": "찾는데요?",
+      "link": "/59",
+      "commentId": "comment23989259",
+      "kind": "comment",
+      "time": 1790873220.0
+    },
+    {
       "name": "일개겜돌이",
       "text": "이번에도 감사합니다..! 👍 👍 처음보는 열혈입니다. 왜 몰랐지??",
       "link": "/57",
       "commentId": "comment23988965",
       "kind": "comment",
       "time": 1790847900.0
-    },
-    {
-      "name": "일개겜돌이",
-      "text": "찾는데요?",
-      "link": "/59",
-      "commentId": "comment23988788",
-      "kind": "comment",
-      "time": 1790821620.0
     }
   ],
   "patch": [
