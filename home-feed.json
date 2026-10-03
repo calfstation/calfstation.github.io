@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-04T04:25:46+09:00",
+  "generatedAt": "2026-10-04T07:22:49+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -243,19 +243,6 @@
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FclZjfm%2FdJMcablxUD0%2FAAAAAAAAAAAAAAAAAAAAABI_OkKiV61yr43YQPSzka42KBNZaqUuj127-6gpISkC%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DuhZ6o80O9Kv8RvFKIoJRGaZ09y8%253D"
     },
     {
-      "url": "/46",
-      "path": "/46",
-      "title": "베어 너클 II: 사투로의 진혼가",
-      "date": "2026.09.20",
-      "analysis": 100,
-      "translation": 100,
-      "review": 0,
-      "average": 67,
-      "platform": "md",
-      "test": "pending",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJFtFX%2FdJMcacdyW4y%2FAAAAAAAAAAAAAAAAAAAAAPL5jQEgNWCLjy2PVxBzAGyphok2mx-iQBLu0cdTERaI%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DSnxBd7tpL%252FnwjGPIaiUxGg5VDoY%253D"
-    },
-    {
       "url": "/14",
       "path": "/14",
       "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
@@ -282,6 +269,19 @@
       "platform": "gb",
       "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk6Yif%2FdJMcabMM3QI%2FAAAAAAAAAAAAAAAAAAAAAGwR78o8CN3wwL7kFr0IYK55cQ1ulmtbumTfCLjvZj1z%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxhcXQzyTFh%252B1sGfNjPdOTUxICA8%253D"
+    },
+    {
+      "url": "/46",
+      "path": "/46",
+      "title": "베어 너클 II: 사투로의 진혼가",
+      "date": "2026.09.20",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "md",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FJFtFX%2FdJMcacdyW4y%2FAAAAAAAAAAAAAAAAAAAAAPL5jQEgNWCLjy2PVxBzAGyphok2mx-iQBLu0cdTERaI%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DSnxBd7tpL%252FnwjGPIaiUxGg5VDoY%253D"
     },
     {
       "url": "/45",
@@ -389,8 +389,8 @@
     }
   ],
   "nextSummary": {
-    "active": 4,
-    "complete": 9,
+    "active": 3,
+    "complete": 10,
     "total": 13
   },
   "history": [
