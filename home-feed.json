@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-03T10:27:01+09:00",
+  "generatedAt": "2026-10-03T16:01:37+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -23,7 +23,7 @@
       "link": "/59",
       "commentId": "comment23989531",
       "kind": "comment",
-      "time": 1790917380.0
+      "time": 1790866800.0
     },
     {
       "name": "도리도리",
