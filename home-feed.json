@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-05T11:21:15+09:00",
+  "generatedAt": "2026-10-05T18:17:14+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "알프",
+      "text": "3천원 밖에 안 해서 미안해요 ㅜㅜ 잘 받고 있습니다",
+      "link": "/61",
+      "commentId": "comment23990858",
+      "kind": "comment",
+      "time": 1791181440.0
+    },
+    {
       "name": "네로황제",
       "text": "드디오 올것이 왔도다!^^",
       "link": "/61",
       "commentId": "comment23990622",
       "kind": "comment",
       "time": 1791140760.0
-    },
-    {
-      "name": "찾는데요?",
-      "text": "찾는데요?",
-      "link": "/59",
-      "commentId": "comment23989531",
-      "kind": "comment",
-      "time": 1790866800.0
     }
   ],
   "patch": [
