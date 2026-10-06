@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-06T15:35:19+09:00",
+  "generatedAt": "2026-10-06T22:03:28+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -38,17 +38,17 @@
     {
       "url": "/61",
       "path": "/61",
-      "title": "베어너클 II: 사투로의 진혼가 한글화",
+      "title": "베어너클 II: 사투로의 진혼가",
       "date": "2026.10.05",
-      "subtitle": "베어너클 II: 사투로의 진혼가 한글화",
+      "subtitle": "베어너클 II: 사투로의 진혼가",
       "displayTitle": "베어너클 2 한글패치"
     },
     {
       "url": "/58",
       "path": "/58",
-      "title": "푸른 전설 슛! 한국어화&한글 패치",
+      "title": "푸른 전설 슛!",
       "date": "2026.09.30",
-      "subtitle": "푸른 전설 슛! 한국어화&한글 패치",
+      "subtitle": "푸른 전설 슛!",
       "displayTitle": "GB 푸른 전설 슛! 한글패치"
     },
     {
@@ -64,7 +64,7 @@
     {
       "url": "/61",
       "path": "/61",
-      "title": "베어너클 II: 사투로의 진혼가 한글화",
+      "title": "베어너클 II: 사투로의 진혼가",
       "date": "2026.10.05",
       "image": "https://calfstation.github.io/screenshots/bare-knuckle-ii-shitou-heno-chingonka-streets-of-rage-ii/cover.png",
       "platform": "MD / 메가 드라이브",
@@ -76,7 +76,7 @@
     {
       "url": "/58",
       "path": "/58",
-      "title": "푸른 전설 슛! 한국어화&한글 패치",
+      "title": "푸른 전설 슛!",
       "date": "2026.09.30",
       "image": "https://calfstation.github.io/screenshots/aoki-densetsu-shoot/cover.png",
       "platform": "GB / 게임보이",
@@ -100,7 +100,7 @@
     {
       "url": "/56",
       "path": "/56",
-      "title": "열혈고교 피구부 ~강적! 투구전사의 권~ 한국어화&한글 패치",
+      "title": "열혈고교 피구부 ~강적! 투구전사의 권~",
       "date": "2026.09.29",
       "image": "https://calfstation.github.io/screenshots/nekketsu-koukou-dodge-ball-bu/cover.png",
       "platform": "GB / 게임보이",
@@ -112,7 +112,7 @@
     {
       "url": "/55",
       "path": "/55",
-      "title": "열혈고교 축구부 월드컵편 한국어화&한글 패치",
+      "title": "열혈고교 축구부 월드컵편",
       "date": "2026.09.29",
       "image": "https://calfstation.github.io/screenshots/nekketsu-koukou-soccer-bu-world-cup-hen/cover.png",
       "platform": "GB / 게임보이",
@@ -124,7 +124,7 @@
     {
       "url": "/54",
       "path": "/54",
-      "title": "열혈경파 쿠니오군 번외난투편 한국어화&한글 패치",
+      "title": "열혈경파 쿠니오군 번외난투편",
       "date": "2026.09.29",
       "image": "https://calfstation.github.io/screenshots/nekketsu-kouha-kunio-kun-bangai-rantou-hen/cover.png",
       "platform": "GB / 게임보이",
@@ -136,7 +136,7 @@
     {
       "url": "/40",
       "path": "/40",
-      "title": "다운타운 열혈물어 한국어화&한글 패치",
+      "title": "다운타운 열혈물어",
       "date": "2026.09.16",
       "image": "https://calfstation.github.io/screenshots/downtown-nekketsu-monogatari/cover.png",
       "platform": "FC / 패미컴",
@@ -148,7 +148,7 @@
     {
       "url": "/39",
       "path": "/39",
-      "title": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합! 한국어화&한글 패치",
+      "title": "다운타운 스페셜♥ 쿠니오군의 시대극이다 전원집합!",
       "date": "2026.09.16",
       "image": "https://calfstation.github.io/screenshots/downtown-special-kunio-kun-no-jidaigeki-da-yo-zenin-shuugou/cover.png",
       "platform": "FC / 패미컴",
@@ -160,7 +160,7 @@
     {
       "url": "/20",
       "path": "/20",
-      "title": "쿠니오군의 열혈축구리그 한국어화&한글 패치",
+      "title": "쿠니오군의 열혈축구리그",
       "date": "2026.08.08",
       "image": "https://calfstation.github.io/screenshots/kunio-kun-no-nekketsu-soccer-league/cover.png",
       "platform": "FC / 패미컴",
@@ -172,7 +172,7 @@
     {
       "url": "/17",
       "path": "/17",
-      "title": "가라가라! 열혈하키부 미끄러지고 넘어지고 대난투 한국어화&한글 패치",
+      "title": "가라가라! 열혈하키부 미끄러지고 넘어지고 대난투",
       "date": "2026.07.29",
       "image": "https://calfstation.github.io/screenshots/ike-ike-nekketsu-hockey-bu-subette-koronde-dairantou/cover.png",
       "platform": "FC / 패미컴",
@@ -184,7 +184,7 @@
     {
       "url": "/8",
       "path": "/8",
-      "title": "더블 드래곤 II: 더 리벤지 한글 패치",
+      "title": "더블 드래곤 II: 더 리벤지",
       "date": "2026.07.17",
       "image": "https://calfstation.github.io/screenshots/double-dragon-ii-the-revenge/cover.png",
       "platform": "FC / 패미컴",
@@ -196,7 +196,7 @@
     {
       "url": "/6",
       "path": "/6",
-      "title": "열혈고교 피구부 한글 패치",
+      "title": "열혈고교 피구부",
       "date": "2026.07.14",
       "image": "https://calfstation.github.io/screenshots/nekketsu-koukou-dodgeball-bu/cover.png",
       "platform": "FC / 패미컴",
