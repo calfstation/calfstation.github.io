@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-06T09:20:19+09:00",
+  "generatedAt": "2026-10-06T12:08:18+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -236,6 +236,19 @@
   },
   "next": [
     {
+      "url": "/63",
+      "path": "/63",
+      "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
+      "date": "11:53:47",
+      "analysis": 100,
+      "translation": 100,
+      "review": 90,
+      "average": 97,
+      "platform": "fc",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxUB30%2FdJMcaaty6s0%2FAAAAAAAAAAAAAAAAAAAAAEO0aGKq99oPIcsIG1mRA2kiM-0sia4ykymsF8fY1IVh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DF9LGy9EuYM160NCHek19EzhwJsw%253D"
+    },
+    {
       "url": "/49",
       "path": "/49",
       "title": "열혈격투전설",
@@ -408,9 +421,9 @@
     }
   ],
   "nextSummary": {
-    "active": 3,
+    "active": 4,
     "complete": 10,
-    "total": 13
+    "total": 14
   },
   "history": [
     {
