@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-08T16:16:43+09:00",
+  "generatedAt": "2026-10-08T23:33:38+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -236,32 +236,6 @@
   },
   "next": [
     {
-      "url": "/63",
-      "path": "/63",
-      "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
-      "date": "2026.10.06",
-      "analysis": 100,
-      "translation": 100,
-      "review": 90,
-      "average": 97,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxUB30%2FdJMcaaty6s0%2FAAAAAAAAAAAAAAAAAAAAAEO0aGKq99oPIcsIG1mRA2kiM-0sia4ykymsF8fY1IVh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DF9LGy9EuYM160NCHek19EzhwJsw%253D"
-    },
-    {
-      "url": "/49",
-      "path": "/49",
-      "title": "열혈격투전설",
-      "date": "2026.09.23",
-      "analysis": 100,
-      "translation": 100,
-      "review": 70,
-      "average": 90,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbE0Vm4%2FdJMcagmK392%2FAAAAAAAAAAAAAAAAAAAAAKWVK1fI2OsB7DYSzoxbrnibEDeNLmj_4-WpYZh9kq4J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DQXQR1x2GB7X9k%252FQ2v1EtBBAgW84%253D"
-    },
-    {
       "url": "/47",
       "path": "/47",
       "title": "초대 열혈경파 쿠니오군",
@@ -290,6 +264,19 @@
   ],
   "nextCompleted": [
     {
+      "url": "/63",
+      "path": "/63",
+      "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
+      "date": "2026.10.06",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcxUB30%2FdJMcaaty6s0%2FAAAAAAAAAAAAAAAAAAAAAEO0aGKq99oPIcsIG1mRA2kiM-0sia4ykymsF8fY1IVh%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DF9LGy9EuYM160NCHek19EzhwJsw%253D"
+    },
+    {
       "url": "/53",
       "path": "/53",
       "title": "푸른 전설 슛!",
@@ -301,6 +288,19 @@
       "platform": "gb",
       "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fk6Yif%2FdJMcabMM3QI%2FAAAAAAAAAAAAAAAAAAAAAGwR78o8CN3wwL7kFr0IYK55cQ1ulmtbumTfCLjvZj1z%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DxhcXQzyTFh%252B1sGfNjPdOTUxICA8%253D"
+    },
+    {
+      "url": "/49",
+      "path": "/49",
+      "title": "열혈격투전설",
+      "date": "2026.09.23",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbE0Vm4%2FdJMcagmK392%2FAAAAAAAAAAAAAAAAAAAAAKWVK1fI2OsB7DYSzoxbrnibEDeNLmj_4-WpYZh9kq4J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DQXQR1x2GB7X9k%252FQ2v1EtBBAgW84%253D"
     },
     {
       "url": "/46",
@@ -421,8 +421,8 @@
     }
   ],
   "nextSummary": {
-    "active": 4,
-    "complete": 10,
+    "active": 2,
+    "complete": 12,
     "total": 14
   },
   "history": [
