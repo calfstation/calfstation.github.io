@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T09:23:57+09:00",
+  "generatedAt": "2026-10-09T15:35:02+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,18 +18,18 @@
   ],
   "friends": [
     {
+      "name": "일개겜돌이",
+      "text": "버그 글이 없네요..ㅋ 버전업이 없고 안전성 쩌는 꽃송아지님의 한글화. 이것이 현직 개발자의 빠워?",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1791512160.0
+    },
+    {
       "name": "알프",
       "text": "3천원 밖에 안 해서 미안해요 ㅜㅜ 잘 받고 있습니다",
       "link": "/61",
       "commentId": "comment23990858",
-      "kind": "comment",
-      "time": 1791126000.0
-    },
-    {
-      "name": "네로황제",
-      "text": "드디오 올것이 왔도다!^^",
-      "link": "/61",
-      "commentId": "comment23990622",
       "kind": "comment",
       "time": 1791126000.0
     }
