@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-10T02:22:48+09:00",
+  "generatedAt": "2026-10-10T02:57:12+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -26,12 +26,12 @@
       "time": 1791556320.0
     },
     {
-      "name": "리키",
-      "text": "에뮬 문제인지 잘 모르겠어요 레트로아크 Mesen 코어를 쓰고 있습니다⋯",
-      "link": "/65",
-      "commentId": "comment23993891",
-      "kind": "comment",
-      "time": 1791555420.0
+      "name": "뺘요",
+      "text": "지난번에 한글화 포기햇엇는데 너무 어렵네요 ㅜㅜ 어릴때 벅스버니 생일잔치,지아이조 어 리얼 아메리칸 히어로,캡콤 바르셀로나 올림픽 잼잇게햇거든요 한패 가능하러는지 궁금합니다",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1791555120.0
     }
   ],
   "patch": [
