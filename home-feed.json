@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T22:47:02+09:00",
+  "generatedAt": "2026-10-10T02:22:48+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -19,19 +19,19 @@
   "friends": [
     {
       "name": "리키",
-      "text": "꽃송아지님 감사합니다. 엔딩까지 보고 너무 재밌게 했습니다. 근데 동료 ⋯",
+      "text": "녹화해봤습니다.https://youtu.be/kbX-Y4C298A 항⋯",
       "link": "/65",
-      "commentId": "comment23993871",
+      "commentId": "comment23993899",
       "kind": "comment",
-      "time": 1791553020.0
+      "time": 1791556320.0
     },
     {
-      "name": "게이머",
-      "text": "아.. 보니까 다른 롬을 넣었다가 패치가 안될 때 새로고침을 해야는데 그냥 다른 롬을 넣어서 인식이 안되었던 거네요 것도 모르고 롬 찾아 삼만리를 했으니 ㅋㅋ 암튼 이렇게 고품질의 한글패치로 옛추억을 살려주셔서 다시 한 번 감사드립니다 ㅎㅎ",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1791542760.0
+      "name": "리키",
+      "text": "에뮬 문제인지 잘 모르겠어요 레트로아크 Mesen 코어를 쓰고 있습니다⋯",
+      "link": "/65",
+      "commentId": "comment23993891",
+      "kind": "comment",
+      "time": 1791555420.0
     }
   ],
   "patch": [
@@ -39,7 +39,7 @@
       "url": "/66",
       "path": "/66",
       "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
-      "date": "16:49:10",
+      "date": "2026.10.09",
       "subtitle": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
       "displayTitle": "열혈농구 한글패치"
     },
@@ -47,7 +47,7 @@
       "url": "/65",
       "path": "/65",
       "title": "열혈격투전설",
-      "date": "16:49:07",
+      "date": "2026.10.09",
       "subtitle": "열혈격투전설",
       "displayTitle": "열혈격투전설 한글패치"
     },
@@ -65,7 +65,7 @@
       "url": "/66",
       "path": "/66",
       "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
-      "date": "16:49:10",
+      "date": "2026.10.09",
       "image": "https://calfstation.github.io/screenshots/nekketsu-street-basket-ganbare-dunk-heroes/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -77,7 +77,7 @@
       "url": "/65",
       "path": "/65",
       "title": "열혈격투전설",
-      "date": "16:49:07",
+      "date": "2026.10.09",
       "image": "https://calfstation.github.io/screenshots/nekketsu-kakutou-densetsu/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -259,6 +259,19 @@
     ]
   },
   "next": [
+    {
+      "url": "/68",
+      "path": "/68",
+      "title": "흑의검",
+      "date": "02:06:29",
+      "analysis": 100,
+      "translation": 40,
+      "review": 10,
+      "average": 50,
+      "platform": "ps1",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFXdoG%2FdJMcajcUw2E%2FAAAAAAAAAAAAAAAAAAAAABrSUMtgeojKfEv0ZarwjyP9TSzsu9QKUfB5u7FmpjH6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DOGiV6uTsOQVQdZKFBy%252BN5RexUyY%253D"
+    },
     {
       "url": "/47",
       "path": "/47",
@@ -445,11 +458,19 @@
     }
   ],
   "nextSummary": {
-    "active": 2,
+    "active": 3,
     "complete": 12,
-    "total": 14
+    "total": 15
   },
   "history": [
+    {
+      "url": "/67",
+      "path": "/67",
+      "title": "패미컴 열혈시리즈 아디오스! 초대 열혈경파 쿠니오군 검수 일지 PAGE1",
+      "date": "2026.10.09",
+      "displayTitle": "패미컴 열혈시리즈 아디오스! 초대 열혈경파 쿠니오군 검수 일지 PAGE1",
+      "subtitle": "패미컴 열혈시리즈 아디오스! 초대 열혈경파 쿠니오군 검수 일지 한글화 작업기 1"
+    },
     {
       "url": "/60",
       "path": "/60",
@@ -465,14 +486,6 @@
       "date": "2026.09.30",
       "displayTitle": "푸른 전설 슛! (END) 과 잡설",
       "subtitle": "푸른 전설 슛! 과 잡설 한글화 작업기"
-    },
-    {
-      "url": "/51",
-      "path": "/51",
-      "title": "GB 열혈 시리즈 작업완료 (END)",
-      "date": "2026.09.28",
-      "displayTitle": "GB 열혈 시리즈 작업완료 (END)",
-      "subtitle": "GB 열혈 시리즈 작업완료 한글화 작업기"
     }
   ]
 }
