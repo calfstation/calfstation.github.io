@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T15:35:02+09:00",
+  "generatedAt": "2026-10-09T16:59:48+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -36,31 +36,55 @@
   ],
   "patch": [
     {
+      "url": "/66",
+      "path": "/66",
+      "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
+      "date": "16:49:10",
+      "subtitle": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
+      "displayTitle": "열혈농구 한글패치"
+    },
+    {
+      "url": "/65",
+      "path": "/65",
+      "title": "열혈격투전설",
+      "date": "16:49:07",
+      "subtitle": "열혈격투전설",
+      "displayTitle": "열혈격투전설 한글패치"
+    },
+    {
       "url": "/61",
       "path": "/61",
       "title": "베어너클 II: 사투로의 진혼가",
       "date": "2026.10.05",
       "subtitle": "베어너클 II: 사투로의 진혼가",
       "displayTitle": "베어너클 2 한글패치"
-    },
-    {
-      "url": "/58",
-      "path": "/58",
-      "title": "푸른 전설 슛!",
-      "date": "2026.09.30",
-      "subtitle": "푸른 전설 슛!",
-      "displayTitle": "GB 푸른 전설 슛! 한글패치"
-    },
-    {
-      "url": "/57",
-      "path": "/57",
-      "title": "열혈! 비치발리볼이다♥ 쿠니오군",
-      "date": "2026.09.29",
-      "subtitle": "열혈! 비치발리볼이다♥ 쿠니오군",
-      "displayTitle": "GB 열혈비치발리볼 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/66",
+      "path": "/66",
+      "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
+      "date": "16:49:10",
+      "image": "https://calfstation.github.io/screenshots/nekketsu-street-basket-ganbare-dunk-heroes/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "열혈농구 한글패치"
+    },
+    {
+      "url": "/65",
+      "path": "/65",
+      "title": "열혈격투전설",
+      "date": "16:49:07",
+      "image": "https://calfstation.github.io/screenshots/nekketsu-kakutou-densetsu/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "열혈격투전설 한글패치"
+    },
     {
       "url": "/61",
       "path": "/61",
@@ -207,13 +231,19 @@
     }
   ],
   "patchSummary": {
-    "total": 12,
+    "total": 14,
     "byPlatform": {
+      "fc": 8,
       "md": 1,
-      "gb": 5,
-      "fc": 6
+      "gb": 5
     },
     "platforms": [
+      {
+        "code": "fc",
+        "label": "패미컴",
+        "short": "FC",
+        "count": 8
+      },
       {
         "code": "md",
         "label": "메가 드라이브",
@@ -225,12 +255,6 @@
         "label": "게임보이",
         "short": "GB",
         "count": 5
-      },
-      {
-        "code": "fc",
-        "label": "패미컴",
-        "short": "FC",
-        "count": 6
       }
     ]
   },
