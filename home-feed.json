@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-10T22:33:39+09:00",
+  "generatedAt": "2026-10-10T22:36:04+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -262,7 +262,7 @@
     {
       "url": "/70",
       "path": "/70",
-      "title": "흑의검",
+      "title": "칩과 데일의 대작전 2",
       "date": "22:32:27",
       "analysis": 100,
       "translation": 70,
