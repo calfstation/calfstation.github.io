@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-10T17:53:25+09:00",
+  "generatedAt": "2026-10-10T22:33:39+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -260,6 +260,32 @@
   },
   "next": [
     {
+      "url": "/70",
+      "path": "/70",
+      "title": "흑의검",
+      "date": "22:32:27",
+      "analysis": 100,
+      "translation": 70,
+      "review": 0,
+      "average": 57,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqZCBb%2FdJMcah7ptul%2FAAAAAAAAAAAAAAAAAAAAAK3h-Rech3qkfkSRYpwLqml5iPTQNt__sV6eeNPdKAbx%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DEAWFvDRo1CdMIl%252FVbbpHS1kEkjY%253D"
+    },
+    {
+      "url": "/69",
+      "path": "/69",
+      "title": "가면 라이더 SD: 그랑쇼커의 야망",
+      "date": "19:06:57",
+      "analysis": 100,
+      "translation": 30,
+      "review": 0,
+      "average": 43,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D0Dy0q9ggU%252B5Fw%252BCdbqpX5Itgy8Y%253D"
+    },
+    {
       "url": "/68",
       "path": "/68",
       "title": "흑의검",
@@ -458,9 +484,9 @@
     }
   ],
   "nextSummary": {
-    "active": 3,
+    "active": 5,
     "complete": 12,
-    "total": 15
+    "total": 17
   },
   "history": [
     {
