@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-10T22:36:04+09:00",
+  "generatedAt": "2026-10-10T23:58:14+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -23,7 +23,7 @@
       "link": "/65",
       "commentId": "comment23993899",
       "kind": "comment",
-      "time": 1791556320.0
+      "time": 1791642720.0
     },
     {
       "name": "뺘요",
