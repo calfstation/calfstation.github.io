@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-11T23:13:17+09:00",
+  "generatedAt": "2026-10-12T03:57:59+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/71",
       "path": "/71",
       "title": "새 프로젝트 진행 중",
-      "date": "02:27:57"
+      "date": "2026.10.11"
     },
     {
       "url": "/64",
@@ -263,7 +263,7 @@
       "url": "/72",
       "path": "/72",
       "title": "싸움대장 2",
-      "date": "03:36:24",
+      "date": "2026.10.11",
       "analysis": 100,
       "translation": 30,
       "review": 0,
