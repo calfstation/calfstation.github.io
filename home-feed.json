@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-12T17:13:47+09:00",
+  "generatedAt": "2026-10-13T02:27:25+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -260,6 +260,19 @@
   },
   "next": [
     {
+      "url": "/73",
+      "path": "/73",
+      "title": "G.I. Joe: 어 리얼 아메리칸 히어로",
+      "date": "02:23:43",
+      "analysis": 100,
+      "translation": 100,
+      "review": 70,
+      "average": 90,
+      "platform": "fc",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FS4Cv2%2FdJMcag1uLMW%2FAAAAAAAAAAAAAAAAAAAAABfBX8fSMfXWKHf1P2PvVgn4ZP91bQXnSr2SG-8Tcj9_%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252ButihWlJ2hqbZh8xJUigTZNEhiE%253D"
+    },
+    {
       "url": "/72",
       "path": "/72",
       "title": "싸움대장 2",
@@ -278,11 +291,11 @@
       "title": "칩과 데일의 대작전 2",
       "date": "2026.10.10",
       "analysis": 100,
-      "translation": 70,
-      "review": 0,
-      "average": 57,
+      "translation": 100,
+      "review": 60,
+      "average": 87,
       "platform": "fc",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqZCBb%2FdJMcah7ptul%2FAAAAAAAAAAAAAAAAAAAAAK3h-Rech3qkfkSRYpwLqml5iPTQNt__sV6eeNPdKAbx%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DEAWFvDRo1CdMIl%252FVbbpHS1kEkjY%253D"
     },
     {
@@ -304,11 +317,11 @@
       "title": "흑의검",
       "date": "2026.10.10",
       "analysis": 100,
-      "translation": 40,
-      "review": 10,
-      "average": 50,
+      "translation": 97,
+      "review": 40,
+      "average": 79,
       "platform": "ps1",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFXdoG%2FdJMcajcUw2E%2FAAAAAAAAAAAAAAAAAAAAABrSUMtgeojKfEv0ZarwjyP9TSzsu9QKUfB5u7FmpjH6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DOGiV6uTsOQVQdZKFBy%252BN5RexUyY%253D"
     },
     {
@@ -497,9 +510,9 @@
     }
   ],
   "nextSummary": {
-    "active": 6,
+    "active": 7,
     "complete": 12,
-    "total": 18
+    "total": 19
   },
   "history": [
     {
