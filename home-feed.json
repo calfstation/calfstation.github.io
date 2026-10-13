@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-13T23:58:19+09:00",
+  "generatedAt": "2026-10-14T03:32:31+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -36,31 +36,55 @@
   ],
   "patch": [
     {
+      "url": "/76",
+      "path": "/76",
+      "title": "칩과 데일의 대작전 2",
+      "date": "03:17:13",
+      "subtitle": "칩과 데일의 대작전 2",
+      "displayTitle": "다람쥐 구조대 2 한글패치"
+    },
+    {
+      "url": "/75",
+      "path": "/75",
+      "title": "지.아이.조: 어 리얼 아메리칸 히어로",
+      "date": "03:16:35",
+      "subtitle": "지.아이.조: 어 리얼 아메리칸 히어로",
+      "displayTitle": "지.아이.조 한글패치"
+    },
+    {
       "url": "/66",
       "path": "/66",
       "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
       "date": "2026.10.09",
       "subtitle": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
       "displayTitle": "열혈농구 한글패치"
-    },
-    {
-      "url": "/65",
-      "path": "/65",
-      "title": "열혈격투전설",
-      "date": "2026.10.09",
-      "subtitle": "열혈격투전설",
-      "displayTitle": "열혈격투전설 한글패치"
-    },
-    {
-      "url": "/61",
-      "path": "/61",
-      "title": "베어너클 II: 사투로의 진혼가",
-      "date": "2026.10.05",
-      "subtitle": "베어너클 II: 사투로의 진혼가",
-      "displayTitle": "베어너클 2 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/76",
+      "path": "/76",
+      "title": "칩과 데일의 대작전 2",
+      "date": "03:17:13",
+      "image": "https://calfstation.github.io/screenshots/chip-to-dale-no-dai-sakusen-2/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "다람쥐 구조대 2 한글패치"
+    },
+    {
+      "url": "/75",
+      "path": "/75",
+      "title": "지.아이.조: 어 리얼 아메리칸 히어로",
+      "date": "03:16:35",
+      "image": "https://calfstation.github.io/screenshots/g-i-joe-a-real-american-hero/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "지.아이.조 한글패치"
+    },
     {
       "url": "/66",
       "path": "/66",
@@ -231,9 +255,9 @@
     }
   ],
   "patchSummary": {
-    "total": 14,
+    "total": 16,
     "byPlatform": {
-      "fc": 8,
+      "fc": 10,
       "md": 1,
       "gb": 5
     },
@@ -242,7 +266,7 @@
         "code": "fc",
         "label": "패미컴",
         "short": "FC",
-        "count": 8
+        "count": 10
       },
       {
         "code": "md",
@@ -260,19 +284,6 @@
   },
   "next": [
     {
-      "url": "/73",
-      "path": "/73",
-      "title": "G.I. Joe: 어 리얼 아메리칸 히어로",
-      "date": "02:23:43",
-      "analysis": 100,
-      "translation": 100,
-      "review": 70,
-      "average": 90,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FS4Cv2%2FdJMcag1uLMW%2FAAAAAAAAAAAAAAAAAAAAABfBX8fSMfXWKHf1P2PvVgn4ZP91bQXnSr2SG-8Tcj9_%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252ButihWlJ2hqbZh8xJUigTZNEhiE%253D"
-    },
-    {
       "url": "/72",
       "path": "/72",
       "title": "싸움대장 2",
@@ -284,19 +295,6 @@
       "platform": "ps2",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FldPXH%2FdJMcacdN7EI%2FAAAAAAAAAAAAAAAAAAAAALkxpUh_GE41gFxmid6gKNAfefQrIx5p2V3b469NcaQJ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DM6mwsUe8tkyH%252BhHeVDfCjOl%252FeJY%253D"
-    },
-    {
-      "url": "/70",
-      "path": "/70",
-      "title": "칩과 데일의 대작전 2",
-      "date": "2026.10.10",
-      "analysis": 100,
-      "translation": 100,
-      "review": 60,
-      "average": 87,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqZCBb%2FdJMcah7ptul%2FAAAAAAAAAAAAAAAAAAAAAK3h-Rech3qkfkSRYpwLqml5iPTQNt__sV6eeNPdKAbx%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DEAWFvDRo1CdMIl%252FVbbpHS1kEkjY%253D"
     },
     {
       "url": "/69",
@@ -352,6 +350,32 @@
     }
   ],
   "nextCompleted": [
+    {
+      "url": "/73",
+      "path": "/73",
+      "title": "G.I. Joe: 어 리얼 아메리칸 히어로",
+      "date": "2026.10.13",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FS4Cv2%2FdJMcag1uLMW%2FAAAAAAAAAAAAAAAAAAAAABfBX8fSMfXWKHf1P2PvVgn4ZP91bQXnSr2SG-8Tcj9_%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252ButihWlJ2hqbZh8xJUigTZNEhiE%253D"
+    },
+    {
+      "url": "/70",
+      "path": "/70",
+      "title": "칩과 데일의 대작전 2",
+      "date": "2026.10.10",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqZCBb%2FdJMcah7ptul%2FAAAAAAAAAAAAAAAAAAAAAK3h-Rech3qkfkSRYpwLqml5iPTQNt__sV6eeNPdKAbx%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DEAWFvDRo1CdMIl%252FVbbpHS1kEkjY%253D"
+    },
     {
       "url": "/63",
       "path": "/63",
@@ -510,8 +534,8 @@
     }
   ],
   "nextSummary": {
-    "active": 7,
-    "complete": 12,
+    "active": 5,
+    "complete": 14,
     "total": 19
   },
   "history": [
@@ -519,7 +543,7 @@
       "url": "/74",
       "path": "/74",
       "title": "지.아이.조: 진정한 Me Cook의 영웅 PAGE1 (END)",
-      "date": "22:57:32",
+      "date": "2026.10.13",
       "displayTitle": "지.아이.조: 진정한 Me Cook의 영웅 PAGE1 (END)",
       "subtitle": "지.아이.조: 진정한 Me Cook의 영웅 한글화 작업기 1"
     },
