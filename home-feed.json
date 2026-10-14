@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-14T18:45:31+09:00",
+  "generatedAt": "2026-10-14T23:43:39+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
-      "name": "일개겜돌이",
-      "text": "이게 한글화가안됐었군요. 즐겁게 할게요 감사함다 ㅋㅋㅋ",
-      "link": "/76",
-      "commentId": "comment23996842",
+      "name": "힉",
+      "text": "잘됩니다. 감사합니다. ^^",
+      "link": "/66",
+      "commentId": "comment23997198",
       "kind": "comment",
-      "time": 1791932340.0
+      "time": 1791976080.0
     },
     {
-      "name": "일개겜돌이",
-      "text": "님아 패치하기를 누르거나 롬을 잘못 넣었으면 새로고침을 해야죠 ㅡㅡ;",
-      "link": "/76",
-      "commentId": "comment23996841",
-      "kind": "comment",
-      "time": 1791932280.0
+      "name": "뺘요",
+      "text": "여기는 게임요청 드러도될까요? 몇가지게임있는데... 벅스버니-생일잔치,고인돌가족 플린스톤-디노 와 호피,재키찬 액션 쿵푸,공룡전대 쥬레인저,정글북,롤러게임즈,미키마우스-이상한 나라의 대모험,미키 의 편지나라 속 사파리 엣날에 게임은 기억이나요",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1791973200.0
     }
   ],
   "patch": [
