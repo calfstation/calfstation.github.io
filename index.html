@@ -18,7 +18,13 @@
     .info{display:grid;grid-template-columns:140px minmax(0,1fr);margin:18px 0;border:2px solid var(--line);background:#fff;min-width:0}.info dt,.info dd{margin:0;padding:10px 12px;border-bottom:1px solid var(--line);min-width:0}.info dt{font-weight:700;background:#fff3c9}.info dd{overflow-wrap:anywhere;word-break:break-all;white-space:normal}.info dt:last-of-type,.info dd:last-of-type{border-bottom:0}.info dd[id^="requiredSha"]{font-family:ui-monospace,Consolas,monospace;font-size:12px;line-height:1.5}
     .status{margin:14px 0;padding:11px 13px;background:#fff;border:2px solid var(--line)}.status[hidden]{display:none!important}.status.ok{color:var(--ok);border-color:#8fc59f}.status.bad{color:var(--bad);border-color:#e2a1a4}.status.warn{color:#8b6410;border-color:#d8bf6b}
     .patcher{margin-top:18px;padding:20px;background:#fff;border:3px solid var(--line)}.field{margin:0 0 14px}.field label{display:block;margin-bottom:6px;font-weight:700}.file-box{position:relative;display:flex;align-items:center;justify-content:center;min-height:96px;padding:15px;border:3px dashed #d1b97c;background:#fffaf0;text-align:center;cursor:pointer}.file-box.drag{background:#fff0bf;border-color:var(--red)}.file-box input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
-    .hashes{display:grid;grid-template-columns:105px minmax(0,1fr);margin:16px 0;border-top:1px solid var(--line);min-width:0}.hashes dt,.hashes dd{margin:0;padding:8px 9px;border-bottom:1px solid var(--line);min-width:0}.hashes dt{font-weight:700}.hashes dd{font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;word-break:break-all;white-space:normal}.actions{text-align:center;margin-top:18px}.apply{min-width:150px;padding:11px 18px;color:#fff;background:var(--red);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 var(--red-dark);font-weight:800;cursor:pointer}.apply:disabled{opacity:.42;cursor:not-allowed}.apply:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--red-dark)}
+    .hashes{display:grid;grid-template-columns:105px minmax(0,1fr);margin:16px 0;border-top:1px solid var(--line);min-width:0}.hashes dt,.hashes dd{margin:0;padding:8px 9px;border-bottom:1px solid var(--line);min-width:0}.hashes dt{font-weight:700}.hashes dd{font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;word-break:break-all;white-space:normal}.actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:11px;text-align:center;margin-top:18px}.apply{min-width:150px;padding:11px 18px;color:#fff;background:var(--red);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 var(--red-dark);font-weight:800;cursor:pointer}.apply:disabled{opacity:.42;cursor:not-allowed}.apply:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--red-dark)}
+    /* PERF3M: 기존 .apply는 그대로. 초기화 버튼 전용 스타일 */
+    .patch-reset{min-width:150px;min-height:50px;padding:11px 16px;color:var(--red-dark);background:linear-gradient(#fff9e7,#f2dda0);border:3px solid var(--gold);border-radius:7px;box-shadow:0 3px 0 #9d6818;font-weight:800;cursor:pointer}
+    .patch-reset:hover,.patch-reset:focus-visible{background:var(--gold);color:#3a1f0b;outline:2px solid var(--red);outline-offset:2px}
+    .patch-reset:active{transform:translateY(2px);box-shadow:0 1px 0 #9d6818}
+    .patch-reset-note{margin:14px 0 0;padding:9px 10px;background:#fff8e4;border:1px dashed #d1b97c;color:#77532c;font-size:12px;line-height:1.7;text-align:center}
+    @media(max-width:380px){.patch-reset,.actions .apply{min-width:0;flex:1 1 130px;font-size:13px}}
     .result-panel{margin:16px 0 0;padding:13px 14px;background:#fffaf0;border:3px solid var(--gold)}.result-panel[hidden]{display:none!important}.result-panel h3{margin:0 0 9px;font-size:17px}.result-grid{display:grid;grid-template-columns:125px minmax(0,1fr);margin:0;border-top:1px solid var(--line);min-width:0}.result-grid dt,.result-grid dd{margin:0;padding:7px 8px;border-bottom:1px solid var(--line);min-width:0}.result-grid dt{font-weight:700}.result-grid dd{font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;word-break:break-all;white-space:normal}.result-grid dd.result-ok{color:var(--ok);font-family:inherit;font-weight:700}.result-grid dd.result-bad{color:var(--bad);font-family:inherit;font-weight:700}
     .notice{margin-top:20px;padding:14px 16px;background:#fff3c9;border-left:7px solid var(--gold)}footer{text-align:center;margin-top:25px;color:var(--muted);font-size:12px}footer a{color:var(--red-dark)}
 
@@ -100,7 +106,8 @@
           </dl>
         </section>
 
-        <div class="actions"><button type="button" class="apply" id="applyButton" disabled>패치하기</button></div>
+        <p class="patch-reset-note" role="note">※ 잘못된 ROM을 넣었거나 패치가 진행되지 않으면 <strong>[↻ 패처 초기화]</strong>를 누르고 올바른 원본 파일을 다시 선택해 주세요.</p>
+        <div class="actions"><button type="button" class="apply" id="applyButton" disabled>패치하기</button><button type="button" class="patch-reset" id="resetButton" title="선택한 ROM과 검증 상태를 모두 초기화합니다">↻ 패처 초기화</button></div>
       </div>
 
       <div class="notice"><strong>안내</strong><br />이 사이트는 원본 ROM을 제공하거나 서버에 업로드하지 않습니다. 본인이 보유한 정당한 원본 파일을 사용하세요.</div>
@@ -134,6 +141,8 @@
 
     let romFile=null,romBytes=null,patchBytes=null;
     let romHashes={crc32:'',sha1:'',sha256:''};
+    // PERF3M: 빠른 ROM 재선택 시 늦게 완료된 이전 해시 계산의 반영을 차단합니다.
+    let romLoadToken=0;
 
     document.title=title+(version?' '+version:'')+' | CALF STATION';
     $('pageTitle').textContent=title+(version?' '+version:'');
@@ -248,10 +257,16 @@
     }
 
     async function loadRom(file){
+      const token=++romLoadToken;
+      // 올바른 새 파일을 읽는 동안 예전 ROM으로 패치할 수 없게 합니다.
+      romFile=null;romBytes=null;romHashes={crc32:'',sha1:'',sha256:''};
+      $('applyButton').disabled=true;
+      clearPatchedResult();
       try{
+        const nextBytes=new Uint8Array(await file.arrayBuffer());
+        if(token!==romLoadToken)return;
         romFile=file;
-        romBytes=new Uint8Array(await file.arrayBuffer());
-        clearPatchedResult();
+        romBytes=nextBytes;
         $('romLabel').textContent=file.name;
         $('romFileName').textContent=file.name;
         $('romSize').textContent=formatBytes(file.size);
@@ -267,6 +282,7 @@
           digestHex('SHA-1',romBytes),
           digestHex('SHA-256',romBytes)
         ]);
+        if(token!==romLoadToken)return;
         romHashes={crc32:crc,sha1:hashes[0],sha256:hashes[1]};
 
         $('romCrc').textContent=romHashes.crc32;
@@ -283,7 +299,8 @@
         }
         notifyParentHeight();
       }catch(e){
-        romBytes=null;
+        if(token!==romLoadToken)return;
+        romFile=null;romBytes=null;
         romHashes={crc32:'',sha1:'',sha256:''};
         setStatus('원본 파일 읽기 또는 해시 계산 실패: '+e.message,'bad');
         canApply();
@@ -411,12 +428,14 @@
     }
 
     function bindDrop(box,input,handler){
-      input.addEventListener('change',()=>{if(input.files&&input.files[0])handler(input.files[0])});
+      input.addEventListener('change',()=>{const picked=input.files&&input.files[0];input.value='';if(picked)handler(picked)});
       ['dragenter','dragover'].forEach(ev=>box.addEventListener(ev,e=>{e.preventDefault();box.classList.add('drag')}));
       ['dragleave','drop'].forEach(ev=>box.addEventListener(ev,e=>{e.preventDefault();box.classList.remove('drag')}));
       box.addEventListener('drop',e=>{const f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(f)handler(f)});
     }
     bindDrop($('romDrop'),$('romInput'),loadRom);bindDrop($('patchDrop'),$('patchInput'),loadPatchFile);$('applyButton').addEventListener('click',downloadPatched);
+    // 블로그 게시글 새로고침 없이 이 패처 iframe만 재로딩합니다.
+    $('resetButton').addEventListener('click',()=>{romLoadToken++;window.location.reload()});
     if(patchParam)loadEmbeddedPatch(patchParam);else clearStatus();
     const shell=document.querySelector('.shell');
     let lastSentHeight=0;
