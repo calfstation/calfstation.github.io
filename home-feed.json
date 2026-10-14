@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-14T23:43:39+09:00",
+  "generatedAt": "2026-10-15T03:58:31+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/78",
       "path": "/78",
       "title": "패치 툴 수정 \"잘못된 ROM 적용 시 새로고침 버튼을 눌러주세요.\"",
-      "date": "11:52:06"
+      "date": "2026.10.14"
     },
     {
       "url": "/71",
@@ -39,7 +39,7 @@
       "url": "/76",
       "path": "/76",
       "title": "칩과 데일의 대작전 2",
-      "date": "03:17:13",
+      "date": "2026.10.14",
       "subtitle": "칩과 데일의 대작전 2",
       "displayTitle": "다람쥐 구조대 2 한글패치"
     },
@@ -47,7 +47,7 @@
       "url": "/75",
       "path": "/75",
       "title": "지.아이.조: 어 리얼 아메리칸 히어로",
-      "date": "03:16:35",
+      "date": "2026.10.14",
       "subtitle": "지.아이.조: 어 리얼 아메리칸 히어로",
       "displayTitle": "지.아이.조 한글패치"
     },
@@ -65,7 +65,7 @@
       "url": "/76",
       "path": "/76",
       "title": "칩과 데일의 대작전 2",
-      "date": "03:17:13",
+      "date": "2026.10.14",
       "image": "https://calfstation.github.io/screenshots/chip-to-dale-no-dai-sakusen-2/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -77,7 +77,7 @@
       "url": "/75",
       "path": "/75",
       "title": "지.아이.조: 어 리얼 아메리칸 히어로",
-      "date": "03:16:35",
+      "date": "2026.10.14",
       "image": "https://calfstation.github.io/screenshots/g-i-joe-a-real-american-hero/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -543,7 +543,7 @@
       "url": "/77",
       "path": "/77",
       "title": "흑의 검 작업기 PAGE 1",
-      "date": "11:15:15",
+      "date": "2026.10.14",
       "displayTitle": "흑의 검 작업기 PAGE 1",
       "subtitle": "흑의 검 작업기 한글화 작업기 1"
     },
