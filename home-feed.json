@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-16T22:57:28+09:00",
+  "generatedAt": "2026-10-17T01:44:06+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -31,7 +31,7 @@
       "link": "/57",
       "commentId": "comment23997917",
       "kind": "comment",
-      "time": 1792077600.0
+      "time": 1792076400.0
     }
   ],
   "patch": [
@@ -289,9 +289,9 @@
       "title": "싸움대장 2",
       "date": "2026.10.11",
       "analysis": 100,
-      "translation": 30,
-      "review": 0,
-      "average": 43,
+      "translation": 60,
+      "review": 20,
+      "average": 60,
       "platform": "ps2",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FldPXH%2FdJMcacdN7EI%2FAAAAAAAAAAAAAAAAAAAAALkxpUh_GE41gFxmid6gKNAfefQrIx5p2V3b469NcaQJ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DM6mwsUe8tkyH%252BhHeVDfCjOl%252FeJY%253D"
@@ -302,9 +302,9 @@
       "title": "가면 라이더 SD: 그랜드 쇼커의 야망",
       "date": "2026.10.10",
       "analysis": 100,
-      "translation": 30,
+      "translation": 80,
       "review": 0,
-      "average": 43,
+      "average": 60,
       "platform": "fc",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D0Dy0q9ggU%252B5Fw%252BCdbqpX5Itgy8Y%253D"
@@ -315,9 +315,9 @@
       "title": "흑의검",
       "date": "2026.10.10",
       "analysis": 100,
-      "translation": 97,
-      "review": 40,
-      "average": 79,
+      "translation": 100,
+      "review": 60,
+      "average": 87,
       "platform": "ps1",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFXdoG%2FdJMcajcUw2E%2FAAAAAAAAAAAAAAAAAAAAABrSUMtgeojKfEv0ZarwjyP9TSzsu9QKUfB5u7FmpjH6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DOGiV6uTsOQVQdZKFBy%252BN5RexUyY%253D"
