@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-16T18:07:19+09:00",
+  "generatedAt": "2026-10-16T22:57:28+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "일개겜돌이",
+      "text": "늘 감사하는 마음에 후원했습니다!! 액수가 적지만 다음에도 또 하도록 할게요~~!!! 열혈 짱! 꽃송아지님 짱! 퀄리티 짱!! p.s 혹시 패미컴 점프 - 영웅열전이라는 게임 한글화 요청 드려도 될까요?? 만화 주인공들의 올스타 RPG같은 게임입니다~~",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1792146540.0
+    },
+    {
       "name": "다클리어",
       "text": "어릴때 했던 열혈배구네요! 그땐 게임도 정말 많이 했는데 이젠 할 시간이⋯",
       "link": "/57",
       "commentId": "comment23997917",
       "kind": "comment",
       "time": 1792077600.0
-    },
-    {
-      "name": "기역",
-      "text": "정말! 감사합니다! 평생을 찾아헤맸던 그한글판 정말 내용을 알길이 없어⋯",
-      "link": "/39",
-      "commentId": "comment23997352",
-      "kind": "comment",
-      "time": 1791990000.0
     }
   ],
   "patch": [
