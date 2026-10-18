@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-18T23:30:20+09:00",
+  "generatedAt": "2026-10-19T02:30:41+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -289,9 +289,9 @@
       "title": "싸움대장 2",
       "date": "2026.10.11",
       "analysis": 100,
-      "translation": 60,
+      "translation": 100,
       "review": 20,
-      "average": 60,
+      "average": 73,
       "platform": "ps2",
       "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FldPXH%2FdJMcacdN7EI%2FAAAAAAAAAAAAAAAAAAAAALkxpUh_GE41gFxmid6gKNAfefQrIx5p2V3b469NcaQJ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DM6mwsUe8tkyH%252BhHeVDfCjOl%252FeJY%253D"
