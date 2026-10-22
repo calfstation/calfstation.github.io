@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-22T20:38:28+09:00",
+  "generatedAt": "2026-10-23T01:02:43+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -36,31 +36,55 @@
   ],
   "patch": [
     {
+      "url": "/81",
+      "path": "/81",
+      "title": "흑의검",
+      "date": "2026.10.22",
+      "subtitle": "흑의검",
+      "displayTitle": "흑의검 한글패치"
+    },
+    {
+      "url": "/80",
+      "path": "/80",
+      "title": "초대 열혈경파 쿠니오군",
+      "date": "2026.10.22",
+      "subtitle": "초대 열혈경파 쿠니오군",
+      "displayTitle": "초대 열혈경파 쿠니오군 한글패치"
+    },
+    {
       "url": "/76",
       "path": "/76",
       "title": "칩과 데일의 대작전 2",
       "date": "2026.10.14",
       "subtitle": "칩과 데일의 대작전 2",
       "displayTitle": "다람쥐 구조대 2 한글패치"
-    },
-    {
-      "url": "/75",
-      "path": "/75",
-      "title": "지.아이.조: 어 리얼 아메리칸 히어로",
-      "date": "2026.10.14",
-      "subtitle": "지.아이.조: 어 리얼 아메리칸 히어로",
-      "displayTitle": "지.아이.조 한글패치"
-    },
-    {
-      "url": "/66",
-      "path": "/66",
-      "title": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
-      "date": "2026.10.09",
-      "subtitle": "열혈 스트리트 바스켓 힘내라 덩크 히어로즈",
-      "displayTitle": "열혈농구 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/81",
+      "path": "/81",
+      "title": "흑의검",
+      "date": "2026.10.22",
+      "image": "https://calfstation.github.io/screenshots/kuro-no-ken/cover.png",
+      "platform": "ps1",
+      "platformCode": "ps1",
+      "platformLabel": "플레이스테이션",
+      "platformShort": "ps1",
+      "displayTitle": "흑의검 한글패치"
+    },
+    {
+      "url": "/80",
+      "path": "/80",
+      "title": "초대 열혈경파 쿠니오군",
+      "date": "2026.10.22",
+      "image": "https://calfstation.github.io/screenshots/shodai-nekketsu-kouha-kunio-kun/cover.png",
+      "platform": "SFC / 슈퍼 패미컴",
+      "platformCode": "sfc",
+      "platformLabel": "슈퍼 패미컴",
+      "platformShort": "SFC",
+      "displayTitle": "초대 열혈경파 쿠니오군 한글패치"
+    },
     {
       "url": "/76",
       "path": "/76",
@@ -255,13 +279,27 @@
     }
   ],
   "patchSummary": {
-    "total": 16,
+    "total": 18,
     "byPlatform": {
+      "ps1": 1,
+      "sfc": 1,
       "fc": 10,
       "md": 1,
       "gb": 5
     },
     "platforms": [
+      {
+        "code": "ps1",
+        "label": "플레이스테이션",
+        "short": "ps1",
+        "count": 1
+      },
+      {
+        "code": "sfc",
+        "label": "슈퍼 패미컴",
+        "short": "SFC",
+        "count": 1
+      },
       {
         "code": "fc",
         "label": "패미컴",
@@ -283,6 +321,32 @@
     ]
   },
   "next": [
+    {
+      "url": "/83",
+      "path": "/83",
+      "title": "서유기 월드",
+      "date": "01:02:19",
+      "analysis": 100,
+      "translation": 10,
+      "review": 0,
+      "average": 37,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FMbnfh%2FdJMcagm6lp0%2FAAAAAAAAAAAAAAAAAAAAAFuBMHY5KEgyc_cOgkwfKm1JdPo5VrqktJ0YMxj_DN4s%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DYBSJKdj53I8z0r2neSpekuZwA4Y%253D"
+    },
+    {
+      "url": "/82",
+      "path": "/82",
+      "title": "패미컴 점프 영웅열전",
+      "date": "00:56:06",
+      "analysis": 100,
+      "translation": 30,
+      "review": 0,
+      "average": 43,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FrCUvO%2FdJMb992FMRo%2FAAAAAAAAAAAAAAAAAAAAADWVH56t1ujJMjR1QR625T1ZV24xHhr-tWZS4eCdvTgf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252B8KbpIhgKn0%252BlqEg8aKL8%252Fz1tMI%253D"
+    },
     {
       "url": "/72",
       "path": "/72",
@@ -323,27 +387,14 @@
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFXdoG%2FdJMcajcUw2E%2FAAAAAAAAAAAAAAAAAAAAABrSUMtgeojKfEv0ZarwjyP9TSzsu9QKUfB5u7FmpjH6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DOGiV6uTsOQVQdZKFBy%252BN5RexUyY%253D"
     },
     {
-      "url": "/47",
-      "path": "/47",
-      "title": "초대 열혈경파 쿠니오군",
-      "date": "2026.09.20",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "sfc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FclZjfm%2FdJMcablxUD0%2FAAAAAAAAAAAAAAAAAAAAABI_OkKiV61yr43YQPSzka42KBNZaqUuj127-6gpISkC%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DuhZ6o80O9Kv8RvFKIoJRGaZ09y8%253D"
-    },
-    {
       "url": "/14",
       "path": "/14",
       "title": "캡틴 츠바사 V ~패자의 칭호 캄피오네~",
       "date": "2026.07.26",
       "analysis": 100,
       "translation": 100,
-      "review": 90,
-      "average": 97,
+      "review": 100,
+      "average": 100,
       "platform": "",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbXEVG2%2FdJMcaasE3r8%2FAAAAAAAAAAAAAAAAAAAAAKdUEZEG6DmDQCLGwYQT2P9o0fw1KidciP9IzZQXI2MI%2Ftfile.dat%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVRvJUvKkfQINjCqp4qfeeq6MBss%253D"
@@ -414,6 +465,19 @@
       "platform": "fc",
       "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbE0Vm4%2FdJMcagmK392%2FAAAAAAAAAAAAAAAAAAAAAKWVK1fI2OsB7DYSzoxbrnibEDeNLmj_4-WpYZh9kq4J%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DQXQR1x2GB7X9k%252FQ2v1EtBBAgW84%253D"
+    },
+    {
+      "url": "/47",
+      "path": "/47",
+      "title": "초대 열혈경파 쿠니오군",
+      "date": "2026.09.20",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "sfc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FclZjfm%2FdJMcablxUD0%2FAAAAAAAAAAAAAAAAAAAAABI_OkKiV61yr43YQPSzka42KBNZaqUuj127-6gpISkC%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DuhZ6o80O9Kv8RvFKIoJRGaZ09y8%253D"
     },
     {
       "url": "/46",
@@ -534,9 +598,9 @@
     }
   ],
   "nextSummary": {
-    "active": 5,
-    "complete": 14,
-    "total": 19
+    "active": 6,
+    "complete": 15,
+    "total": 21
   },
   "history": [
     {
