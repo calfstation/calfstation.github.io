@@ -716,6 +716,67 @@ def merge_friends(comments: list[dict], guestbook: list[dict]) -> list[dict]:
     return output
 
 
+
+def preserve_last_known_comments(
+    observed: list[dict],
+    previous: list[dict],
+    limit: int = 10,
+) -> list[dict]:
+    """Avoid regressing to old guestbook entries if Tistory stops supplying
+    recent comments temporarily. Public comments are cached for up to 7 days.
+    """
+    now = datetime.now(KST).timestamp()
+    max_age = 7 * 24 * 60 * 60
+
+    def valid(rows: list[dict]) -> list[dict]:
+        items = []
+        for row in rows:
+            if not isinstance(row, dict) or row.get("kind", "comment") != "comment":
+                continue
+            name = clean(row.get("name"))
+            body = clean(row.get("text"))
+            try:
+                ts = float(row.get("time") or 0)
+            except (TypeError, ValueError):
+                continue
+            if not name or not body or name in OWNER_NAMES:
+                continue
+            if not (0 < ts <= now + 3600) or now - ts > max_age:
+                continue
+            items.append({
+                "name": name,
+                "text": body,
+                "link": clean(row.get("link")),
+                "commentId": clean(row.get("commentId")),
+                "kind": "comment",
+                "time": int(ts),
+            })
+        return items
+
+    live = valid(observed)
+    cached = valid(previous)
+    latest_live = max((item["time"] for item in live), default=0)
+    latest_cached = max((item["time"] for item in cached), default=0)
+
+    # Current comments win when current source is fresh. When the source is
+    # empty or older than a verified snapshot, keep that newer snapshot.
+    candidates = live if latest_live >= latest_cached else live + cached
+    selected = []
+    seen = set()
+    for item in sorted(candidates, key=lambda row: row["time"], reverse=True):
+        key = (
+            ("id", item["commentId"]) if item["commentId"]
+            else ("text", item["name"], item["text"], item["link"])
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        selected.append(item)
+        if len(selected) >= limit:
+            break
+    return selected
+
+
 def main() -> None:
     print("Fetching CALF STATION Tistory pages...")
 
@@ -811,6 +872,26 @@ def main() -> None:
     daily_posts = parse_post_list(daily_soup, 2)
 
     comments = parse_recent_comments(home)
+    # Reuse already-fetched public pages if HOME temporarily omits this tag.
+    # This adds no network calls and leaves the original source priority intact.
+    if not comments:
+        for alternate_page in (patch_soup, guest_soup, history_soup):
+            comments = parse_recent_comments(alternate_page)
+            if comments:
+                break
+    # Tistory may transiently omit <s_rctrp_rep> in the public HTML.
+    # Do not replace newer, verified comments with older guestbook entries.
+    try:
+        previous_feed = json.loads(OUT.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        previous_feed = {}
+    previous_comments = previous_feed.get("recentCommentBackup")
+    if not isinstance(previous_comments, list):
+        previous_comments = [
+            item for item in previous_feed.get("friends", [])
+            if isinstance(item, dict) and item.get("kind") == "comment"
+        ]
+    recent_comments = preserve_last_known_comments(comments, previous_comments)
     guestbook = parse_guestbook_hidden(guest_soup)
     if not guestbook:
         guestbook = parse_guestbook_fallback(guest_soup)
@@ -820,7 +901,8 @@ def main() -> None:
         "generatedAt": datetime.now(KST).isoformat(timespec="seconds"),
         "source": "CALF-STATION-GITHUB-ACTIONS",
         "daily": daily_posts,
-        "friends": merge_friends(comments, guestbook),
+        "friends": merge_friends(recent_comments, guestbook),
+        "recentCommentBackup": recent_comments,
         "patch": patch_posts,
 
         # 한글화 카테고리 전체 즉시 렌더용.
@@ -850,6 +932,8 @@ def main() -> None:
     print(json.dumps({
         "daily": len(feed["daily"]),
         "friends": len(feed["friends"]),
+        "liveComments": len(comments),
+        "verifiedRecentComments": len(recent_comments),
         "patch": len(feed["patch"]),
         "patchArchive": len(feed["patchArchive"]),
         "patchPlatforms": feed["patchSummary"]["byPlatform"],
