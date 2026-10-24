@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-24T15:31:22+09:00",
+  "generatedAt": "2026-10-24T20:31:00+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,23 +18,31 @@
   ],
   "friends": [
     {
+      "name": "뺘요",
+      "text": "이야 대박 초대 열혈경파 쿠니오군 한패다 어릴때 게임매장에 300원내고 ⋯",
+      "link": "/80",
+      "commentId": "comment24003180",
+      "kind": "comment",
+      "time": 1792836420
+    },
+    {
       "name": "명작~",
       "text": "감사합니다... 일어버전으로 SFC 콘솔 실기로...엔딩보고... 한⋯",
       "link": "/80",
       "commentId": "comment24002879",
       "kind": "comment",
       "time": 1792758900
-    },
-    {
-      "name": "일개겜돌이",
-      "text": "늘 감사하는 마음에 후원했습니다!! 액수가 적지만 다음에도 또 하도록 할게요~~!!! 열혈 짱! 꽃송아지님 짱! 퀄리티 짱!! p.s 혹시 패미컴 점프 - 영웅열전이라는 게임 한글화 요청 드려도 될까요?? 만화 주인공들의 올스타 RPG같은 게임입니다~~",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1792146540.0
     }
   ],
   "recentCommentBackup": [
+    {
+      "name": "뺘요",
+      "text": "이야 대박 초대 열혈경파 쿠니오군 한패다 어릴때 게임매장에 300원내고 ⋯",
+      "link": "/80",
+      "commentId": "comment24003180",
+      "kind": "comment",
+      "time": 1792836420
+    },
     {
       "name": "명작~",
       "text": "감사합니다... 일어버전으로 SFC 콘솔 실기로...엔딩보고... 한⋯",
