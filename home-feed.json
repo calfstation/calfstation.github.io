@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-25T09:13:41+09:00",
+  "generatedAt": "2026-10-25T13:49:29+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -345,11 +345,11 @@
       "title": "서유기 월드",
       "date": "2026.10.23",
       "analysis": 100,
-      "translation": 10,
-      "review": 0,
-      "average": 37,
+      "translation": 100,
+      "review": 20,
+      "average": 73,
       "platform": "fc",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FMbnfh%2FdJMcagm6lp0%2FAAAAAAAAAAAAAAAAAAAAAFuBMHY5KEgyc_cOgkwfKm1JdPo5VrqktJ0YMxj_DN4s%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DYBSJKdj53I8z0r2neSpekuZwA4Y%253D"
     },
     {
@@ -358,11 +358,11 @@
       "title": "패미컴 점프 영웅열전",
       "date": "2026.10.23",
       "analysis": 100,
-      "translation": 30,
-      "review": 0,
-      "average": 43,
+      "translation": 100,
+      "review": 20,
+      "average": 73,
       "platform": "fc",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FrCUvO%2FdJMb992FMRo%2FAAAAAAAAAAAAAAAAAAAAADWVH56t1ujJMjR1QR625T1ZV24xHhr-tWZS4eCdvTgf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252B8KbpIhgKn0%252BlqEg8aKL8%252Fz1tMI%253D"
     },
     {
