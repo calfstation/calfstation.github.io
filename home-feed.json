@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-27T09:51:43+09:00",
+  "generatedAt": "2026-10-27T14:47:48+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,46 +18,38 @@
   ],
   "friends": [
     {
+      "name": "랄라",
+      "text": "아, 아닙니다. 잘 되네요. 패치 제작해주셔서 감사합니다!",
+      "link": "/81",
+      "commentId": "comment24004643",
+      "kind": "comment",
+      "time": 1793070960
+    },
+    {
       "name": "버터",
       "text": "첨부파일보냈습니다!!",
       "link": "/81",
       "commentId": "comment24004368",
       "kind": "comment",
       "time": 1793017080
-    },
-    {
-      "name": "버터",
-      "text": "이블아이 전투후 컷신에서 자막이 전부 깨져서 나옵니다",
-      "link": "/81",
-      "commentId": "comment24004302",
-      "kind": "comment",
-      "time": 1793009820
     }
   ],
   "recentCommentBackup": [
     {
+      "name": "랄라",
+      "text": "아, 아닙니다. 잘 되네요. 패치 제작해주셔서 감사합니다!",
+      "link": "/81",
+      "commentId": "comment24004643",
+      "kind": "comment",
+      "time": 1793070960
+    },
+    {
       "name": "버터",
       "text": "첨부파일보냈습니다!!",
       "link": "/81",
       "commentId": "comment24004368",
       "kind": "comment",
       "time": 1793017080
-    },
-    {
-      "name": "버터",
-      "text": "이블아이 전투후 컷신에서 자막이 전부 깨져서 나옵니다",
-      "link": "/81",
-      "commentId": "comment24004302",
-      "kind": "comment",
-      "time": 1793009820
-    },
-    {
-      "name": "뺘요",
-      "text": "이야 대박 초대 열혈경파 쿠니오군 한패다 어릴때 게임매장에 300원내고 ⋯",
-      "link": "/80",
-      "commentId": "comment24003180",
-      "kind": "comment",
-      "time": 1792767600
     }
   ],
   "patch": [
