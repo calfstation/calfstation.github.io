@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-27T14:47:48+09:00",
+  "generatedAt": "2026-10-27T16:21:10+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
+    {
+      "url": "/85",
+      "path": "/85",
+      "title": "흑의검 v1.01 수정 배포",
+      "date": "16:20:05"
+    },
     {
       "url": "/84",
       "path": "/84",
       "title": "후!하~ 후!하~ 빡세다Yo 빡셔~",
       "date": "2026.10.23"
-    },
-    {
-      "url": "/79",
-      "path": "/79",
-      "title": "초대열혈경파, 흑의검 배포 준비 중",
-      "date": "2026.10.20"
     }
   ],
   "friends": [
