@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-28T22:11:57+09:00",
+  "generatedAt": "2026-10-29T03:47:29+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -625,7 +625,7 @@
       "url": "/87",
       "path": "/87",
       "title": "싸움대장 2 검수일지 - PAGE1",
-      "date": "14:20:36",
+      "date": "2026.10.28",
       "displayTitle": "싸움대장 2 검수일지 - PAGE1",
       "subtitle": "싸움대장 2 검수일지 한글화 작업기 1"
     },
