@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-28T21:59:17+09:00",
+  "generatedAt": "2026-10-28T22:11:57+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -622,6 +622,14 @@
   },
   "history": [
     {
+      "url": "/87",
+      "path": "/87",
+      "title": "싸움대장 2 검수일지 - PAGE1",
+      "date": "14:20:36",
+      "displayTitle": "싸움대장 2 검수일지 - PAGE1",
+      "subtitle": "싸움대장 2 검수일지 한글화 작업기 1"
+    },
+    {
       "url": "/77",
       "path": "/77",
       "title": "흑의 검 작업기 PAGE 1",
@@ -636,14 +644,6 @@
       "date": "2026.10.13",
       "displayTitle": "지.아이.조: 진정한 Me Cook의 영웅 PAGE1 (END)",
       "subtitle": "지.아이.조: 진정한 Me Cook의 영웅 한글화 작업기 1"
-    },
-    {
-      "url": "/67",
-      "path": "/67",
-      "title": "패미컴 열혈시리즈 아디오스! 초대 열혈경파 쿠니오군 검수 일지 PAGE1",
-      "date": "2026.10.09",
-      "displayTitle": "패미컴 열혈시리즈 아디오스! 초대 열혈경파 쿠니오군 검수 일지 PAGE1",
-      "subtitle": "패미컴 열혈시리즈 아디오스! 초대 열혈경파 쿠니오군 검수 일지 한글화 작업기 1"
     }
   ]
 }
