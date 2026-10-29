@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-30T00:34:13+09:00",
+  "generatedAt": "2026-10-30T02:37:30+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -340,27 +340,40 @@
   },
   "next": [
     {
+      "url": "/91",
+      "path": "/91",
+      "title": "아르마딜로",
+      "date": "2026.10.29",
+      "analysis": 100,
+      "translation": 100,
+      "review": 80,
+      "average": 93,
+      "platform": "fc",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FCXN2I%2FdJMcajxAH8G%2FAAAAAAAAAAAAAAAAAAAAACZkRE3wkzmcked1Zvb8i3Q0QOZSxUPvWzlmZD_saqgZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DL4mzE7YcQJgbwyK6P3UPSuis0HI%253D"
+    },
+    {
       "url": "/90",
       "path": "/90",
       "title": "타카하시 명인의 모험도 IV",
-      "date": "15:48:42",
+      "date": "2026.10.29",
       "analysis": 100,
-      "translation": 78,
-      "review": 0,
-      "average": 59,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
     },
     {
       "url": "/89",
       "path": "/89",
       "title": "꿈 펭귄 이야기",
-      "date": "15:47:10",
+      "date": "2026.10.29",
       "analysis": 100,
       "translation": 100,
-      "review": 70,
-      "average": 90,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpB45d%2FdJMb99VUi4S%2FAAAAAAAAAAAAAAAAAAAAAHs4-rbJeuKkhCdbm_Nh0pDBJ2QToxqCOf6g4fLdWzPT%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVlJGH4i0TXGQTudWkz%252FiHIPaMoU%253D"
@@ -369,11 +382,11 @@
       "url": "/88",
       "path": "/88",
       "title": "더블 드래곤 III: 로제타 스톤",
-      "date": "15:45:26",
+      "date": "2026.10.29",
       "analysis": 100,
       "translation": 100,
-      "review": 96,
-      "average": 99,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fl7XTK%2FdJMcagtZHrQ%2FAAAAAAAAAAAAAAAAAAAAAFjXikGfg8LIwgrJppFkiEcyKjKAj00oLrOLh5j3oQAs%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DY%252BZbllWV1ugNbkxIEV9EKV8fouI%253D"
@@ -655,9 +668,9 @@
     }
   ],
   "nextSummary": {
-    "active": 8,
+    "active": 9,
     "complete": 16,
-    "total": 24
+    "total": 25
   },
   "history": [
     {
