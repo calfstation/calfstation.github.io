@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-29T11:17:55+09:00",
+  "generatedAt": "2026-10-29T15:50:44+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -340,6 +340,45 @@
   },
   "next": [
     {
+      "url": "/90",
+      "path": "/90",
+      "title": "타카하시 명인의 모험도 IV",
+      "date": "15:48:42",
+      "analysis": 100,
+      "translation": 78,
+      "review": 0,
+      "average": 59,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
+    },
+    {
+      "url": "/89",
+      "path": "/89",
+      "title": "꿈 펭귄 이야기",
+      "date": "15:47:10",
+      "analysis": 100,
+      "translation": 100,
+      "review": 70,
+      "average": 90,
+      "platform": "fc",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpB45d%2FdJMb99VUi4S%2FAAAAAAAAAAAAAAAAAAAAAHs4-rbJeuKkhCdbm_Nh0pDBJ2QToxqCOf6g4fLdWzPT%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVlJGH4i0TXGQTudWkz%252FiHIPaMoU%253D"
+    },
+    {
+      "url": "/88",
+      "path": "/88",
+      "title": "더블 드래곤 III: 로제타 스톤",
+      "date": "15:45:26",
+      "analysis": 100,
+      "translation": 100,
+      "review": 96,
+      "average": 99,
+      "platform": "fc",
+      "test": "progress",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fl7XTK%2FdJMcagtZHrQ%2FAAAAAAAAAAAAAAAAAAAAAFjXikGfg8LIwgrJppFkiEcyKjKAj00oLrOLh5j3oQAs%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DY%252BZbllWV1ugNbkxIEV9EKV8fouI%253D"
+    },
+    {
       "url": "/82",
       "path": "/82",
       "title": "패미컴 점프 영웅열전",
@@ -371,11 +410,11 @@
       "title": "가면 라이더 SD: 그랜드 쇼커의 야망",
       "date": "2026.10.10",
       "analysis": 100,
-      "translation": 80,
-      "review": 0,
-      "average": 60,
+      "translation": 100,
+      "review": 60,
+      "average": 87,
       "platform": "fc",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D0Dy0q9ggU%252B5Fw%252BCdbqpX5Itgy8Y%253D"
     },
     {
@@ -616,9 +655,9 @@
     }
   ],
   "nextSummary": {
-    "active": 5,
+    "active": 8,
     "complete": 16,
-    "total": 21
+    "total": 24
   },
   "history": [
     {
