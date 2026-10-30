@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-30T05:36:29+09:00",
+  "generatedAt": "2026-10-30T09:23:10+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,38 +18,38 @@
   ],
   "friends": [
     {
+      "name": "농부맨",
+      "text": "감사합니다! 어렸을때 만화책도 보고 게임도 재밌게했었는데 다시보니 반갑네⋯",
+      "link": "/58",
+      "commentId": "comment24005847",
+      "kind": "comment",
+      "time": 1793313180
+    },
+    {
       "name": "랄라",
       "text": "아, 아닙니다. 잘 되네요. 패치 제작해주셔서 감사합니다!",
       "link": "/81",
       "commentId": "comment24004643",
       "kind": "comment",
-      "time": 1793070960
-    },
-    {
-      "name": "버터",
-      "text": "첨부파일보냈습니다!!",
-      "link": "/81",
-      "commentId": "comment24004368",
-      "kind": "comment",
-      "time": 1792940400
+      "time": 1793026800
     }
   ],
   "recentCommentBackup": [
     {
+      "name": "농부맨",
+      "text": "감사합니다! 어렸을때 만화책도 보고 게임도 재밌게했었는데 다시보니 반갑네⋯",
+      "link": "/58",
+      "commentId": "comment24005847",
+      "kind": "comment",
+      "time": 1793313180
+    },
+    {
       "name": "랄라",
       "text": "아, 아닙니다. 잘 되네요. 패치 제작해주셔서 감사합니다!",
       "link": "/81",
       "commentId": "comment24004643",
       "kind": "comment",
-      "time": 1793070960
-    },
-    {
-      "name": "버터",
-      "text": "첨부파일보냈습니다!!",
-      "link": "/81",
-      "commentId": "comment24004368",
-      "kind": "comment",
-      "time": 1792940400
+      "time": 1793026800
     }
   ],
   "patch": [
