@@ -43,6 +43,17 @@
     html.is-embed .notice{margin-top:10px;padding:9px 11px;font-size:12px}
     html.is-embed .status{margin:0 0 10px}
     @media(max-width:620px){.shell{width:calc(100% - 12px);margin-top:6px}.hero,.card,.patcher{padding:16px 12px}.info,.hashes,.result-grid{grid-template-columns:1fr}.info dt,.hashes dt{border-bottom:0;padding-bottom:2px}.info dd,.hashes dd{padding-top:2px}}
+
+    /* CALF V9.1: multi-IPS opt-in only; hidden for every legacy single IPS post. */
+    .calf-variant-field[hidden]{display:none!important}
+    .calf-variant-field{min-width:0;margin:0 0 18px;padding:12px 13px;border:2px solid var(--gold);background:#fffaf0}
+    .calf-variant-field legend{padding:0 6px;color:var(--red-dark);font-weight:800}
+    .calf-variant-choice{display:block;margin:10px 0;padding:11px 12px;background:var(--paper);border:2px solid var(--line);cursor:pointer;line-height:1.45}
+    .calf-variant-choice:has(input:checked){border-color:var(--red);box-shadow:3px 3px 0 var(--gold)}
+    .calf-variant-choice input{width:17px;height:17px;margin:0 8px 0 0;accent-color:var(--red);vertical-align:-3px}
+    .calf-variant-choice strong{color:var(--ink)}.calf-variant-choice em{margin-left:8px;color:#b22222;font-size:12px;font-weight:800;font-style:normal}
+    .calf-variant-choice small{display:block;margin:3px 0 0 26px;color:var(--muted);font-size:12px;white-space:normal;overflow-wrap:anywhere}
+    @media(max-width:620px){.calf-variant-field{padding:9px}.calf-variant-choice{padding:9px}}
   </style>
 </head>
 <body>
@@ -69,6 +80,11 @@
       <div class="status" id="status" hidden></div>
 
       <div class="patcher">
+        <fieldset class="calf-variant-field" id="calfVariantField" hidden>
+          <legend>한글패치 버전 선택</legend>
+          <div id="calfVariantChoices" role="radiogroup" aria-label="한글패치 버전 선택"></div>
+        </fieldset>
+
         <div class="field">
           <label>1. 원본 게임 파일</label>
           <div class="file-box" id="romDrop">
@@ -215,8 +231,156 @@
       $('patchedVerifyResult').textContent='-';
       $('patchedVerifyResult').className='';
     }
+
+    /* CALF V9.1 · opt-in multi-IPS manifest; legacy .bin IPS path untouched. */
+    let calfMultiVariants=[];
+    let calfSelectedVariant=null;
+    let calfVariantLoadToken=0;
+    let calfApplyVersionToken=0;
+    const calfMultiManifestPattern=/\.calf-ips-variants\.json$/i;
+    function calfValidHex(value,n){return typeof value==='string' && new RegExp('^[0-9A-Fa-f]{'+n+'}$').test(value)}
+    function calfVariantPath(value){
+      if(typeof value!=='string'||!/^\/patches\/[A-Za-z0-9._-]+\.bin$/.test(value))throw Error('패치 경로가 안전하지 않습니다.');
+      const url=new URL(value,location.origin);
+      if(url.origin!==location.origin)throw Error('다른 사이트의 IPS는 사용할 수 없습니다.');
+      return url.href;
+    }
+    function calfVerifyManifest(manifest){
+      if(!manifest||manifest.schema!=='CALF-IPS-VARIANTS-1'||manifest.version!==1||
+         !Array.isArray(manifest.variants)||manifest.variants.length<2||manifest.variants.length>8){
+        throw Error('복수 IPS manifest 형식 또는 버전 수가 잘못되었습니다.');
+      }
+      if(!manifest.source||!calfValidHex(manifest.source.crc32,8)||!calfValidHex(manifest.source.sha1,40)||!calfValidHex(manifest.source.sha256,64))
+        throw Error('복수 IPS 원본 검증값이 누락되었습니다.');
+      if(!requiredCrc||!requiredSha1||!requiredSha256||
+         manifest.source.crc32.toUpperCase()!==requiredCrc||
+         manifest.source.sha1.toUpperCase()!==requiredSha1||
+         manifest.source.sha256.toUpperCase()!==requiredSha256){
+        throw Error('본문 ROM 기준과 manifest 원본 검증값이 일치하지 않습니다.');
+      }
+      const ids=new Set();
+      const variants=manifest.variants.map(raw=>{
+        if(!raw||typeof raw!=='object'||typeof raw.id!=='string')throw Error('IPS 버전 정보가 손상됐습니다.');
+        if(!/^[a-z][a-z0-9_-]{0,31}$/.test(raw.id)||ids.has(raw.id))throw Error('IPS 버전 식별자가 중복 또는 손상됐습니다.');
+        ids.add(raw.id);
+        if(typeof raw.label!=='string'||!raw.label.trim()||raw.label.length>90)throw Error('IPS 버전 표시명이 누락 또는 너무 깁니다.');
+        if(raw.description!=null&&(typeof raw.description!=='string'||raw.description.length>350))throw Error('IPS 버전 설명이 잘못됐습니다.');
+        const patchUrl=calfVariantPath(raw.patch);
+        if(!calfValidHex(raw.patchSha256,64))throw Error('IPS 파일 해시가 누락되었습니다.');
+        const out=raw.output;
+        if(!out||!Number.isSafeInteger(out.size)||out.size<=0||out.size>268435456||
+           !calfValidHex(out.crc32,8)||!calfValidHex(out.sha1,40)||!calfValidHex(out.sha256,64))
+          throw Error('버전별 결과 ROM 검증값이 누락되었습니다.');
+        return {id:raw.id,label:raw.label.trim(),description:(raw.description||'').trim(),
+          patchUrl,patchSha256:raw.patchSha256.toUpperCase(),
+          output:{size:out.size,crc32:out.crc32.toUpperCase(),sha1:out.sha1.toUpperCase(),sha256:out.sha256.toUpperCase()}};
+      });
+      if(!ids.has(manifest.defaultId))throw Error('기본 선택 IPS 버전을 찾을 수 없습니다.');
+      return {variants,defaultId:manifest.defaultId};
+    }
+    function calfUpdateFileName(){
+      $('outputInfo').textContent=romFile
+        ?makePatchedName(romFile.name)
+        :(calfSelectedVariant?'원본 파일명 + (K-patched) ('+calfSelectedVariant.id+')':'원본 파일명 + (K-patched)');
+    }
+    function calfMakeVersionName(originalName){
+      const original=(originalName||'game.bin').trim()||'game.bin';
+      const dot=original.lastIndexOf('.');
+      const hasExt=dot>0&&dot<original.length-1;
+      let base=hasExt?original.slice(0,dot):original;
+      const ext=hasExt?original.slice(dot):'';
+      // Remove ONLY suffixes used by CALF, never arbitrary Japanese ROM tags.
+      const escapedIds=calfMultiVariants.map(v=>v.id.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+      if(escapedIds.length){
+        const tag=new RegExp('\\s\\((?:'+escapedIds.join('|')+')\\)$','i');
+        while(tag.test(base))base=base.replace(tag,'');
+      }
+      while(/\s\((?:K-)?patched\)$/i.test(base))base=base.replace(/\s\((?:K-)?patched\)$/i,'');
+      return base+' (K-patched) ('+calfSelectedVariant.id+')'+ext;
+    }
+    async function calfSelectVariant(item){
+      const token=++calfVariantLoadToken;
+      calfSelectedVariant=item;
+      patchBytes=null;
+      calfApplyVersionToken++;
+      $('applyButton').disabled=true;
+      $('patchState').textContent='선택한 IPS 다운로드 중...';
+      clearPatchedResult();
+      calfUpdateFileName();
+      canApply();
+      notifyParentHeight();
+      try{
+        const res=await fetch(item.patchUrl,{cache:'no-store'});
+        if(!res.ok)throw Error('HTTP '+res.status);
+        const buf=new Uint8Array(await res.arrayBuffer());
+        if(token!==calfVariantLoadToken)return;
+        parseIps(buf);
+        const actualHash=await digestHex('SHA-256',buf);
+        if(token!==calfVariantLoadToken)return;
+        if(actualHash!==item.patchSha256)throw Error('패치 SHA-256 불일치: '+item.id);
+        patchBytes=buf;
+        $('patchState').textContent=item.label+' · IPS 검증 완료';
+        clearStatus();
+        canApply();
+        notifyParentHeight();
+      }catch(err){
+        if(token!==calfVariantLoadToken)return;
+        patchBytes=null;
+        $('patchState').textContent='버전 IPS 읽기 실패';
+        setStatus('선택한 IPS를 적용할 수 없습니다: '+err.message,'bad');
+        canApply();
+      }
+    }
+    async function calfLoadMultiManifest(path){
+      const epoch=++calfVariantLoadToken;
+      patchBytes=null;
+      $('applyButton').disabled=true;
+      $('patchState').textContent='버전 목록 불러오는 중...';
+      try{
+        const url=new URL(path,location.href);
+        if(url.origin!==location.origin||!/\/patches\/[A-Za-z0-9._-]+\.calf-ips-variants\.json$/i.test(url.pathname))
+          throw Error('허용되지 않은 복수 IPS manifest 주소입니다.');
+        const res=await fetch(url.href,{cache:'no-store'});
+        if(!res.ok)throw Error('HTTP '+res.status);
+        const raw=await res.json();
+        if(epoch!==calfVariantLoadToken)return;
+        const verified=calfVerifyManifest(raw);
+        calfMultiVariants=verified.variants;
+        $('manualPatchField').hidden=true;
+        $('calfVariantField').hidden=false;
+        const host=$('calfVariantChoices');host.replaceChildren();
+        verified.variants.forEach(item=>{
+          const wrapper=document.createElement('label');wrapper.className='calf-variant-choice';
+          const radio=document.createElement('input');radio.type='radio';radio.name='calfMultiVersion';radio.value=item.id;
+          radio.checked=item.id===verified.defaultId;
+          const name=document.createElement('strong');name.textContent=item.label;
+          wrapper.append(radio,name);
+          if(radio.checked){const recommended=document.createElement('em');recommended.textContent='⭐ 추천';wrapper.appendChild(recommended);}
+          if(item.description){const small=document.createElement('small');small.textContent=item.description;wrapper.appendChild(small);}
+          radio.addEventListener('change',()=>{if(radio.checked)calfSelectVariant(item);});
+          host.appendChild(wrapper);
+        });
+        const selected=verified.variants.find(item=>item.id===verified.defaultId);
+        await calfSelectVariant(selected);
+      }catch(err){
+        if(epoch!==calfVariantLoadToken)return;
+        patchBytes=null;calfSelectedVariant=null;calfMultiVariants=[];
+        $('patchState').textContent='복수 패치 설정 오류';
+        $('applyButton').disabled=true;
+        setStatus('복수 패치 불러오기 실패: '+err.message,'bad');
+      }
+    }
+
     function getPatchedMismatches(result){
       const mismatches=[];
+      if(calfSelectedVariant){
+        const expected=calfSelectedVariant.output;
+        if(expected.size!==result.size)mismatches.push('파일 크기');
+        if(expected.crc32!==result.crc32)mismatches.push('CRC32');
+        if(expected.sha1!==result.sha1)mismatches.push('SHA-1');
+        if(expected.sha256!==result.sha256)mismatches.push('SHA-256');
+        return mismatches;
+      }
       if(expectedPatchedSize!==null&&expectedPatchedSize!==result.size)mismatches.push('파일 크기');
       if(expectedPatchedCrc&&expectedPatchedCrc!==result.crc32)mismatches.push('CRC32');
       if(expectedPatchedSha1&&expectedPatchedSha1!==result.sha1)mismatches.push('SHA-1');
@@ -224,6 +388,7 @@
       return mismatches;
     }
     function makePatchedName(originalName){
+      if(calfSelectedVariant)return calfMakeVersionName(originalName);
       const fallback='game.bin';
       const clean=(originalName||fallback).trim()||fallback;
       const dot=clean.lastIndexOf('.');
@@ -325,6 +490,7 @@
       }
     }
     async function loadEmbeddedPatch(path){
+      if(calfMultiManifestPattern.test(path))return calfLoadMultiManifest(path);
       try{
         const u=new URL(path,location.href);
         if(u.origin!==location.origin)throw new Error('패치 파일은 CALF STATION GitHub Pages 내부 경로만 사용할 수 있습니다.');
@@ -347,6 +513,8 @@
     }
 
     async function downloadPatched(){
+      const calfVersionAtStart=calfApplyVersionToken;
+      const calfIdAtStart=calfSelectedVariant&&calfSelectedVariant.id;
       const button=$('applyButton');
       const originalText=button.textContent;
 
@@ -355,6 +523,7 @@
         button.textContent='처리 중...';
         setStatus('IPS 적용 후 결과 ROM의 크기와 해시를 계산하고 있습니다.','warn');
 
+        if(calfSelectedVariant&&!patchBytes)throw Error('IPS 파일을 아직 불러오지 못했습니다.');
         const out=applyIps(romBytes,patchBytes);
         const hashes=await Promise.all([
           digestHex('SHA-1',out),
@@ -375,6 +544,7 @@
         $('patchedResultPanel').hidden=false;
 
         const hasExpected=
+          !!calfSelectedVariant||
           expectedPatchedSize!==null||
           expectedPatchedCrc||
           expectedPatchedSha1||
@@ -403,6 +573,10 @@
           verify.className='result-ok';
         }
 
+        if(calfIdAtStart && (calfVersionAtStart!==calfApplyVersionToken || !calfSelectedVariant || calfSelectedVariant.id!==calfIdAtStart)){
+          setStatus('검증 도중 버전이 변경되었습니다. 변경된 버전으로 다시 다운로드해 주세요.','bad');
+          return;
+        }
         const originalName=romFile?romFile.name:'game.bin';
         const name=makePatchedName(originalName);
         const blob=new Blob([out],{type:'application/octet-stream'});
