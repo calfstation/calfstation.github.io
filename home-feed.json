@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-30T17:27:54+09:00",
+  "generatedAt": "2026-10-30T17:40:02+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -406,50 +406,11 @@
       "date": "2026.10.29",
       "analysis": 100,
       "translation": 100,
-      "review": 80,
-      "average": 93,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
-      "test": "progress",
+      "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FCXN2I%2FdJMcajxAH8G%2FAAAAAAAAAAAAAAAAAAAAACZkRE3wkzmcked1Zvb8i3Q0QOZSxUPvWzlmZD_saqgZ%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DL4mzE7YcQJgbwyK6P3UPSuis0HI%253D"
-    },
-    {
-      "url": "/90",
-      "path": "/90",
-      "title": "타카하시 명인의 모험도 IV",
-      "date": "2026.10.29",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
-    },
-    {
-      "url": "/89",
-      "path": "/89",
-      "title": "꿈 펭귄 이야기",
-      "date": "2026.10.29",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpB45d%2FdJMb99VUi4S%2FAAAAAAAAAAAAAAAAAAAAAHs4-rbJeuKkhCdbm_Nh0pDBJ2QToxqCOf6g4fLdWzPT%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVlJGH4i0TXGQTudWkz%252FiHIPaMoU%253D"
-    },
-    {
-      "url": "/88",
-      "path": "/88",
-      "title": "더블 드래곤 III: 로제타 스톤",
-      "date": "2026.10.29",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fl7XTK%2FdJMcagtZHrQ%2FAAAAAAAAAAAAAAAAAAAAAFjXikGfg8LIwgrJppFkiEcyKjKAj00oLrOLh5j3oQAs%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DY%252BZbllWV1ugNbkxIEV9EKV8fouI%253D"
     },
     {
       "url": "/82",
@@ -458,8 +419,8 @@
       "date": "2026.10.23",
       "analysis": 100,
       "translation": 100,
-      "review": 20,
-      "average": 73,
+      "review": 70,
+      "average": 90,
       "platform": "fc",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FrCUvO%2FdJMb992FMRo%2FAAAAAAAAAAAAAAAAAAAAADWVH56t1ujJMjR1QR625T1ZV24xHhr-tWZS4eCdvTgf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D%252B8KbpIhgKn0%252BlqEg8aKL8%252Fz1tMI%253D"
@@ -471,10 +432,10 @@
       "date": "2026.10.11",
       "analysis": 100,
       "translation": 100,
-      "review": 20,
-      "average": 73,
+      "review": 52,
+      "average": 84,
       "platform": "ps2",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FldPXH%2FdJMcacdN7EI%2FAAAAAAAAAAAAAAAAAAAAALkxpUh_GE41gFxmid6gKNAfefQrIx5p2V3b469NcaQJ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DM6mwsUe8tkyH%252BhHeVDfCjOl%252FeJY%253D"
     },
     {
@@ -484,8 +445,8 @@
       "date": "2026.10.10",
       "analysis": 100,
       "translation": 100,
-      "review": 60,
-      "average": 87,
+      "review": 90,
+      "average": 97,
       "platform": "fc",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3D0Dy0q9ggU%252B5Fw%252BCdbqpX5Itgy8Y%253D"
@@ -500,7 +461,7 @@
       "review": 100,
       "average": 100,
       "platform": "ps1",
-      "test": "progress",
+      "test": "pending",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFXdoG%2FdJMcajcUw2E%2FAAAAAAAAAAAAAAAAAAAAABrSUMtgeojKfEv0ZarwjyP9TSzsu9QKUfB5u7FmpjH6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DOGiV6uTsOQVQdZKFBy%252BN5RexUyY%253D"
     },
     {
@@ -518,6 +479,45 @@
     }
   ],
   "nextCompleted": [
+    {
+      "url": "/90",
+      "path": "/90",
+      "title": "타카하시 명인의 모험도 IV",
+      "date": "2026.10.29",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
+    },
+    {
+      "url": "/89",
+      "path": "/89",
+      "title": "꿈 펭귄 이야기",
+      "date": "2026.10.29",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FpB45d%2FdJMb99VUi4S%2FAAAAAAAAAAAAAAAAAAAAAHs4-rbJeuKkhCdbm_Nh0pDBJ2QToxqCOf6g4fLdWzPT%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DVlJGH4i0TXGQTudWkz%252FiHIPaMoU%253D"
+    },
+    {
+      "url": "/88",
+      "path": "/88",
+      "title": "더블 드래곤 III: 로제타 스톤",
+      "date": "2026.10.29",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fl7XTK%2FdJMcagtZHrQ%2FAAAAAAAAAAAAAAAAAAAAAFjXikGfg8LIwgrJppFkiEcyKjKAj00oLrOLh5j3oQAs%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1793458799%26allow_ip%3D%26allow_referer%3D%26signature%3DY%252BZbllWV1ugNbkxIEV9EKV8fouI%253D"
+    },
     {
       "url": "/83",
       "path": "/83",
@@ -728,8 +728,8 @@
     }
   ],
   "nextSummary": {
-    "active": 9,
-    "complete": 16,
+    "active": 6,
+    "complete": 19,
     "total": 25
   },
   "history": [
