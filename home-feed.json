@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-30T15:56:57+09:00",
+  "generatedAt": "2026-10-30T17:27:54+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -54,31 +54,91 @@
   ],
   "patch": [
     {
-      "url": "/81",
-      "path": "/81",
-      "title": "흑의검",
-      "date": "2026.10.22",
-      "subtitle": "흑의검",
-      "displayTitle": "흑의검 한글패치"
+      "url": "/98",
+      "path": "/98",
+      "title": "꿈 펭귄 이야기",
+      "date": "17:03:09",
+      "subtitle": "꿈 펭귄 이야기",
+      "displayTitle": "꿈 펭귄 이야기 한글패치"
     },
     {
-      "url": "/80",
-      "path": "/80",
-      "title": "초대 열혈경파 쿠니오군",
-      "date": "2026.10.22",
-      "subtitle": "초대 열혈경파 쿠니오군",
-      "displayTitle": "초대 열혈경파 쿠니오군 한글패치"
+      "url": "/97",
+      "path": "/97",
+      "title": "더블 드래곤 III: 로제타 스톤",
+      "date": "17:02:58",
+      "subtitle": "더블 드래곤 III: 로제타 스톤",
+      "displayTitle": "더블 드래곤 3 한글패치"
     },
     {
-      "url": "/76",
-      "path": "/76",
-      "title": "칩과 데일의 대작전 2",
-      "date": "2026.10.14",
-      "subtitle": "칩과 데일의 대작전 2",
-      "displayTitle": "다람쥐 구조대 2 한글패치"
+      "url": "/95",
+      "path": "/95",
+      "title": "아르마딜로",
+      "date": "16:20:09",
+      "subtitle": "아르마딜로",
+      "displayTitle": "아르마딜로 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/98",
+      "path": "/98",
+      "title": "꿈 펭귄 이야기",
+      "date": "17:03:09",
+      "image": "https://calfstation.github.io/screenshots/yume-penguin-monogatari/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "꿈 펭귄 이야기 한글패치"
+    },
+    {
+      "url": "/97",
+      "path": "/97",
+      "title": "더블 드래곤 III: 로제타 스톤",
+      "date": "17:02:58",
+      "image": "https://calfstation.github.io/screenshots/sou-setsu-ryuu-iii-the-rosetta-stone/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "더블 드래곤 3 한글패치"
+    },
+    {
+      "url": "/95",
+      "path": "/95",
+      "title": "아르마딜로",
+      "date": "16:20:09",
+      "image": "https://calfstation.github.io/screenshots/armadillo/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "아르마딜로 한글패치"
+    },
+    {
+      "url": "/93",
+      "path": "/93",
+      "title": "타카하시 명인의 모험도 IV",
+      "date": "15:39:51",
+      "image": "https://calfstation.github.io/screenshots/takahashi-meijin-no-bouken-jima-iv/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "모험도 IV 한글패치"
+    },
+    {
+      "url": "/86",
+      "path": "/86",
+      "title": "서유기 월드",
+      "date": "2026.10.28",
+      "image": "https://calfstation.github.io/screenshots/saiyuuki-world/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "서유기 월드 한글 패치"
+    },
     {
       "url": "/81",
       "path": "/81",
@@ -297,15 +357,21 @@
     }
   ],
   "patchSummary": {
-    "total": 18,
+    "total": 23,
     "byPlatform": {
+      "fc": 15,
       "ps1": 1,
       "sfc": 1,
-      "fc": 10,
       "md": 1,
       "gb": 5
     },
     "platforms": [
+      {
+        "code": "fc",
+        "label": "패미컴",
+        "short": "FC",
+        "count": 15
+      },
       {
         "code": "ps1",
         "label": "플레이스테이션",
@@ -317,12 +383,6 @@
         "label": "슈퍼 패미컴",
         "short": "SFC",
         "count": 1
-      },
-      {
-        "code": "fc",
-        "label": "패미컴",
-        "short": "FC",
-        "count": 10
       },
       {
         "code": "md",
