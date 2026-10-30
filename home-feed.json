@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-31T03:18:56+09:00",
+  "generatedAt": "2026-10-31T07:30:55+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
-      "name": "BOLFKANG77",
-      "text": "정말 고생이 많으십니다. 항상 감사드립니다. 홈피 너무 멋져요.",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1793375340.0
-    },
-    {
       "name": "농부맨",
       "text": "감사합니다! 어렸을때 만화책도 보고 게임도 재밌게했었는데 다시보니 반갑네⋯",
       "link": "/58",
       "commentId": "comment24005847",
       "kind": "comment",
-      "time": 1793313180
+      "time": 1793399580
+    },
+    {
+      "name": "농부맨",
+      "text": "감사합니다~! 즐겁게 플레이하겠습니다.",
+      "link": "/93",
+      "commentId": "comment24006235",
+      "kind": "comment",
+      "time": 1793396580
     }
   ],
   "recentCommentBackup": [
@@ -41,7 +41,15 @@
       "link": "/58",
       "commentId": "comment24005847",
       "kind": "comment",
-      "time": 1793313180
+      "time": 1793399580
+    },
+    {
+      "name": "농부맨",
+      "text": "감사합니다~! 즐겁게 플레이하겠습니다.",
+      "link": "/93",
+      "commentId": "comment24006235",
+      "kind": "comment",
+      "time": 1793396580
     },
     {
       "name": "랄라",
