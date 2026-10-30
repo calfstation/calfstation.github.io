@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-30T22:23:25+09:00",
+  "generatedAt": "2026-10-31T03:18:56+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/92",
       "path": "/92",
       "title": "게임 다수 배포 준비 중..!",
-      "date": "02:48:25"
+      "date": "2026.10.30"
     },
     {
       "url": "/85",
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "BOLFKANG77",
+      "text": "정말 고생이 많으십니다. 항상 감사드립니다. 홈피 너무 멋져요.",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1793375340.0
+    },
+    {
       "name": "농부맨",
       "text": "감사합니다! 어렸을때 만화책도 보고 게임도 재밌게했었는데 다시보니 반갑네⋯",
       "link": "/58",
       "commentId": "comment24005847",
       "kind": "comment",
       "time": 1793313180
-    },
-    {
-      "name": "랄라",
-      "text": "아, 아닙니다. 잘 되네요. 패치 제작해주셔서 감사합니다!",
-      "link": "/81",
-      "commentId": "comment24004643",
-      "kind": "comment",
-      "time": 1793026800
     }
   ],
   "recentCommentBackup": [
@@ -57,7 +57,7 @@
       "url": "/98",
       "path": "/98",
       "title": "꿈 펭귄 이야기",
-      "date": "17:03:09",
+      "date": "2026.10.30",
       "subtitle": "꿈 펭귄 이야기",
       "displayTitle": "꿈 펭귄 이야기 한글패치"
     },
@@ -65,7 +65,7 @@
       "url": "/97",
       "path": "/97",
       "title": "더블 드래곤 III: 로제타 스톤",
-      "date": "17:02:58",
+      "date": "2026.10.30",
       "subtitle": "더블 드래곤 III: 로제타 스톤",
       "displayTitle": "더블 드래곤 3 한글패치"
     },
@@ -73,7 +73,7 @@
       "url": "/95",
       "path": "/95",
       "title": "아르마딜로",
-      "date": "16:20:09",
+      "date": "2026.10.30",
       "subtitle": "아르마딜로",
       "displayTitle": "아르마딜로 한글패치"
     }
@@ -83,7 +83,7 @@
       "url": "/98",
       "path": "/98",
       "title": "꿈 펭귄 이야기",
-      "date": "17:03:09",
+      "date": "2026.10.30",
       "image": "https://calfstation.github.io/screenshots/yume-penguin-monogatari/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -95,7 +95,7 @@
       "url": "/97",
       "path": "/97",
       "title": "더블 드래곤 III: 로제타 스톤",
-      "date": "17:02:58",
+      "date": "2026.10.30",
       "image": "https://calfstation.github.io/screenshots/sou-setsu-ryuu-iii-the-rosetta-stone/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -107,7 +107,7 @@
       "url": "/95",
       "path": "/95",
       "title": "아르마딜로",
-      "date": "16:20:09",
+      "date": "2026.10.30",
       "image": "https://calfstation.github.io/screenshots/armadillo/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
@@ -119,7 +119,7 @@
       "url": "/93",
       "path": "/93",
       "title": "타카하시 명인의 모험도 IV",
-      "date": "15:39:51",
+      "date": "2026.10.30",
       "image": "https://calfstation.github.io/screenshots/takahashi-meijin-no-bouken-jima-iv/cover.png",
       "platform": "FC / 패미컴",
       "platformCode": "fc",
