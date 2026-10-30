@@ -1,0 +1,39 @@
+{
+  "schema": "CALF-IPS-VARIANTS-1",
+  "version": 1,
+  "title": "더블 드래곤 III: 로제타 스톤",
+  "source": {
+    "crc32": "40759AB5",
+    "sha1": "C2EB62A13FACA63C55EFA68984AE515B4DBEA9C0",
+    "sha256": "927338069AE27557C3A702F09B6DAF6DA06F8BBFAE54F68DF47E762B731B8C6A"
+  },
+  "defaultId": "easyspin",
+  "variants": [
+    {
+      "id": "easyspin",
+      "label": "선풍각 조작 개선판",
+      "description": "선풍각의 입력 타이밍을 완화한 버전입니다. 이제 점프 후 버튼을 누르는 즉시 선풍각이 발동됩니다.",
+      "patch": "/patches/cfs_20261029_5e4ba3ca_easyspin.bin",
+      "patchSha256": "F41C346100DCC4AA3B513B92FD2240C1244243600106A69831FF3245E39483B7",
+      "output": {
+        "size": 393232,
+        "crc32": "58D94F43",
+        "sha1": "8E5F6AD12D9C2A33A0DE61E3CB225BF9D0B81EC9",
+        "sha256": "1A990AFE5F464831C61C95DDD39F5CC247DC52F5914DB2D04CB53C4F92AB115C"
+      }
+    },
+    {
+      "id": "original",
+      "label": "원작 조작 보존판",
+      "description": "일본판의 선풍각 입력 타이밍을 그대로 유지합니다. 기술 발동이 거지 같습니다.",
+      "patch": "/patches/cfs_20261029_5e4ba3ca_original.bin",
+      "patchSha256": "5614334CA6BE66A9951931D2991306CE50D1A47C88FAC43FA8D061842D234EED",
+      "output": {
+        "size": 393232,
+        "crc32": "50946439",
+        "sha1": "DF5D137308BD11AD347ABAD6FF8FBE0B182617AB",
+        "sha256": "DA0E7A52C5A9C7A414E775BAD1D58A1FAD08519851A88DB9E6219EEE3CF20350"
+      }
+    }
+  ]
+}
