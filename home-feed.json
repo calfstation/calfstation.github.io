@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-01T06:31:03+09:00",
+  "generatedAt": "2026-11-01T09:24:35+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -26,12 +26,12 @@
       "time": 1793466480
     },
     {
-      "name": "농부맨",
-      "text": "감사합니다~! 즐겁게 플레이하겠습니다.",
-      "link": "/93",
-      "commentId": "comment24006235",
-      "kind": "comment",
-      "time": 1793396580
+      "name": "BOLFKANG77",
+      "text": "정말 고생이 많으십니다. 항상 감사드립니다. 홈피 너무 멋져요.",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1793375340.0
     }
   ],
   "recentCommentBackup": [
@@ -49,7 +49,7 @@
       "link": "/93",
       "commentId": "comment24006235",
       "kind": "comment",
-      "time": 1793396580
+      "time": 1793372400
     },
     {
       "name": "농부맨",
