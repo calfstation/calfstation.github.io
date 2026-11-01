@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-01T22:52:28+09:00",
+  "generatedAt": "2026-11-02T03:41:39+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
       "url": "/99",
       "path": "/99",
       "title": "흑의검 자잘한 버그 수정 중 - 싸움대장 2 최종 검수 중",
-      "date": "14:10:01"
+      "date": "2026.11.01"
     },
     {
       "url": "/92",
@@ -31,7 +31,7 @@
       "link": "/81",
       "commentId": "comment24006574",
       "kind": "comment",
-      "time": 1793466480
+      "time": 1793458800
     }
   ],
   "recentCommentBackup": [
@@ -49,7 +49,7 @@
       "link": "/81",
       "commentId": "comment24006574",
       "kind": "comment",
-      "time": 1793466480
+      "time": 1793458800
     },
     {
       "name": "농부맨",
@@ -419,7 +419,7 @@
       "url": "/100",
       "path": "/100",
       "title": "깜짝 열혈신기록! 아득한 금메달",
-      "date": "21:32:24",
+      "date": "2026.11.01",
       "analysis": 100,
       "translation": 40,
       "review": 0,
