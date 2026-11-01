@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-01T15:44:04+09:00",
+  "generatedAt": "2026-11-01T21:34:01+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -416,6 +416,19 @@
   },
   "next": [
     {
+      "url": "/100",
+      "path": "/100",
+      "title": "깜짝 열혈신기록! 아득한 금메달",
+      "date": "21:32:24",
+      "analysis": 100,
+      "translation": 40,
+      "review": 0,
+      "average": 47,
+      "platform": "fc",
+      "test": "pending",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
+    },
+    {
       "url": "/91",
       "path": "/91",
       "title": "아르마딜로",
@@ -744,9 +757,9 @@
     }
   ],
   "nextSummary": {
-    "active": 6,
+    "active": 7,
     "complete": 19,
-    "total": 25
+    "total": 26
   },
   "history": [
     {
