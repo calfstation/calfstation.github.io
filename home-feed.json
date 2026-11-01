@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-01T09:24:35+09:00",
+  "generatedAt": "2026-11-01T14:11:27+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
+    {
+      "url": "/99",
+      "path": "/99",
+      "title": "흑의검 자잘한 버그 수정 중 - 싸움대장 2 최종 검수 중",
+      "date": "14:10:01"
+    },
     {
       "url": "/92",
       "path": "/92",
       "title": "게임 다수 배포 준비 중..!",
       "date": "2026.10.30"
-    },
-    {
-      "url": "/85",
-      "path": "/85",
-      "title": "흑의검 v1.01 수정 배포",
-      "date": "2026.10.27"
     }
   ],
   "friends": [
