@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-03T17:03:13+09:00",
+  "generatedAt": "2026-11-03T22:38:38+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
+    {
+      "url": "/101",
+      "path": "/101",
+      "title": "작업 완료 프로젝트 배포 준비 중ㆍㆍㆍㆍㆍ",
+      "date": "22:36:43"
+    },
     {
       "url": "/99",
       "path": "/99",
       "title": "흑의검 자잘한 버그 수정 중 - 싸움대장 2 최종 검수 중",
       "date": "2026.11.01"
-    },
-    {
-      "url": "/92",
-      "path": "/92",
-      "title": "게임 다수 배포 준비 중..!",
-      "date": "2026.10.30"
     }
   ],
   "friends": [
@@ -448,8 +448,8 @@
       "date": "2026.10.23",
       "analysis": 100,
       "translation": 100,
-      "review": 70,
-      "average": 90,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FrCUvO%2FdJMb992FMRo%2FAAAAAAAAAAAAAAAAAAAAADWVH56t1ujJMjR1QR625T1ZV24xHhr-tWZS4eCdvTgf%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3De9B55J09o1xqPBHWleWeyj9tCYg%253D"
@@ -461,8 +461,8 @@
       "date": "2026.10.11",
       "analysis": 100,
       "translation": 100,
-      "review": 52,
-      "average": 84,
+      "review": 80,
+      "average": 93,
       "platform": "ps2",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FldPXH%2FdJMcacdN7EI%2FAAAAAAAAAAAAAAAAAAAAALkxpUh_GE41gFxmid6gKNAfefQrIx5p2V3b469NcaQJ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DCvTfRWzpQA%252Bbil09LWTCUOY%252Fde4%253D"
@@ -474,8 +474,8 @@
       "date": "2026.10.10",
       "analysis": 100,
       "translation": 100,
-      "review": 90,
-      "average": 97,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
       "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DK0BcEoAxAL3kQ681L8vtI9kdCJA%253D"
