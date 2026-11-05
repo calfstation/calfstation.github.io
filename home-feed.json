@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-05T18:34:43+09:00",
+  "generatedAt": "2026-11-06T02:39:55+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -58,14 +58,6 @@
       "commentId": "comment24006235",
       "kind": "comment",
       "time": 1793372400
-    },
-    {
-      "name": "농부맨",
-      "text": "감사합니다! 어렸을때 만화책도 보고 게임도 재밌게했었는데 다시보니 반갑네⋯",
-      "link": "/58",
-      "commentId": "comment24005847",
-      "kind": "comment",
-      "time": 1793286000
     }
   ],
   "patch": [
