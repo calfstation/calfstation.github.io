@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-05T11:14:04+09:00",
+  "generatedAt": "2026-11-05T18:34:43+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -421,11 +421,11 @@
       "title": "깜짝 열혈신기록! 아득한 금메달",
       "date": "2026.11.01",
       "analysis": 100,
-      "translation": 40,
-      "review": 0,
-      "average": 47,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
       "platform": "fc",
-      "test": "pending",
+      "test": "progress",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
     },
     {
