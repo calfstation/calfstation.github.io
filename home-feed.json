@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-06T19:42:52+09:00",
+  "generatedAt": "2026-11-07T02:42:42+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -50,14 +50,6 @@
       "commentId": "comment24006574",
       "kind": "comment",
       "time": 1793458800
-    },
-    {
-      "name": "농부맨",
-      "text": "감사합니다~! 즐겁게 플레이하겠습니다.",
-      "link": "/93",
-      "commentId": "comment24006235",
-      "kind": "comment",
-      "time": 1793372400
     }
   ],
   "patch": [
