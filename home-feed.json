@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-07T17:57:21+09:00",
+  "generatedAt": "2026-11-08T00:37:01+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -42,14 +42,6 @@
       "commentId": "comment24006858",
       "kind": "comment",
       "time": 1793596680
-    },
-    {
-      "name": "버터",
-      "text": "게임하다가 유저가 선택해야하는 장면 번역들이 전부 안되어있네요 게임전체⋯",
-      "link": "/81",
-      "commentId": "comment24006574",
-      "kind": "comment",
-      "time": 1793458800
     }
   ],
   "patch": [
