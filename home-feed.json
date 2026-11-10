@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-10T16:14:41+09:00",
+  "generatedAt": "2026-11-11T00:41:37+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,23 +18,31 @@
   ],
   "friends": [
     {
+      "name": "일개겜돌이",
+      "text": "오우..이거 유메펭귄...진짜 오랜만이네요 ㅠㅠ 근데 A.i 시대에 A.⋯",
+      "link": "/98",
+      "commentId": "comment24010614",
+      "kind": "comment",
+      "time": 1794314460
+    },
+    {
       "name": "LCH",
       "text": "꿈 펭귄 이야기 한글패치 ips 파일이 없는데요.",
       "link": "/98",
       "commentId": "comment24010496",
       "kind": "comment",
       "time": 1794290460
-    },
-    {
-      "name": "흔들의자",
-      "text": "덕분에 너무 재미있을거 같습니다. 감사합니다.",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1793584620.0
     }
   ],
   "recentCommentBackup": [
+    {
+      "name": "일개겜돌이",
+      "text": "오우..이거 유메펭귄...진짜 오랜만이네요 ㅠㅠ 근데 A.i 시대에 A.⋯",
+      "link": "/98",
+      "commentId": "comment24010614",
+      "kind": "comment",
+      "time": 1794314460
+    },
     {
       "name": "LCH",
       "text": "꿈 펭귄 이야기 한글패치 ips 파일이 없는데요.",
