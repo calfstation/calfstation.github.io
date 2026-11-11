@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-11T17:43:50+09:00",
+  "generatedAt": "2026-11-11T17:49:21+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -424,19 +424,6 @@
   },
   "next": [
     {
-      "url": "/100",
-      "path": "/100",
-      "title": "깜짝 열혈신기록! 아득한 금메달",
-      "date": "2026.11.01",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
-    },
-    {
       "url": "/91",
       "path": "/91",
       "title": "아르마딜로",
@@ -476,19 +463,6 @@
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FldPXH%2FdJMcacdN7EI%2FAAAAAAAAAAAAAAAAAAAAALkxpUh_GE41gFxmid6gKNAfefQrIx5p2V3b469NcaQJ%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DCvTfRWzpQA%252Bbil09LWTCUOY%252Fde4%253D"
     },
     {
-      "url": "/69",
-      "path": "/69",
-      "title": "가면 라이더 SD: 그랜드 쇼커의 야망",
-      "date": "2026.10.10",
-      "analysis": 100,
-      "translation": 100,
-      "review": 100,
-      "average": 100,
-      "platform": "fc",
-      "test": "progress",
-      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DK0BcEoAxAL3kQ681L8vtI9kdCJA%253D"
-    },
-    {
       "url": "/68",
       "path": "/68",
       "title": "흑의검",
@@ -516,6 +490,19 @@
     }
   ],
   "nextCompleted": [
+    {
+      "url": "/100",
+      "path": "/100",
+      "title": "깜짝 열혈신기록! 아득한 금메달",
+      "date": "2026.11.01",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"
+    },
     {
       "url": "/90",
       "path": "/90",
@@ -593,6 +580,19 @@
       "platform": "fc",
       "test": "complete",
       "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbqZCBb%2FdJMcah7ptul%2FAAAAAAAAAAAAAAAAAAAAAK3h-Rech3qkfkSRYpwLqml5iPTQNt__sV6eeNPdKAbx%2Fimg.webp%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DhaqbB05NCSoGfjvyhuZEMyJGXos%253D"
+    },
+    {
+      "url": "/69",
+      "path": "/69",
+      "title": "가면 라이더 SD: 그랜드 쇼커의 야망",
+      "date": "2026.10.10",
+      "analysis": 100,
+      "translation": 100,
+      "review": 100,
+      "average": 100,
+      "platform": "fc",
+      "test": "complete",
+      "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F9S8E5%2FdJMcadDA7gm%2FAAAAAAAAAAAAAAAAAAAAAJ_pTumQJ1Gy7cKhsKNEFd_V5gJxMSvXClu7bRCfCsb0%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1796050799%26allow_ip%3D%26allow_referer%3D%26signature%3DK0BcEoAxAL3kQ681L8vtI9kdCJA%253D"
     },
     {
       "url": "/63",
@@ -765,8 +765,8 @@
     }
   ],
   "nextSummary": {
-    "active": 7,
-    "complete": 19,
+    "active": 5,
+    "complete": 21,
     "total": 26
   },
   "history": [
