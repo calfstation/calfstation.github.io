@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-11T17:17:37+09:00",
+  "generatedAt": "2026-11-11T17:43:50+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -54,31 +54,55 @@
   ],
   "patch": [
     {
+      "url": "/104",
+      "path": "/104",
+      "title": "깜짝 열혈신기록! 아득한 금메달",
+      "date": "17:30:26",
+      "subtitle": "깜짝 열혈신기록! 아득한 금메달",
+      "displayTitle": "열혈신기록 한글패치"
+    },
+    {
+      "url": "/103",
+      "path": "/103",
+      "title": "가면라이더 SD: 그랜드 쇼커의 야망",
+      "date": "17:29:13",
+      "subtitle": "가면라이더 SD: 그랜드 쇼커의 야망",
+      "displayTitle": "가면라이더 SD 한글패치"
+    },
+    {
       "url": "/98",
       "path": "/98",
       "title": "꿈 펭귄 이야기",
       "date": "2026.10.30",
       "subtitle": "꿈 펭귄 이야기",
       "displayTitle": "꿈 펭귄 이야기 한글패치"
-    },
-    {
-      "url": "/97",
-      "path": "/97",
-      "title": "더블 드래곤 III: 로제타 스톤",
-      "date": "2026.10.30",
-      "subtitle": "더블 드래곤 III: 로제타 스톤",
-      "displayTitle": "더블 드래곤 3 한글패치"
-    },
-    {
-      "url": "/95",
-      "path": "/95",
-      "title": "아르마딜로",
-      "date": "2026.10.30",
-      "subtitle": "아르마딜로",
-      "displayTitle": "아르마딜로 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/104",
+      "path": "/104",
+      "title": "깜짝 열혈신기록! 아득한 금메달",
+      "date": "17:30:26",
+      "image": "https://calfstation.github.io/screenshots/original-jp/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "열혈신기록 한글패치"
+    },
+    {
+      "url": "/103",
+      "path": "/103",
+      "title": "가면라이더 SD: 그랜드 쇼커의 야망",
+      "date": "17:29:13",
+      "image": "https://calfstation.github.io/screenshots/kamen-rider-sd-granshocker-no-yabou/cover.png",
+      "platform": "FC / 패미컴",
+      "platformCode": "fc",
+      "platformLabel": "패미컴",
+      "platformShort": "FC",
+      "displayTitle": "가면라이더 SD 한글패치"
+    },
     {
       "url": "/98",
       "path": "/98",
@@ -357,9 +381,9 @@
     }
   ],
   "patchSummary": {
-    "total": 23,
+    "total": 25,
     "byPlatform": {
-      "fc": 15,
+      "fc": 17,
       "ps1": 1,
       "sfc": 1,
       "md": 1,
@@ -370,7 +394,7 @@
         "code": "fc",
         "label": "패미컴",
         "short": "FC",
-        "count": 15
+        "count": 17
       },
       {
         "code": "ps1",
