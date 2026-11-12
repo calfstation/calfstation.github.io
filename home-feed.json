@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-12T12:30:30+09:00",
+  "generatedAt": "2026-11-12T20:45:44+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -26,12 +26,12 @@
       "time": 1794404520
     },
     {
-      "name": "겜돌",
-      "text": "늘 고품질의 한글화 감사합니다 진짜 믿고 플레이 해 보면 역시나 입니다 ⋯",
-      "link": "/104",
-      "commentId": "comment24011001",
-      "kind": "comment",
-      "time": 1794395040
+      "name": "보노보노",
+      "text": "한글화 해주셔서 너무 재미나게 즐기고 있습니다! 앞으로도 좋은 게임들 한글화 되길 기대해 봅니다^^",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1794393840.0
     }
   ],
   "recentCommentBackup": [
@@ -49,7 +49,7 @@
       "link": "/104",
       "commentId": "comment24011001",
       "kind": "comment",
-      "time": 1794395040
+      "time": 1794322800
     },
     {
       "name": "일개겜돌이",
