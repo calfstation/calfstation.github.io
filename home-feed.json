@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-15T01:46:24+09:00",
+  "generatedAt": "2026-11-15T04:52:14+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -779,6 +779,14 @@
   },
   "history": [
     {
+      "url": "/105",
+      "path": "/105",
+      "title": "싸움대장 2 검수일지 - PAGE2",
+      "date": "01:44:29",
+      "displayTitle": "싸움대장 2 검수일지 - PAGE2",
+      "subtitle": "싸움대장 2 검수일지 한글화 작업기 2"
+    },
+    {
       "url": "/87",
       "path": "/87",
       "title": "싸움대장 2 검수일지 - PAGE1",
@@ -793,14 +801,6 @@
       "date": "2026.10.14",
       "displayTitle": "흑의 검 작업기 PAGE 1",
       "subtitle": "흑의 검 작업기 한글화 작업기 1"
-    },
-    {
-      "url": "/74",
-      "path": "/74",
-      "title": "지.아이.조: 진정한 Me Cook의 영웅 PAGE1 (END)",
-      "date": "2026.10.13",
-      "displayTitle": "지.아이.조: 진정한 Me Cook의 영웅 PAGE1 (END)",
-      "subtitle": "지.아이.조: 진정한 Me Cook의 영웅 한글화 작업기 1"
     }
   ]
 }
