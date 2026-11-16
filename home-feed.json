@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-16T17:48:32+09:00",
+  "generatedAt": "2026-11-17T03:58:57+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,12 +18,12 @@
   ],
   "friends": [
     {
-      "name": "리키",
-      "text": "선생님 감사합니다. 한글로 다시 해보니깐 너무 재밌네요",
+      "name": "draconova",
+      "text": "다시 패치 하니까 잘되네요 감사합니다",
       "link": "/104",
-      "commentId": "comment24011052",
+      "commentId": "comment24014868",
       "kind": "comment",
-      "time": 1794404520
+      "time": 1794842700
     },
     {
       "name": "보노보노",
@@ -36,28 +36,12 @@
   ],
   "recentCommentBackup": [
     {
-      "name": "리키",
-      "text": "선생님 감사합니다. 한글로 다시 해보니깐 너무 재밌네요",
+      "name": "draconova",
+      "text": "다시 패치 하니까 잘되네요 감사합니다",
       "link": "/104",
-      "commentId": "comment24011052",
+      "commentId": "comment24014868",
       "kind": "comment",
-      "time": 1794404520
-    },
-    {
-      "name": "겜돌",
-      "text": "늘 고품질의 한글화 감사합니다 진짜 믿고 플레이 해 보면 역시나 입니다 ⋯",
-      "link": "/104",
-      "commentId": "comment24011001",
-      "kind": "comment",
-      "time": 1794322800
-    },
-    {
-      "name": "일개겜돌이",
-      "text": "오우..이거 유메펭귄...진짜 오랜만이네요 ㅠㅠ 근데 A.i 시대에 A.⋯",
-      "link": "/98",
-      "commentId": "comment24010614",
-      "kind": "comment",
-      "time": 1794236400
+      "time": 1794842700
     }
   ],
   "patch": [
