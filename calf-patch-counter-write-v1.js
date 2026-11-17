@@ -109,12 +109,14 @@
       if (!currentSnap.exists() || !Number.isSafeInteger(currentSnap.val()) || currentSnap.val() < 0) {
         throw new Error('기존 trackedSuccesses 값이 올바르지 않습니다.');
       }
-      var result = await dbApi.runTransaction(counterRef, function (current) {
-        if (!Number.isSafeInteger(current) || current < 0 || current >= Number.MAX_SAFE_INTEGER) {
-          return; // Abort. Never overwrite an invalid or missing counter.
-        }
-        return current + 1;
-      }, { applyLocally: false });
+var result = await dbApi.runTransaction(counterRef, function (current) {
+    if (current === null) return currentSnap.val() + 1;
+
+    if (!Number.isSafeInteger(current) || current < 0 || current >= Number.MAX_SAFE_INTEGER) {
+        return;
+    }
+    return current + 1;
+}, { applyLocally: false });
       if (!result.committed) throw new Error('카운터 트랜잭션이 반영되지 않았습니다.');
       // This tab must not keep the archive's previous 90-second snapshot after +1.
       try { sessionStorage.removeItem('calf-patch-count-readonly-v3'); } catch (_) {}
