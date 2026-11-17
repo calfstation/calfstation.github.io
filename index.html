@@ -593,6 +593,36 @@
           'ok'
         );
         notifyParentHeight();
+                /* CALF PATCH COUNTER · 성공 후 비차단 기록 신호 · 2026-11-17 */
+        try {
+          var calfCounterPost = (params.get('post') || '').trim();
+          if (window.parent !== window) {
+            window.parent.postMessage(
+              {type: 'calf-patcher-verified-download-v1'},
+              'https://calfstation.tistory.com'
+            );
+          } else if (/^[1-9][0-9]{0,7}$/.test(calfCounterPost)) {
+            if (window.CALF_PATCH_COUNTER_V1) {
+              void window.CALF_PATCH_COUNTER_V1.record(calfCounterPost);
+            } else {
+              var calfStatScript = document.createElement('script');
+              calfStatScript.src = 'https://calfstation.github.io/calf-patch-counter-write-v1.js';
+              calfStatScript.async = true;
+              calfStatScript.onload = function () {
+                if (window.CALF_PATCH_COUNTER_V1) {
+                  void window.CALF_PATCH_COUNTER_V1.record(calfCounterPost);
+                }
+              };
+              calfStatScript.onerror = function () {
+                console.warn('[CALF PATCH COUNT] 모듈 로딩 실패; 패치 파일은 정상 저장됨');
+              };
+              document.head.appendChild(calfStatScript);
+            }
+          }
+        } catch (countError) {
+          console.warn('[CALF PATCH COUNT] 통계 요청만 실패:', countError);
+        }
+
       }catch(e){
         setStatus('패치 적용 또는 결과 검증 실패: '+e.message,'bad');
       }finally{
