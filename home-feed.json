@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-18T19:01:27+09:00",
+  "generatedAt": "2026-11-19T03:48:33+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -18,20 +18,20 @@
   ],
   "friends": [
     {
+      "name": "시에라",
+      "text": "베어너클이랑 더블 드래곤 한글화 감사합니다 중학생때 정말 재미있게 했었는데 나이 50이돼서 한글화로 다시깼습니다 고맙습니다 혹시 가능하시다면 md 공작왕(환영성) 한글화 요청해봅니다",
+      "link": "/guestbook",
+      "commentId": "",
+      "kind": "guestbook",
+      "time": 1795002300.0
+    },
+    {
       "name": "draconova",
       "text": "다시 패치 하니까 잘되네요 감사합니다",
       "link": "/104",
       "commentId": "comment24014868",
       "kind": "comment",
       "time": 1794842700
-    },
-    {
-      "name": "보노보노",
-      "text": "한글화 해주셔서 너무 재미나게 즐기고 있습니다! 앞으로도 좋은 게임들 한글화 되길 기대해 봅니다^^",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1794393840.0
     }
   ],
   "recentCommentBackup": [
