@@ -9,6 +9,7 @@ on:
   push:
     paths:
       - 'scripts/build_home_feed.py'
+      - 'scripts/sync_patch_counts.py'
       - '.github/workflows/update-home-feed.yml'
 
 permissions:
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   build-home-feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
 
     steps:
       - name: Checkout
@@ -74,3 +75,18 @@ jobs:
 
           echo "Failed to publish home-feed.json after 3 attempts."
           exit 1
+
+      # 별도 단계: GitHub Actions가 새 글을 확인한 뒤 관리자 자격으로
+      # Firebase /items/post_ID 한 곳만 신규 생성. 기존 25개 값은 쓰지 않습니다.
+      - name: Auto-register missing Firebase patch counters
+        shell: bash
+        env:
+          CALF_FIREBASE_SA_JSON: ${{ secrets.CALF_FIREBASE_SA_JSON }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${CALF_FIREBASE_SA_JSON}" ]]; then
+            echo "::warning title=Firebase counter sync disabled::Set CALF_FIREBASE_SA_JSON in Settings > Secrets and variables > Actions to enable automatic new post registration."
+            exit 0
+          fi
+          python -m pip install --disable-pip-version-check 'firebase-admin>=7.8,<8'
+          python scripts/sync_patch_counts.py --apply
