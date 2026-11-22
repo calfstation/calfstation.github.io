@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T14:51:24+09:00",
+  "generatedAt": "2026-11-22T14:55:14+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -54,31 +54,67 @@
   ],
   "patch": [
     {
-      "url": "/104",
-      "path": "/104",
-      "title": "깜짝 열혈신기록! 아득한 금메달",
-      "date": "2026.11.11",
-      "subtitle": "깜짝 열혈신기록! 아득한 금메달",
-      "displayTitle": "열혈신기록 한글패치"
+      "url": "/109",
+      "path": "/109",
+      "title": "유유백서 파이널: 마계최강열전",
+      "date": "14:40:52",
+      "subtitle": "유유백서 파이널: 마계최강열전",
+      "displayTitle": "유유백서 파이널 한글패치"
     },
     {
-      "url": "/103",
-      "path": "/103",
-      "title": "가면라이더 SD: 그랜드 쇼커의 야망",
-      "date": "2026.11.11",
-      "subtitle": "가면라이더 SD: 그랜드 쇼커의 야망",
-      "displayTitle": "가면라이더 SD 한글패치"
+      "url": "/108",
+      "path": "/108",
+      "title": "공작왕 2: 환영성",
+      "date": "14:39:24",
+      "subtitle": "공작왕 2: 환영성",
+      "displayTitle": "공작왕2 한글패치"
     },
     {
-      "url": "/98",
-      "path": "/98",
-      "title": "꿈 펭귄 이야기",
-      "date": "2026.10.30",
-      "subtitle": "꿈 펭귄 이야기",
-      "displayTitle": "꿈 펭귄 이야기 한글패치"
+      "url": "/107",
+      "path": "/107",
+      "title": "셉텐트리온",
+      "date": "14:39:12",
+      "subtitle": "셉텐트리온",
+      "displayTitle": "셉텐트리온 한글패치"
     }
   ],
   "patchArchive": [
+    {
+      "url": "/109",
+      "path": "/109",
+      "title": "유유백서 파이널: 마계최강열전",
+      "date": "14:40:52",
+      "image": "https://calfstation.github.io/screenshots/yu-yu-hakusho-final-makai-saikyou-retsuden/cover.png",
+      "platform": "SFC / 슈퍼 패미컴",
+      "platformCode": "sfc",
+      "platformLabel": "슈퍼 패미컴",
+      "platformShort": "SFC",
+      "displayTitle": "유유백서 파이널 한글패치"
+    },
+    {
+      "url": "/108",
+      "path": "/108",
+      "title": "공작왕 2: 환영성",
+      "date": "14:39:24",
+      "image": "https://calfstation.github.io/screenshots/kujaku-ou-2-geneijou/cover.png",
+      "platform": "MD / 메가 드라이브",
+      "platformCode": "md",
+      "platformLabel": "메가 드라이브",
+      "platformShort": "MD",
+      "displayTitle": "공작왕2 한글패치"
+    },
+    {
+      "url": "/107",
+      "path": "/107",
+      "title": "셉텐트리온",
+      "date": "14:39:12",
+      "image": "https://calfstation.github.io/screenshots/septentrion/cover.png",
+      "platform": "SFC / 슈퍼 패미컴",
+      "platformCode": "sfc",
+      "platformLabel": "슈퍼 패미컴",
+      "platformShort": "SFC",
+      "displayTitle": "셉텐트리온 한글패치"
+    },
     {
       "url": "/104",
       "path": "/104",
@@ -381,15 +417,27 @@
     }
   ],
   "patchSummary": {
-    "total": 25,
+    "total": 28,
     "byPlatform": {
+      "sfc": 3,
+      "md": 2,
       "fc": 17,
       "ps1": 1,
-      "sfc": 1,
-      "md": 1,
       "gb": 5
     },
     "platforms": [
+      {
+        "code": "sfc",
+        "label": "슈퍼 패미컴",
+        "short": "SFC",
+        "count": 3
+      },
+      {
+        "code": "md",
+        "label": "메가 드라이브",
+        "short": "MD",
+        "count": 2
+      },
       {
         "code": "fc",
         "label": "패미컴",
@@ -400,18 +448,6 @@
         "code": "ps1",
         "label": "플레이스테이션",
         "short": "ps1",
-        "count": 1
-      },
-      {
-        "code": "sfc",
-        "label": "슈퍼 패미컴",
-        "short": "SFC",
-        "count": 1
-      },
-      {
-        "code": "md",
-        "label": "메가 드라이브",
-        "short": "MD",
         "count": 1
       },
       {
