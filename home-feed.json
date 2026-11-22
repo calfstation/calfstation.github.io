@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T02:46:00+09:00",
+  "generatedAt": "2026-11-23T07:52:31+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -19,29 +19,37 @@
   "friends": [
     {
       "name": "쓰피겔",
-      "text": "메뉴에 터보파일에서 저장하기 누르면 저장못함.... 이라며 저장이 안되는⋯",
+      "text": "왓 대박! Mesen에 이런 기능이 있는지 처음 알았습니다. ㅎㅎ 클리⋯",
       "link": "/40",
-      "commentId": "comment24016867",
+      "commentId": "comment24017157",
       "kind": "comment",
-      "time": 1795294200
+      "time": 1795370460
     },
-    {
-      "name": "멍돌이",
-      "text": "여러 열혈 시리즈들을 한글화 해주셔서 너무 감사히 잘 하고 있습니다! 홈페이지부터가 고수 느낌이 물씬 풍기네요~제가 알기로 여태까지 한번도 한글화가 안된 열혈 시리즈가 있는데, SFC용 \"쿠니오군의 돗지볼이다 전원집합\"입니다.제가 열혈시리즈 광팬이었어서 이 겜 출시당시 SFC 실기로 팩을 사서 했는데 열혈시리즈 답지 않게 언어의 압박이 굉장히 심해서 진행을 못하고 걍 다른 팩으로 교환했던 기억이 있네요.ㅠ 혹시, 이 작품 한글패치가 가능할까요?",
-      "link": "/guestbook",
-      "commentId": "",
-      "kind": "guestbook",
-      "time": 1795079760.0
-    }
-  ],
-  "recentCommentBackup": [
     {
       "name": "쓰피겔",
       "text": "메뉴에 터보파일에서 저장하기 누르면 저장못함.... 이라며 저장이 안되는⋯",
       "link": "/40",
       "commentId": "comment24016867",
       "kind": "comment",
-      "time": 1795294200
+      "time": 1795273200
+    }
+  ],
+  "recentCommentBackup": [
+    {
+      "name": "쓰피겔",
+      "text": "왓 대박! Mesen에 이런 기능이 있는지 처음 알았습니다. ㅎㅎ 클리⋯",
+      "link": "/40",
+      "commentId": "comment24017157",
+      "kind": "comment",
+      "time": 1795370460
+    },
+    {
+      "name": "쓰피겔",
+      "text": "메뉴에 터보파일에서 저장하기 누르면 저장못함.... 이라며 저장이 안되는⋯",
+      "link": "/40",
+      "commentId": "comment24016867",
+      "kind": "comment",
+      "time": 1795273200
     },
     {
       "name": "draconova",
