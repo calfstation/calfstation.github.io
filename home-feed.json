@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T01:09:59+09:00",
+  "generatedAt": "2026-11-23T02:24:17+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -57,7 +57,7 @@
       "url": "/109",
       "path": "/109",
       "title": "유유백서 파이널: 마계최강열전",
-      "date": "14:40:52",
+      "date": "2026.11.22",
       "subtitle": "유유백서 파이널: 마계최강열전",
       "displayTitle": "유유백서 파이널 한글패치"
     },
@@ -65,7 +65,7 @@
       "url": "/108",
       "path": "/108",
       "title": "공작왕 2: 환영성",
-      "date": "14:39:24",
+      "date": "2026.11.22",
       "subtitle": "공작왕 2: 환영성",
       "displayTitle": "공작왕2 한글패치"
     },
@@ -73,7 +73,7 @@
       "url": "/107",
       "path": "/107",
       "title": "셉텐트리온",
-      "date": "14:39:12",
+      "date": "2026.11.22",
       "subtitle": "셉텐트리온",
       "displayTitle": "셉텐트리온 한글패치"
     }
@@ -83,7 +83,7 @@
       "url": "/109",
       "path": "/109",
       "title": "유유백서 파이널: 마계최강열전",
-      "date": "14:40:52",
+      "date": "2026.11.22",
       "image": "https://calfstation.github.io/screenshots/yu-yu-hakusho-final-makai-saikyou-retsuden/cover.png",
       "platform": "SFC / 슈퍼 패미컴",
       "platformCode": "sfc",
@@ -95,7 +95,7 @@
       "url": "/108",
       "path": "/108",
       "title": "공작왕 2: 환영성",
-      "date": "14:39:24",
+      "date": "2026.11.22",
       "image": "https://calfstation.github.io/screenshots/kujaku-ou-2-geneijou/cover.png",
       "platform": "MD / 메가 드라이브",
       "platformCode": "md",
@@ -107,7 +107,7 @@
       "url": "/107",
       "path": "/107",
       "title": "셉텐트리온",
-      "date": "14:39:12",
+      "date": "2026.11.22",
       "image": "https://calfstation.github.io/screenshots/septentrion/cover.png",
       "platform": "SFC / 슈퍼 패미컴",
       "platformCode": "sfc",
