@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T12:22:04+09:00",
+  "generatedAt": "2026-11-23T22:21:32+09:00",
   "source": "CALF-STATION-GITHUB-ACTIONS",
   "daily": [
     {
@@ -50,14 +50,6 @@
       "commentId": "comment24016867",
       "kind": "comment",
       "time": 1795273200
-    },
-    {
-      "name": "draconova",
-      "text": "다시 패치 하니까 잘되네요 감사합니다",
-      "link": "/104",
-      "commentId": "comment24014868",
-      "kind": "comment",
-      "time": 1794841200
     }
   ],
   "patch": [
